@@ -17,10 +17,8 @@
 		42D16B9A1D92B1290094E457 /* ReactionSDKExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D16B991D92B1290094E457 /* ReactionSDKExampleTests.swift */; };
 		42D16BB21D92B2C90094E457 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42D16BB11D92B2C90094E457 /* GoogleService-Info.plist */; };
 		42F04D7A1DE32A6F004FFCE7 /* ReactionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F04D791DE32A6F004FFCE7 /* ReactionSDK.framework */; };
-		42F04D7B1DE32ADF004FFCE7 /* ReactionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F04D791DE32A6F004FFCE7 /* ReactionSDK.framework */; };
-		42F04D7C1DE32ADF004FFCE7 /* ReactionSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42F04D791DE32A6F004FFCE7 /* ReactionSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4962AA7DE161EA0E73580FAC /* Pods_ReactionSDKExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33DA7316CDF3E70FF6F6FE4E /* Pods_ReactionSDKExample.framework */; };
-		4D8F19E08FCC136EE3B92446 /* Pods_ReactionSDKExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6297F12CC606904ADC64F0E3 /* Pods_ReactionSDKExampleTests.framework */; };
+		8AAE3AAC6F790AFFB217DBB0 /* libPods-ReactionSDKExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 840B2A829B5C868D3D655846 /* libPods-ReactionSDKExampleTests.a */; };
+		B035B652AB23D0CAC33CD21F /* libPods-ReactionSDKExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B187735025A15625FC32B5B3 /* libPods-ReactionSDKExample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +38,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				42F04D7C1DE32ADF004FFCE7 /* ReactionSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,7 +46,6 @@
 
 /* Begin PBXFileReference section */
 		1C5C54231E6E15B9C9B24D1A /* Pods-ReactionSDKExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactionSDKExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactionSDKExample/Pods-ReactionSDKExample.debug.xcconfig"; sourceTree = "<group>"; };
-		33DA7316CDF3E70FF6F6FE4E /* Pods_ReactionSDKExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactionSDKExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4285802F1DA27BC4000EF4B7 /* ReactionSDKExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReactionSDKExample.entitlements; sourceTree = "<group>"; };
 		42B79FD31DA7A3CE003291B3 /* ViewInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInfo.swift; sourceTree = "<group>"; };
 		42B79FD41DA7A3CE003291B3 /* ViewInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewInfo.xib; sourceTree = "<group>"; };
@@ -64,11 +60,12 @@
 		42D16B991D92B1290094E457 /* ReactionSDKExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionSDKExampleTests.swift; sourceTree = "<group>"; };
 		42D16B9B1D92B1290094E457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42D16BB11D92B2C90094E457 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		42F04D791DE32A6F004FFCE7 /* ReactionSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactionSDK.framework; path = lib/ReactionSDK.framework; sourceTree = "<group>"; };
-		6297F12CC606904ADC64F0E3 /* Pods_ReactionSDKExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactionSDKExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42F04D791DE32A6F004FFCE7 /* ReactionSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactionSDK.framework; path = "/Users/valentine.pavchuk/g8y3e/work/projects/git/reaction-ios/reaction_sdk/ReactionSDKExample/lib/ReactionSDK.framework"; sourceTree = "<absolute>"; };
 		62E6646DDEB4419243C120E9 /* Pods-ReactionSDKExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactionSDKExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactionSDKExampleTests/Pods-ReactionSDKExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		67ED621CCA422146B1570E5B /* Pods-ReactionSDKExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactionSDKExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactionSDKExample/Pods-ReactionSDKExample.release.xcconfig"; sourceTree = "<group>"; };
 		80504C59C762D61DB6CCCE06 /* Pods-ReactionSDKExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactionSDKExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactionSDKExampleTests/Pods-ReactionSDKExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		840B2A829B5C868D3D655846 /* libPods-ReactionSDKExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactionSDKExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B187735025A15625FC32B5B3 /* libPods-ReactionSDKExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactionSDKExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +74,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42F04D7A1DE32A6F004FFCE7 /* ReactionSDK.framework in Frameworks */,
-				4962AA7DE161EA0E73580FAC /* Pods_ReactionSDKExample.framework in Frameworks */,
-				42F04D7B1DE32ADF004FFCE7 /* ReactionSDK.framework in Frameworks */,
+				B035B652AB23D0CAC33CD21F /* libPods-ReactionSDKExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D8F19E08FCC136EE3B92446 /* Pods_ReactionSDKExampleTests.framework in Frameworks */,
+				8AAE3AAC6F790AFFB217DBB0 /* libPods-ReactionSDKExampleTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +92,6 @@
 		42D16B781D92B1290094E457 = {
 			isa = PBXGroup;
 			children = (
-				42F04D791DE32A6F004FFCE7 /* ReactionSDK.framework */,
 				42D16BB11D92B2C90094E457 /* GoogleService-Info.plist */,
 				42D16B831D92B1290094E457 /* ReactionSDKExample */,
 				42D16B981D92B1290094E457 /* ReactionSDKExampleTests */,
@@ -154,8 +149,8 @@
 		EEE6AB81465FF64EB12358F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				33DA7316CDF3E70FF6F6FE4E /* Pods_ReactionSDKExample.framework */,
-				6297F12CC606904ADC64F0E3 /* Pods_ReactionSDKExampleTests.framework */,
+				B187735025A15625FC32B5B3 /* libPods-ReactionSDKExample.a */,
+				840B2A829B5C868D3D655846 /* libPods-ReactionSDKExampleTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

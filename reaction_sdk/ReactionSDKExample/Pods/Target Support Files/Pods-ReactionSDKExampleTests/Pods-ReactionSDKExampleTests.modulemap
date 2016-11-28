@@ -1,6 +1,0 @@
-framework module Pods_ReactionSDKExampleTests {
-  umbrella header "Pods-ReactionSDKExampleTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
