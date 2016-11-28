@@ -73,4 +73,4 @@ You can use our [example][example-url]
 [pod-image]: https://img.shields.io/cocoapods/v/AtomSDK.svg
 [pod-url]: https://cocoapods.org/?q=AtomSDK
 
-[example-url]: atom-sdk/AtomSDKExample
+[example-url]: reaction_sdk/ReactionSDKExample
