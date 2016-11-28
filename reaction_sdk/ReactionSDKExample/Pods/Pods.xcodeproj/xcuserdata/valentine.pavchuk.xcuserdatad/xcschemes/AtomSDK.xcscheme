@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '51897305F57A4B576C85CD22F7604D84'
+               BlueprintIdentifier = '6E0446B44F6EF03AE38C7CB447E7F438'
                BlueprintName = 'AtomSDK'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libAtomSDK.a'>
+               BuildableName = 'AtomSDK.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
