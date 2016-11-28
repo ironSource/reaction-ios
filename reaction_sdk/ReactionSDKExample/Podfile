@@ -6,7 +6,7 @@ target 'ReactionSDKExample' do
   use_frameworks!
 
   # Pods for ReactionSDKExample
-  pod 'Google/CloudMessaging'
+  pod 'Google/CloudMessaging' => 2.1
   pod 'AtomSDK'
 
   target 'ReactionSDKExampleTests' do
