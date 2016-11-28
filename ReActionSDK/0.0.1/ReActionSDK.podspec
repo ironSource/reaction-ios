@@ -98,7 +98,7 @@ Pod::Spec.new do |s|
 
   s.source_files  = "reaction_sdk/ReactionSDK", "reaction_sdk/ReactionSDK/ReactionSDK/*.{h,m}", "reaction_sdk/ReactionSDK/ReactionSDK/**/*.{h,m}"
 
-  s.public_header_files = "reaction_sdk/ReactionSDK/ReactionSDK/ISReaction.h", "reaction_sdk/ReactionSDK/ReactionSDK/ISReactionApp.h"
+  #s.public_header_files = "reaction_sdk/ReactionSDK/ReactionSDK/ISReaction.h", "reaction_sdk/ReactionSDK/ReactionSDK/ISReactionApp.h"
 
 
    # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -108,8 +108,14 @@ Pod::Spec.new do |s|
   #  you can include multiple dependencies to ensure it works.
 
   #core.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => $(PODS_ROOT)/mypod/module }
+  s.requires_arc = true
 
   s.dependency "AtomSDK"
   s.dependency "Google/CloudMessaging"
+
+  s.pod_target_xcconfig = {
+        'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/Google/CloudMessaging',
+        'OTHER_LDFLAGS'          => '$(inherited) -undefined dynamic_lookup'
+    }
 
 end
