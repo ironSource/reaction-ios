@@ -520,6 +520,7 @@
 					"$(PROJECT_DIR)/lib/Arcane",
 					"$(PROJECT_DIR)/lib/sqlite3",
 				);
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
 				INFOPLIST_FILE = ReactionSDKExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -545,6 +546,7 @@
 					"$(PROJECT_DIR)/lib/Arcane",
 					"$(PROJECT_DIR)/lib/sqlite3",
 				);
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
 				INFOPLIST_FILE = ReactionSDKExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

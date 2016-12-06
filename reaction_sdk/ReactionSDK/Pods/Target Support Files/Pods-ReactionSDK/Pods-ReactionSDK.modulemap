@@ -1,6 +1,0 @@
-framework module Pods_ReactionSDK {
-  umbrella header "Pods-ReactionSDK-umbrella.h"
-
-  export *
-  module * { export * }
-}
