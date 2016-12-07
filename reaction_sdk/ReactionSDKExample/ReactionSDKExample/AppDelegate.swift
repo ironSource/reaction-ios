@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import ReActionSDK
+import ReactionSDK
 
 @UIApplicationMain
 class AppDelegate: ISReactionApp {

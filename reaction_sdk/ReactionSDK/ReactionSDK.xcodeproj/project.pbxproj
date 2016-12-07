@@ -63,6 +63,8 @@
 		424EE4681DF8384D00F05369 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Libraries/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
 		424EE4691DF8384D00F05369 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Libraries/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
 		424EE46A1DF8384D00F05369 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Libraries/GoogleUtilities.framework; sourceTree = "<group>"; };
+		42631F6D1DF8642900FEF5AF /* AtomSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AtomSDK.framework; path = "Pods/../build/Release-iphoneos/AtomSDK/AtomSDK.framework"; sourceTree = "<group>"; };
+		42631F6E1DF8642900FEF5AF /* sqlite3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = sqlite3.framework; path = "Pods/../build/Release-iphoneos/sqlite3/sqlite3.framework"; sourceTree = "<group>"; };
 		42F04D1B1DE301CF004FFCE7 /* ReactionSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactionSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42F04D1E1DE301CF004FFCE7 /* ReactionSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactionSDK.h; sourceTree = "<group>"; };
 		42F04D1F1DE301CF004FFCE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -126,6 +128,8 @@
 		376502DE02A8E24B9DBF4BDC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				42631F6D1DF8642900FEF5AF /* AtomSDK.framework */,
+				42631F6E1DF8642900FEF5AF /* sqlite3.framework */,
 				424EE4661DF8384D00F05369 /* GoogleInterchangeUtilities.framework */,
 				424EE4671DF8384D00F05369 /* GoogleIPhoneUtilities.framework */,
 				424EE4681DF8384D00F05369 /* GoogleNetworkingUtilities.framework */,
@@ -555,11 +559,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)",
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libraries",
+					"$(PROJECT_DIR)/build/Release-iphoneos/AtomSDK",
+					"$(PROJECT_DIR)/build/Release-iphoneos/sqlite3",
 				);
 				INFOPLIST_FILE = ReactionSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -575,7 +581,6 @@
 					"\"AtomSDK\"",
 					"-framework",
 					"\"sqlite3\"",
-					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.reaction.sdk.ReactionSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -594,11 +599,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)",
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libraries",
+					"$(PROJECT_DIR)/build/Release-iphoneos/AtomSDK",
+					"$(PROJECT_DIR)/build/Release-iphoneos/sqlite3",
 				);
 				INFOPLIST_FILE = ReactionSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -614,7 +621,6 @@
 					"\"AtomSDK\"",
 					"-framework",
 					"\"sqlite3\"",
-					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.reaction.sdk.ReactionSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
