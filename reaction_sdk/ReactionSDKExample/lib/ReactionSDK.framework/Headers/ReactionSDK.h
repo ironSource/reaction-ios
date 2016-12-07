@@ -16,7 +16,7 @@ FOUNDATION_EXPORT const unsigned char ReactionSDKVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <ReactionSDK/PublicHeader.h>
 
-#import <ReactionSDK/ISReaction.h>
-#import <ReactionSDK/ISReactionApp.h>
+#import "ISReaction.h"
+#import "ISReactionApp.h"
 
 
