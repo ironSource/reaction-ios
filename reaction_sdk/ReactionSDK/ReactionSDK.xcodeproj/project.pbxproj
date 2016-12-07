@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		424EE4901DF842ED00F05369 /* CloudMessaging.h in Headers */ = {isa = PBXBuildFile; fileRef = 424EE48F1DF842ED00F05369 /* CloudMessaging.h */; };
+		424EE4911DF8434D00F05369 /* GoogleInterchangeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424EE4661DF8384D00F05369 /* GoogleInterchangeUtilities.framework */; };
+		424EE4921DF8434D00F05369 /* GoogleIPhoneUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424EE4671DF8384D00F05369 /* GoogleIPhoneUtilities.framework */; };
+		424EE4931DF8434D00F05369 /* GoogleNetworkingUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424EE4681DF8384D00F05369 /* GoogleNetworkingUtilities.framework */; };
+		424EE4941DF8434D00F05369 /* GoogleSymbolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424EE4691DF8384D00F05369 /* GoogleSymbolUtilities.framework */; };
+		424EE4951DF8434D00F05369 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424EE46A1DF8384D00F05369 /* GoogleUtilities.framework */; };
+		424EE4961DF8434D00F05369 /* libGcmLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 424EE4641DF8379300F05369 /* libGcmLib.a */; };
+		424EE4971DF8434D00F05369 /* libGGLCloudMessaging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 424EE45E1DF836CB00F05369 /* libGGLCloudMessaging.a */; };
+		424EE4981DF8434D00F05369 /* libGGLCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 424EE45F1DF836CB00F05369 /* libGGLCore.a */; };
+		424EE4991DF8434D00F05369 /* libGGLInstanceIDLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 424EE4601DF836CB00F05369 /* libGGLInstanceIDLib.a */; };
 		42F04D251DE301CF004FFCE7 /* ReactionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F04D1B1DE301CF004FFCE7 /* ReactionSDK.framework */; };
 		42F04D2A1DE301CF004FFCE7 /* ReactionSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F04D291DE301CF004FFCE7 /* ReactionSDKTests.m */; };
 		42F04D2C1DE301CF004FFCE7 /* ReactionSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F04D1E1DE301CF004FFCE7 /* ReactionSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -63,6 +73,7 @@
 		424EE4681DF8384D00F05369 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Libraries/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
 		424EE4691DF8384D00F05369 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Libraries/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
 		424EE46A1DF8384D00F05369 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Libraries/GoogleUtilities.framework; sourceTree = "<group>"; };
+		424EE48F1DF842ED00F05369 /* CloudMessaging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudMessaging.h; path = gcm/CloudMessaging.h; sourceTree = "<group>"; };
 		42F04D1B1DE301CF004FFCE7 /* ReactionSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactionSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42F04D1E1DE301CF004FFCE7 /* ReactionSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactionSDK.h; sourceTree = "<group>"; };
 		42F04D1F1DE301CF004FFCE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -108,6 +119,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				424EE4911DF8434D00F05369 /* GoogleInterchangeUtilities.framework in Frameworks */,
+				424EE4921DF8434D00F05369 /* GoogleIPhoneUtilities.framework in Frameworks */,
+				424EE4931DF8434D00F05369 /* GoogleNetworkingUtilities.framework in Frameworks */,
+				424EE4941DF8434D00F05369 /* GoogleSymbolUtilities.framework in Frameworks */,
+				424EE4951DF8434D00F05369 /* GoogleUtilities.framework in Frameworks */,
+				424EE4961DF8434D00F05369 /* libGcmLib.a in Frameworks */,
+				424EE4971DF8434D00F05369 /* libGGLCloudMessaging.a in Frameworks */,
+				424EE4981DF8434D00F05369 /* libGGLCore.a in Frameworks */,
+				424EE4991DF8434D00F05369 /* libGGLInstanceIDLib.a in Frameworks */,
 				6069359F31F98833BA16061A /* Pods_ReactionSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +161,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		424EE48E1DF842E300F05369 /* gcm */ = {
+			isa = PBXGroup;
+			children = (
+				424EE48F1DF842ED00F05369 /* CloudMessaging.h */,
+			);
+			name = gcm;
+			sourceTree = "<group>";
+		};
 		42F04D111DE301CF004FFCE7 = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +192,7 @@
 		42F04D1D1DE301CF004FFCE7 /* ReactionSDK */ = {
 			isa = PBXGroup;
 			children = (
+				424EE48E1DF842E300F05369 /* gcm */,
 				42F04D401DE3025C004FFCE7 /* helper */,
 				42F04D3F1DE30252004FFCE7 /* http */,
 				42F04D3E1DE30244004FFCE7 /* message */,
@@ -259,6 +288,7 @@
 				42F04D681DE3027E004FFCE7 /* ISRUrlHandler.h in Headers */,
 				42F04D381DE3022B004FFCE7 /* ISReaction.h in Headers */,
 				42F04D3C1DE30231004FFCE7 /* ISReactionApp.h in Headers */,
+				424EE4901DF842ED00F05369 /* CloudMessaging.h in Headers */,
 				42F04D711DE30288004FFCE7 /* ISRHtmlView.h in Headers */,
 				42F04D2C1DE301CF004FFCE7 /* ReactionSDK.h in Headers */,
 				42F04D651DE3027E004FFCE7 /* ISRMessageHandlerFactory.h in Headers */,
