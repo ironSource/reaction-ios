@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import <Google/GGLContext+CloudMessaging.h>
+#import "gcm/CloudMessaging.h"
 
 @interface ISReactionApp : UIResponder <UIApplicationDelegate, GCMReceiverDelegate>
 

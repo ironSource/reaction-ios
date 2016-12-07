@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		424EE45C1DF835EA00F05369 /* CloudMessaging.h in Headers */ = {isa = PBXBuildFile; fileRef = 424EE45A1DF835EA00F05369 /* CloudMessaging.h */; };
+		424EE45D1DF835EA00F05369 /* GGLContext+CloudMessaging.h in Headers */ = {isa = PBXBuildFile; fileRef = 424EE45B1DF835EA00F05369 /* GGLContext+CloudMessaging.h */; };
+		424EE4611DF836CB00F05369 /* libGGLCloudMessaging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 424EE45E1DF836CB00F05369 /* libGGLCloudMessaging.a */; };
+		424EE4621DF836CB00F05369 /* libGGLCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 424EE45F1DF836CB00F05369 /* libGGLCore.a */; };
+		424EE4631DF836CB00F05369 /* libGGLInstanceIDLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 424EE4601DF836CB00F05369 /* libGGLInstanceIDLib.a */; };
+		424EE4651DF8379300F05369 /* libGcmLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 424EE4641DF8379300F05369 /* libGcmLib.a */; };
+		424EE46B1DF8384D00F05369 /* GoogleInterchangeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424EE4661DF8384D00F05369 /* GoogleInterchangeUtilities.framework */; };
+		424EE46C1DF8384D00F05369 /* GoogleIPhoneUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424EE4671DF8384D00F05369 /* GoogleIPhoneUtilities.framework */; };
+		424EE46D1DF8384D00F05369 /* GoogleNetworkingUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424EE4681DF8384D00F05369 /* GoogleNetworkingUtilities.framework */; };
+		424EE46E1DF8384D00F05369 /* GoogleSymbolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424EE4691DF8384D00F05369 /* GoogleSymbolUtilities.framework */; };
+		424EE46F1DF8384D00F05369 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424EE46A1DF8384D00F05369 /* GoogleUtilities.framework */; };
 		42F04D251DE301CF004FFCE7 /* ReactionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F04D1B1DE301CF004FFCE7 /* ReactionSDK.framework */; };
 		42F04D2A1DE301CF004FFCE7 /* ReactionSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F04D291DE301CF004FFCE7 /* ReactionSDKTests.m */; };
 		42F04D2C1DE301CF004FFCE7 /* ReactionSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F04D1E1DE301CF004FFCE7 /* ReactionSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -40,7 +51,6 @@
 		42F04D711DE30288004FFCE7 /* ISRHtmlView.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F04D6D1DE30288004FFCE7 /* ISRHtmlView.h */; };
 		42F04D721DE30288004FFCE7 /* ISRWebInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F04D6E1DE30288004FFCE7 /* ISRWebInterface.m */; };
 		6069359F31F98833BA16061A /* Pods_ReactionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA0940CBA10828FBCC41B8F /* Pods_ReactionSDK.framework */; };
-		6227CD4D5E517C7706F5ED73 /* Pods_ReactionSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD4D6AD20A6DF453E901C3F1 /* Pods_ReactionSDKTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +65,17 @@
 
 /* Begin PBXFileReference section */
 		0775D1249F50402AE63DCB42 /* Pods-ReactionSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactionSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactionSDK/Pods-ReactionSDK.release.xcconfig"; sourceTree = "<group>"; };
+		424EE45A1DF835EA00F05369 /* CloudMessaging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudMessaging.h; path = gcm/CloudMessaging.h; sourceTree = "<group>"; };
+		424EE45B1DF835EA00F05369 /* GGLContext+CloudMessaging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GGLContext+CloudMessaging.h"; path = "gcm/GGLContext+CloudMessaging.h"; sourceTree = "<group>"; };
+		424EE45E1DF836CB00F05369 /* libGGLCloudMessaging.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGGLCloudMessaging.a; path = Libraries/libGGLCloudMessaging.a; sourceTree = "<group>"; };
+		424EE45F1DF836CB00F05369 /* libGGLCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGGLCore.a; path = Libraries/libGGLCore.a; sourceTree = "<group>"; };
+		424EE4601DF836CB00F05369 /* libGGLInstanceIDLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGGLInstanceIDLib.a; path = Libraries/libGGLInstanceIDLib.a; sourceTree = "<group>"; };
+		424EE4641DF8379300F05369 /* libGcmLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGcmLib.a; path = Libraries/libGcmLib.a; sourceTree = "<group>"; };
+		424EE4661DF8384D00F05369 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Libraries/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		424EE4671DF8384D00F05369 /* GoogleIPhoneUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleIPhoneUtilities.framework; path = Libraries/GoogleIPhoneUtilities.framework; sourceTree = "<group>"; };
+		424EE4681DF8384D00F05369 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Libraries/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
+		424EE4691DF8384D00F05369 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Libraries/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		424EE46A1DF8384D00F05369 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Libraries/GoogleUtilities.framework; sourceTree = "<group>"; };
 		42F04D1B1DE301CF004FFCE7 /* ReactionSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactionSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42F04D1E1DE301CF004FFCE7 /* ReactionSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactionSDK.h; sourceTree = "<group>"; };
 		42F04D1F1DE301CF004FFCE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,9 +112,7 @@
 		42F04D6D1DE30288004FFCE7 /* ISRHtmlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISRHtmlView.h; path = view/ISRHtmlView.h; sourceTree = "<group>"; };
 		42F04D6E1DE30288004FFCE7 /* ISRWebInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISRWebInterface.m; path = view/ISRWebInterface.m; sourceTree = "<group>"; };
 		6EA0940CBA10828FBCC41B8F /* Pods_ReactionSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactionSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9028F8F70321F5C225AFE6B9 /* Pods-ReactionSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactionSDKTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactionSDKTests/Pods-ReactionSDKTests.release.xcconfig"; sourceTree = "<group>"; };
 		D396166AD20A761B3007BE05 /* Pods-ReactionSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactionSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactionSDK/Pods-ReactionSDK.debug.xcconfig"; sourceTree = "<group>"; };
-		D3C5B197229A8C6182D887E0 /* Pods-ReactionSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactionSDKTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactionSDKTests/Pods-ReactionSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FD4D6AD20A6DF453E901C3F1 /* Pods_ReactionSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactionSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -102,6 +121,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				424EE46B1DF8384D00F05369 /* GoogleInterchangeUtilities.framework in Frameworks */,
+				424EE46C1DF8384D00F05369 /* GoogleIPhoneUtilities.framework in Frameworks */,
+				424EE46D1DF8384D00F05369 /* GoogleNetworkingUtilities.framework in Frameworks */,
+				424EE46E1DF8384D00F05369 /* GoogleSymbolUtilities.framework in Frameworks */,
+				424EE46F1DF8384D00F05369 /* GoogleUtilities.framework in Frameworks */,
+				424EE4651DF8379300F05369 /* libGcmLib.a in Frameworks */,
+				424EE4611DF836CB00F05369 /* libGGLCloudMessaging.a in Frameworks */,
+				424EE4621DF836CB00F05369 /* libGGLCore.a in Frameworks */,
+				424EE4631DF836CB00F05369 /* libGGLInstanceIDLib.a in Frameworks */,
 				6069359F31F98833BA16061A /* Pods_ReactionSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,7 +139,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				42F04D251DE301CF004FFCE7 /* ReactionSDK.framework in Frameworks */,
-				6227CD4D5E517C7706F5ED73 /* Pods_ReactionSDKTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,10 +148,28 @@
 		376502DE02A8E24B9DBF4BDC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				424EE4661DF8384D00F05369 /* GoogleInterchangeUtilities.framework */,
+				424EE4671DF8384D00F05369 /* GoogleIPhoneUtilities.framework */,
+				424EE4681DF8384D00F05369 /* GoogleNetworkingUtilities.framework */,
+				424EE4691DF8384D00F05369 /* GoogleSymbolUtilities.framework */,
+				424EE46A1DF8384D00F05369 /* GoogleUtilities.framework */,
+				424EE4641DF8379300F05369 /* libGcmLib.a */,
+				424EE45E1DF836CB00F05369 /* libGGLCloudMessaging.a */,
+				424EE45F1DF836CB00F05369 /* libGGLCore.a */,
+				424EE4601DF836CB00F05369 /* libGGLInstanceIDLib.a */,
 				6EA0940CBA10828FBCC41B8F /* Pods_ReactionSDK.framework */,
 				FD4D6AD20A6DF453E901C3F1 /* Pods_ReactionSDKTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		424EE4591DF835CD00F05369 /* gcm */ = {
+			isa = PBXGroup;
+			children = (
+				424EE45A1DF835EA00F05369 /* CloudMessaging.h */,
+				424EE45B1DF835EA00F05369 /* GGLContext+CloudMessaging.h */,
+			);
+			name = gcm;
 			sourceTree = "<group>";
 		};
 		42F04D111DE301CF004FFCE7 = {
@@ -150,6 +195,7 @@
 		42F04D1D1DE301CF004FFCE7 /* ReactionSDK */ = {
 			isa = PBXGroup;
 			children = (
+				424EE4591DF835CD00F05369 /* gcm */,
 				42F04D401DE3025C004FFCE7 /* helper */,
 				42F04D3F1DE30252004FFCE7 /* http */,
 				42F04D3E1DE30244004FFCE7 /* message */,
@@ -231,8 +277,6 @@
 			children = (
 				D396166AD20A761B3007BE05 /* Pods-ReactionSDK.debug.xcconfig */,
 				0775D1249F50402AE63DCB42 /* Pods-ReactionSDK.release.xcconfig */,
-				D3C5B197229A8C6182D887E0 /* Pods-ReactionSDKTests.debug.xcconfig */,
-				9028F8F70321F5C225AFE6B9 /* Pods-ReactionSDKTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -258,7 +302,9 @@
 				42F04D4C1DE30267004FFCE7 /* ISRAtomController.h in Headers */,
 				42F04D4A1DE30267004FFCE7 /* ISRUtils.h in Headers */,
 				42F04D501DE30267004FFCE7 /* ISRConfig.h in Headers */,
+				424EE45D1DF835EA00F05369 /* GGLContext+CloudMessaging.h in Headers */,
 				42F04D691DE3027E004FFCE7 /* ISRHttpHandler.h in Headers */,
+				424EE45C1DF835EA00F05369 /* CloudMessaging.h in Headers */,
 				42F04D4D1DE30267004FFCE7 /* ISRLogger.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,12 +336,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42F04D321DE301CF004FFCE7 /* Build configuration list for PBXNativeTarget "ReactionSDKTests" */;
 			buildPhases = (
-				75C664F5EFC7EBF83D64FE2E /* [CP] Check Pods Manifest.lock */,
 				42F04D201DE301CF004FFCE7 /* Sources */,
 				42F04D211DE301CF004FFCE7 /* Frameworks */,
 				42F04D221DE301CF004FFCE7 /* Resources */,
-				6F65EA276BCCB030C7373FC2 /* [CP] Embed Pods Frameworks */,
-				5C0C7AFC1244BDD37530B44C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -364,36 +407,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5C0C7AFC1244BDD37530B44C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactionSDKTests/Pods-ReactionSDKTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6F65EA276BCCB030C7373FC2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactionSDKTests/Pods-ReactionSDKTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6FF48BBF7D0BE9A26AA8CFA9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -407,21 +420,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactionSDK/Pods-ReactionSDK-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		75C664F5EFC7EBF83D64FE2E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		C0A93901ECE3022644BC869F /* [CP] Check Pods Manifest.lock */ = {
@@ -595,11 +593,24 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Libraries",
 				);
 				INFOPLIST_FILE = ReactionSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libraries",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AtomSDK\"",
+					"-framework",
+					"\"sqlite3\"",
+					"-lc++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.reaction.sdk.ReactionSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -621,11 +632,24 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Libraries",
 				);
 				INFOPLIST_FILE = ReactionSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libraries",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AtomSDK\"",
+					"-framework",
+					"\"sqlite3\"",
+					"-lc++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.reaction.sdk.ReactionSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -634,7 +658,6 @@
 		};
 		42F04D331DE301CF004FFCE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3C5B197229A8C6182D887E0 /* Pods-ReactionSDKTests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = UYFV8VN697;
 				INFOPLIST_FILE = ReactionSDKTests/Info.plist;
@@ -646,7 +669,6 @@
 		};
 		42F04D341DE301CF004FFCE7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9028F8F70321F5C225AFE6B9 /* Pods-ReactionSDKTests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = UYFV8VN697;
 				INFOPLIST_FILE = ReactionSDKTests/Info.plist;
