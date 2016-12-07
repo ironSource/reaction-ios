@@ -3,5 +3,6 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'ReactionSDK' do
-  pod 'AtomSDK'
+    pod "Google/CloudMessaging"
+    pod 'AtomSDK'
 end

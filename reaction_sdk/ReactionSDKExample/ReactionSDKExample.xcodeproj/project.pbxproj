@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		424EE4581DF8234300F05369 /* ReActionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424EE4571DF8234300F05369 /* ReActionSDK.framework */; };
+		424EE48D1DF83FA700F05369 /* ReActionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424EE48C1DF83FA700F05369 /* ReActionSDK.framework */; };
 		42B79FD51DA7A3CE003291B3 /* ViewInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B79FD31DA7A3CE003291B3 /* ViewInfo.swift */; };
 		42B79FD61DA7A3CE003291B3 /* ViewInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42B79FD41DA7A3CE003291B3 /* ViewInfo.xib */; };
 		42D16B851D92B1290094E457 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D16B841D92B1290094E457 /* AppDelegate.swift */; };
@@ -17,7 +17,7 @@
 		42D16B8F1D92B1290094E457 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42D16B8D1D92B1290094E457 /* LaunchScreen.storyboard */; };
 		42D16B9A1D92B1290094E457 /* ReactionSDKExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D16B991D92B1290094E457 /* ReactionSDKExampleTests.swift */; };
 		42D16BB21D92B2C90094E457 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42D16BB11D92B2C90094E457 /* GoogleService-Info.plist */; };
-		83AB01BD32AD4877CE4C83CE /* Pods_ReactionSDKExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331F207AE62D2D4375AD7537 /* Pods_ReactionSDKExample.framework */; };
+		B933BE31B954AC363782EDD9 /* Pods_ReactionSDKExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397316E27D2064E8BDF3700B /* Pods_ReactionSDKExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +45,8 @@
 
 /* Begin PBXFileReference section */
 		1C5C54231E6E15B9C9B24D1A /* Pods-ReactionSDKExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactionSDKExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactionSDKExample/Pods-ReactionSDKExample.debug.xcconfig"; sourceTree = "<group>"; };
-		2A66DABB36BBADFECDA98324 /* Pods_ReactionSDKExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactionSDKExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		331F207AE62D2D4375AD7537 /* Pods_ReactionSDKExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactionSDKExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		420FF4AF1DF8060B00915372 /* libReActionSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReActionSDK.a; path = "../../../../../../../Library/Developer/Xcode/DerivedData/ReactionSDKExample-auqmokvbbjxqanbohiggtlmnvxte/Build/Products/Debug-iphoneos/ReActionSDK/libReActionSDK.a"; sourceTree = "<group>"; };
-		424EE4571DF8234300F05369 /* ReActionSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReActionSDK.framework; path = "../../../../../../../Library/Developer/Xcode/DerivedData/ReactionSDKExample-auqmokvbbjxqanbohiggtlmnvxte/Build/Products/Debug-iphoneos/ReActionSDK/ReActionSDK.framework"; sourceTree = "<group>"; };
+		397316E27D2064E8BDF3700B /* Pods_ReactionSDKExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactionSDKExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		424EE48C1DF83FA700F05369 /* ReActionSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReActionSDK.framework; path = "Pods/../build/Debug-iphoneos/ReActionSDK/ReActionSDK.framework"; sourceTree = "<group>"; };
 		4285802F1DA27BC4000EF4B7 /* ReactionSDKExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReactionSDKExample.entitlements; sourceTree = "<group>"; };
 		42B79FD31DA7A3CE003291B3 /* ViewInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInfo.swift; sourceTree = "<group>"; };
 		42B79FD41DA7A3CE003291B3 /* ViewInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewInfo.xib; sourceTree = "<group>"; };
@@ -71,8 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				424EE4581DF8234300F05369 /* ReActionSDK.framework in Frameworks */,
-				83AB01BD32AD4877CE4C83CE /* Pods_ReactionSDKExample.framework in Frameworks */,
+				424EE48D1DF83FA700F05369 /* ReActionSDK.framework in Frameworks */,
+				B933BE31B954AC363782EDD9 /* Pods_ReactionSDKExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,10 +142,8 @@
 		EEE6AB81465FF64EB12358F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				424EE4571DF8234300F05369 /* ReActionSDK.framework */,
-				420FF4AF1DF8060B00915372 /* libReActionSDK.a */,
-				2A66DABB36BBADFECDA98324 /* Pods_ReactionSDKExampleTests.framework */,
-				331F207AE62D2D4375AD7537 /* Pods_ReactionSDKExample.framework */,
+				424EE48C1DF83FA700F05369 /* ReActionSDK.framework */,
+				397316E27D2064E8BDF3700B /* Pods_ReactionSDKExample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -462,13 +458,7 @@
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ReactionSDKExample/ReactionSDKExample.entitlements;
 				DEVELOPMENT_TEAM = UYFV8VN697;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/lib",
-					"$(PROJECT_DIR)/lib/AtomSDK",
-					"$(PROJECT_DIR)/lib/Arcane",
-					"$(PROJECT_DIR)/lib/sqlite3",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
 				INFOPLIST_FILE = ReactionSDKExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -490,13 +480,7 @@
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ReactionSDKExample/ReactionSDKExample.entitlements;
 				DEVELOPMENT_TEAM = UYFV8VN697;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/lib",
-					"$(PROJECT_DIR)/lib/AtomSDK",
-					"$(PROJECT_DIR)/lib/Arcane",
-					"$(PROJECT_DIR)/lib/sqlite3",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
 				INFOPLIST_FILE = ReactionSDKExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

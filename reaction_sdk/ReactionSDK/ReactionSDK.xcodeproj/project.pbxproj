@@ -7,31 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		424EE45C1DF835EA00F05369 /* CloudMessaging.h in Headers */ = {isa = PBXBuildFile; fileRef = 424EE45A1DF835EA00F05369 /* CloudMessaging.h */; };
-		424EE45D1DF835EA00F05369 /* GGLContext+CloudMessaging.h in Headers */ = {isa = PBXBuildFile; fileRef = 424EE45B1DF835EA00F05369 /* GGLContext+CloudMessaging.h */; };
-		424EE4611DF836CB00F05369 /* libGGLCloudMessaging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 424EE45E1DF836CB00F05369 /* libGGLCloudMessaging.a */; };
-		424EE4621DF836CB00F05369 /* libGGLCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 424EE45F1DF836CB00F05369 /* libGGLCore.a */; };
-		424EE4631DF836CB00F05369 /* libGGLInstanceIDLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 424EE4601DF836CB00F05369 /* libGGLInstanceIDLib.a */; };
-		424EE4651DF8379300F05369 /* libGcmLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 424EE4641DF8379300F05369 /* libGcmLib.a */; };
-		424EE46B1DF8384D00F05369 /* GoogleInterchangeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424EE4661DF8384D00F05369 /* GoogleInterchangeUtilities.framework */; };
-		424EE46C1DF8384D00F05369 /* GoogleIPhoneUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424EE4671DF8384D00F05369 /* GoogleIPhoneUtilities.framework */; };
-		424EE46D1DF8384D00F05369 /* GoogleNetworkingUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424EE4681DF8384D00F05369 /* GoogleNetworkingUtilities.framework */; };
-		424EE46E1DF8384D00F05369 /* GoogleSymbolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424EE4691DF8384D00F05369 /* GoogleSymbolUtilities.framework */; };
-		424EE46F1DF8384D00F05369 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424EE46A1DF8384D00F05369 /* GoogleUtilities.framework */; };
-		424EE47E1DF83D0500F05369 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 424EE4701DF83D0500F05369 /* Core.h */; };
-		424EE47F1DF83D0500F05369 /* GCMConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 424EE4711DF83D0500F05369 /* GCMConfig.h */; };
-		424EE4801DF83D0500F05369 /* GCMPubSub.h in Headers */ = {isa = PBXBuildFile; fileRef = 424EE4721DF83D0500F05369 /* GCMPubSub.h */; };
-		424EE4811DF83D0500F05369 /* GCMReceiverDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 424EE4731DF83D0500F05369 /* GCMReceiverDelegate.h */; };
-		424EE4821DF83D0500F05369 /* GCMService.h in Headers */ = {isa = PBXBuildFile; fileRef = 424EE4741DF83D0500F05369 /* GCMService.h */; };
-		424EE4831DF83D0500F05369 /* GGLConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 424EE4751DF83D0500F05369 /* GGLConfiguration.h */; };
-		424EE4841DF83D0500F05369 /* GGLContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 424EE4761DF83D0500F05369 /* GGLContext.h */; };
-		424EE4851DF83D0500F05369 /* GGLErrorCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 424EE4771DF83D0500F05369 /* GGLErrorCode.h */; };
-		424EE4861DF83D0500F05369 /* GGLInstanceID.h in Headers */ = {isa = PBXBuildFile; fileRef = 424EE4781DF83D0500F05369 /* GGLInstanceID.h */; };
-		424EE4871DF83D0500F05369 /* GGLInstanceIDConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 424EE4791DF83D0500F05369 /* GGLInstanceIDConfig.h */; };
-		424EE4881DF83D0500F05369 /* GGLInstanceIDDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 424EE47A1DF83D0500F05369 /* GGLInstanceIDDelegate.h */; };
-		424EE4891DF83D0500F05369 /* GGLInstanceIDHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 424EE47B1DF83D0500F05369 /* GGLInstanceIDHeaders.h */; };
-		424EE48A1DF83D0500F05369 /* GMRConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 424EE47C1DF83D0500F05369 /* GMRConfiguration.h */; };
-		424EE48B1DF83D0500F05369 /* GoogleCloudMessaging.h in Headers */ = {isa = PBXBuildFile; fileRef = 424EE47D1DF83D0500F05369 /* GoogleCloudMessaging.h */; };
 		42F04D251DE301CF004FFCE7 /* ReactionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F04D1B1DE301CF004FFCE7 /* ReactionSDK.framework */; };
 		42F04D2A1DE301CF004FFCE7 /* ReactionSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F04D291DE301CF004FFCE7 /* ReactionSDKTests.m */; };
 		42F04D2C1DE301CF004FFCE7 /* ReactionSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F04D1E1DE301CF004FFCE7 /* ReactionSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -79,8 +54,6 @@
 
 /* Begin PBXFileReference section */
 		0775D1249F50402AE63DCB42 /* Pods-ReactionSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactionSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactionSDK/Pods-ReactionSDK.release.xcconfig"; sourceTree = "<group>"; };
-		424EE45A1DF835EA00F05369 /* CloudMessaging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudMessaging.h; path = gcm/CloudMessaging.h; sourceTree = "<group>"; };
-		424EE45B1DF835EA00F05369 /* GGLContext+CloudMessaging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GGLContext+CloudMessaging.h"; path = "gcm/GGLContext+CloudMessaging.h"; sourceTree = "<group>"; };
 		424EE45E1DF836CB00F05369 /* libGGLCloudMessaging.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGGLCloudMessaging.a; path = Libraries/libGGLCloudMessaging.a; sourceTree = "<group>"; };
 		424EE45F1DF836CB00F05369 /* libGGLCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGGLCore.a; path = Libraries/libGGLCore.a; sourceTree = "<group>"; };
 		424EE4601DF836CB00F05369 /* libGGLInstanceIDLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGGLInstanceIDLib.a; path = Libraries/libGGLInstanceIDLib.a; sourceTree = "<group>"; };
@@ -90,20 +63,6 @@
 		424EE4681DF8384D00F05369 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Libraries/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
 		424EE4691DF8384D00F05369 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Libraries/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
 		424EE46A1DF8384D00F05369 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Libraries/GoogleUtilities.framework; sourceTree = "<group>"; };
-		424EE4701DF83D0500F05369 /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Core.h; path = gcm/Core.h; sourceTree = "<group>"; };
-		424EE4711DF83D0500F05369 /* GCMConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCMConfig.h; path = gcm/GCMConfig.h; sourceTree = "<group>"; };
-		424EE4721DF83D0500F05369 /* GCMPubSub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCMPubSub.h; path = gcm/GCMPubSub.h; sourceTree = "<group>"; };
-		424EE4731DF83D0500F05369 /* GCMReceiverDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCMReceiverDelegate.h; path = gcm/GCMReceiverDelegate.h; sourceTree = "<group>"; };
-		424EE4741DF83D0500F05369 /* GCMService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCMService.h; path = gcm/GCMService.h; sourceTree = "<group>"; };
-		424EE4751DF83D0500F05369 /* GGLConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GGLConfiguration.h; path = gcm/GGLConfiguration.h; sourceTree = "<group>"; };
-		424EE4761DF83D0500F05369 /* GGLContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GGLContext.h; path = gcm/GGLContext.h; sourceTree = "<group>"; };
-		424EE4771DF83D0500F05369 /* GGLErrorCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GGLErrorCode.h; path = gcm/GGLErrorCode.h; sourceTree = "<group>"; };
-		424EE4781DF83D0500F05369 /* GGLInstanceID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GGLInstanceID.h; path = gcm/GGLInstanceID.h; sourceTree = "<group>"; };
-		424EE4791DF83D0500F05369 /* GGLInstanceIDConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GGLInstanceIDConfig.h; path = gcm/GGLInstanceIDConfig.h; sourceTree = "<group>"; };
-		424EE47A1DF83D0500F05369 /* GGLInstanceIDDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GGLInstanceIDDelegate.h; path = gcm/GGLInstanceIDDelegate.h; sourceTree = "<group>"; };
-		424EE47B1DF83D0500F05369 /* GGLInstanceIDHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GGLInstanceIDHeaders.h; path = gcm/GGLInstanceIDHeaders.h; sourceTree = "<group>"; };
-		424EE47C1DF83D0500F05369 /* GMRConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GMRConfiguration.h; path = gcm/GMRConfiguration.h; sourceTree = "<group>"; };
-		424EE47D1DF83D0500F05369 /* GoogleCloudMessaging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoogleCloudMessaging.h; path = gcm/GoogleCloudMessaging.h; sourceTree = "<group>"; };
 		42F04D1B1DE301CF004FFCE7 /* ReactionSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactionSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42F04D1E1DE301CF004FFCE7 /* ReactionSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactionSDK.h; sourceTree = "<group>"; };
 		42F04D1F1DE301CF004FFCE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -149,15 +108,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				424EE46B1DF8384D00F05369 /* GoogleInterchangeUtilities.framework in Frameworks */,
-				424EE46C1DF8384D00F05369 /* GoogleIPhoneUtilities.framework in Frameworks */,
-				424EE46D1DF8384D00F05369 /* GoogleNetworkingUtilities.framework in Frameworks */,
-				424EE46E1DF8384D00F05369 /* GoogleSymbolUtilities.framework in Frameworks */,
-				424EE46F1DF8384D00F05369 /* GoogleUtilities.framework in Frameworks */,
-				424EE4651DF8379300F05369 /* libGcmLib.a in Frameworks */,
-				424EE4611DF836CB00F05369 /* libGGLCloudMessaging.a in Frameworks */,
-				424EE4621DF836CB00F05369 /* libGGLCore.a in Frameworks */,
-				424EE4631DF836CB00F05369 /* libGGLInstanceIDLib.a in Frameworks */,
 				6069359F31F98833BA16061A /* Pods_ReactionSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,29 +141,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		424EE4591DF835CD00F05369 /* gcm */ = {
-			isa = PBXGroup;
-			children = (
-				424EE4701DF83D0500F05369 /* Core.h */,
-				424EE4711DF83D0500F05369 /* GCMConfig.h */,
-				424EE4721DF83D0500F05369 /* GCMPubSub.h */,
-				424EE4731DF83D0500F05369 /* GCMReceiverDelegate.h */,
-				424EE4741DF83D0500F05369 /* GCMService.h */,
-				424EE4751DF83D0500F05369 /* GGLConfiguration.h */,
-				424EE4761DF83D0500F05369 /* GGLContext.h */,
-				424EE4771DF83D0500F05369 /* GGLErrorCode.h */,
-				424EE4781DF83D0500F05369 /* GGLInstanceID.h */,
-				424EE4791DF83D0500F05369 /* GGLInstanceIDConfig.h */,
-				424EE47A1DF83D0500F05369 /* GGLInstanceIDDelegate.h */,
-				424EE47B1DF83D0500F05369 /* GGLInstanceIDHeaders.h */,
-				424EE47C1DF83D0500F05369 /* GMRConfiguration.h */,
-				424EE47D1DF83D0500F05369 /* GoogleCloudMessaging.h */,
-				424EE45A1DF835EA00F05369 /* CloudMessaging.h */,
-				424EE45B1DF835EA00F05369 /* GGLContext+CloudMessaging.h */,
-			);
-			name = gcm;
-			sourceTree = "<group>";
-		};
 		42F04D111DE301CF004FFCE7 = {
 			isa = PBXGroup;
 			children = (
@@ -237,7 +164,6 @@
 		42F04D1D1DE301CF004FFCE7 /* ReactionSDK */ = {
 			isa = PBXGroup;
 			children = (
-				424EE4591DF835CD00F05369 /* gcm */,
 				42F04D401DE3025C004FFCE7 /* helper */,
 				42F04D3F1DE30252004FFCE7 /* http */,
 				42F04D3E1DE30244004FFCE7 /* message */,
@@ -332,35 +258,19 @@
 			files = (
 				42F04D681DE3027E004FFCE7 /* ISRUrlHandler.h in Headers */,
 				42F04D381DE3022B004FFCE7 /* ISReaction.h in Headers */,
-				424EE4831DF83D0500F05369 /* GGLConfiguration.h in Headers */,
-				424EE47F1DF83D0500F05369 /* GCMConfig.h in Headers */,
-				424EE45C1DF835EA00F05369 /* CloudMessaging.h in Headers */,
 				42F04D3C1DE30231004FFCE7 /* ISReactionApp.h in Headers */,
-				424EE47E1DF83D0500F05369 /* Core.h in Headers */,
 				42F04D711DE30288004FFCE7 /* ISRHtmlView.h in Headers */,
-				424EE4821DF83D0500F05369 /* GCMService.h in Headers */,
 				42F04D2C1DE301CF004FFCE7 /* ReactionSDK.h in Headers */,
 				42F04D651DE3027E004FFCE7 /* ISRMessageHandlerFactory.h in Headers */,
-				424EE4851DF83D0500F05369 /* GGLErrorCode.h in Headers */,
-				424EE4801DF83D0500F05369 /* GCMPubSub.h in Headers */,
 				42F04D561DE30273004FFCE7 /* ISRRequest.h in Headers */,
-				424EE4881DF83D0500F05369 /* GGLInstanceIDDelegate.h in Headers */,
 				42F04D6A1DE3027E004FFCE7 /* ISRMessageHandler.h in Headers */,
-				424EE4891DF83D0500F05369 /* GGLInstanceIDHeaders.h in Headers */,
-				424EE4861DF83D0500F05369 /* GGLInstanceID.h in Headers */,
-				424EE4841DF83D0500F05369 /* GGLContext.h in Headers */,
-				424EE4871DF83D0500F05369 /* GGLInstanceIDConfig.h in Headers */,
-				424EE4811DF83D0500F05369 /* GCMReceiverDelegate.h in Headers */,
 				42F04D571DE30273004FFCE7 /* ISRResponse.h in Headers */,
 				42F04D661DE3027E004FFCE7 /* ISRNotificationHandler.h in Headers */,
 				42F04D701DE30288004FFCE7 /* ISRWebInterface.h in Headers */,
 				42F04D4C1DE30267004FFCE7 /* ISRAtomController.h in Headers */,
 				42F04D4A1DE30267004FFCE7 /* ISRUtils.h in Headers */,
 				42F04D501DE30267004FFCE7 /* ISRConfig.h in Headers */,
-				424EE45D1DF835EA00F05369 /* GGLContext+CloudMessaging.h in Headers */,
-				424EE48A1DF83D0500F05369 /* GMRConfiguration.h in Headers */,
 				42F04D691DE3027E004FFCE7 /* ISRHttpHandler.h in Headers */,
-				424EE48B1DF83D0500F05369 /* GoogleCloudMessaging.h in Headers */,
 				42F04D4D1DE30267004FFCE7 /* ISRLogger.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
