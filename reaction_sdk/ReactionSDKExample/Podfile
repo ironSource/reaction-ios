@@ -7,8 +7,6 @@ target 'ReactionSDKExample' do
   
 
   # Pods for ReactionSDKExample
-  pod 'Google'
-  pod 'Google/CloudMessaging'
   pod 'ReActionSDK'
 
   target 'ReactionSDKExampleTests' do
