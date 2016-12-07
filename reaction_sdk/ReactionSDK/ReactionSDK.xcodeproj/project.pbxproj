@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		424EE45C1DF835EA00F05369 /* CloudMessaging.h in Headers */ = {isa = PBXBuildFile; fileRef = 424EE45A1DF835EA00F05369 /* CloudMessaging.h */; };
+		424EE45C1DF835EA00F05369 /* CloudMessaging.h in Headers */ = {isa = PBXBuildFile; fileRef = 424EE45A1DF835EA00F05369 /* CloudMessaging.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		424EE45D1DF835EA00F05369 /* GGLContext+CloudMessaging.h in Headers */ = {isa = PBXBuildFile; fileRef = 424EE45B1DF835EA00F05369 /* GGLContext+CloudMessaging.h */; };
 		424EE4611DF836CB00F05369 /* libGGLCloudMessaging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 424EE45E1DF836CB00F05369 /* libGGLCloudMessaging.a */; };
 		424EE4621DF836CB00F05369 /* libGGLCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 424EE45F1DF836CB00F05369 /* libGGLCore.a */; };
@@ -291,6 +291,7 @@
 				42F04D681DE3027E004FFCE7 /* ISRUrlHandler.h in Headers */,
 				42F04D381DE3022B004FFCE7 /* ISReaction.h in Headers */,
 				42F04D3C1DE30231004FFCE7 /* ISReactionApp.h in Headers */,
+				424EE45C1DF835EA00F05369 /* CloudMessaging.h in Headers */,
 				42F04D711DE30288004FFCE7 /* ISRHtmlView.h in Headers */,
 				42F04D2C1DE301CF004FFCE7 /* ReactionSDK.h in Headers */,
 				42F04D651DE3027E004FFCE7 /* ISRMessageHandlerFactory.h in Headers */,
@@ -304,7 +305,6 @@
 				42F04D501DE30267004FFCE7 /* ISRConfig.h in Headers */,
 				424EE45D1DF835EA00F05369 /* GGLContext+CloudMessaging.h in Headers */,
 				42F04D691DE3027E004FFCE7 /* ISRHttpHandler.h in Headers */,
-				424EE45C1DF835EA00F05369 /* CloudMessaging.h in Headers */,
 				42F04D4D1DE30267004FFCE7 /* ISRLogger.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
