@@ -19,4 +19,6 @@ FOUNDATION_EXPORT const unsigned char ReactionSDKVersionString[];
 #import "ISReaction.h"
 #import "ISReactionApp.h"
 
+#import "gcm/CloudMessaging.h"
+
 
