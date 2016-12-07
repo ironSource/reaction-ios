@@ -4,4 +4,5 @@ use_frameworks!
 
 target 'ReactionSDK' do
     pod 'AtomSDK'
+    pod 'Google/CloudMessaging'
 end
