@@ -21,7 +21,7 @@
 #import "http/ISRResponse.h"
 #import "http/ISRRequest.h"
 
-@interface ISReaction2()
+@interface ISReaction()
 
 -(void)initNotificationCallbacks;
 
@@ -43,7 +43,7 @@
 
 static NSString* TAG_ = @"ISReaction";
 
-@implementation ISReaction2
+@implementation ISReaction
 
 -(id)initWithSenderID: (NSString*)senderID applicationKey: (NSString*)applicationKey
               isDebug: (BOOL)isDebug {

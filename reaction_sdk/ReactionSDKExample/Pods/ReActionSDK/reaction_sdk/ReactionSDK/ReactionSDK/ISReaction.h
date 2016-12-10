@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 @import Google.CloudMessaging;
 
-@interface ISReaction : NSObject <GGLInstanceIDDelegate>
+@interface ISReaction2 : NSObject <GGLInstanceIDDelegate>
 {
     BOOL isDebug_;
     BOOL isSendedUserData_;
