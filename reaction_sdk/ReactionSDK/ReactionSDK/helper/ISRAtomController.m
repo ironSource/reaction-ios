@@ -8,7 +8,7 @@
 
 #import "ISRAtomController.h"
 
-#import <AtomSDK/ISAtom.h>
+#import <AtomSDK/ISAtom>
 
 #import "ISRLogger.h"
 #import "ISRUtils.h"

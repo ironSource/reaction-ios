@@ -40,6 +40,7 @@
 		42F04D711DE30288004FFCE7 /* ISRHtmlView.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F04D6D1DE30288004FFCE7 /* ISRHtmlView.h */; };
 		42F04D721DE30288004FFCE7 /* ISRWebInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F04D6E1DE30288004FFCE7 /* ISRWebInterface.m */; };
 		6069359F31F98833BA16061A /* Pods_ReactionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA0940CBA10828FBCC41B8F /* Pods_ReactionSDK.framework */; };
+		DC7BB03DAC62399A855FE273 /* Pods_ReActionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7401FF3C7029D5D7A41865B2 /* Pods_ReActionSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +54,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		043CD0322FBA319DC1BA834F /* Pods-ReActionSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReActionSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReActionSDK/Pods-ReActionSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		0775D1249F50402AE63DCB42 /* Pods-ReactionSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactionSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactionSDK/Pods-ReactionSDK.release.xcconfig"; sourceTree = "<group>"; };
+		342FE614E3D44A4EB4D4AADE /* Pods-ReActionSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReActionSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReActionSDK/Pods-ReActionSDK.release.xcconfig"; sourceTree = "<group>"; };
 		424EE45E1DF836CB00F05369 /* libGGLCloudMessaging.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGGLCloudMessaging.a; path = Libraries/libGGLCloudMessaging.a; sourceTree = "<group>"; };
 		424EE45F1DF836CB00F05369 /* libGGLCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGGLCore.a; path = Libraries/libGGLCore.a; sourceTree = "<group>"; };
 		424EE4601DF836CB00F05369 /* libGGLInstanceIDLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGGLInstanceIDLib.a; path = Libraries/libGGLInstanceIDLib.a; sourceTree = "<group>"; };
@@ -101,6 +104,7 @@
 		42F04D6D1DE30288004FFCE7 /* ISRHtmlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISRHtmlView.h; path = view/ISRHtmlView.h; sourceTree = "<group>"; };
 		42F04D6E1DE30288004FFCE7 /* ISRWebInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISRWebInterface.m; path = view/ISRWebInterface.m; sourceTree = "<group>"; };
 		6EA0940CBA10828FBCC41B8F /* Pods_ReactionSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactionSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7401FF3C7029D5D7A41865B2 /* Pods_ReActionSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReActionSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D396166AD20A761B3007BE05 /* Pods-ReactionSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactionSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactionSDK/Pods-ReactionSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		FD4D6AD20A6DF453E901C3F1 /* Pods_ReactionSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactionSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -111,6 +115,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6069359F31F98833BA16061A /* Pods_ReactionSDK.framework in Frameworks */,
+				DC7BB03DAC62399A855FE273 /* Pods_ReActionSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +146,7 @@
 				424EE4601DF836CB00F05369 /* libGGLInstanceIDLib.a */,
 				6EA0940CBA10828FBCC41B8F /* Pods_ReactionSDK.framework */,
 				FD4D6AD20A6DF453E901C3F1 /* Pods_ReactionSDKTests.framework */,
+				7401FF3C7029D5D7A41865B2 /* Pods_ReActionSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -149,7 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				42F04D1D1DE301CF004FFCE7 /* ReActionSDK */,
-				42F04D281DE301CF004FFCE7 /* ReactionSDKTests */,
+				42F04D281DE301CF004FFCE7 /* ReActionSDKTests */,
 				42F04D1C1DE301CF004FFCE7 /* Products */,
 				58518727AD182976C92BB026 /* Pods */,
 				376502DE02A8E24B9DBF4BDC /* Frameworks */,
@@ -183,12 +189,13 @@
 			path = ReactionSDK;
 			sourceTree = "<group>";
 		};
-		42F04D281DE301CF004FFCE7 /* ReactionSDKTests */ = {
+		42F04D281DE301CF004FFCE7 /* ReActionSDKTests */ = {
 			isa = PBXGroup;
 			children = (
 				42F04D291DE301CF004FFCE7 /* ReactionSDKTests.m */,
 				42F04D2B1DE301CF004FFCE7 /* Info.plist */,
 			);
+			name = ReActionSDKTests;
 			path = ReactionSDKTests;
 			sourceTree = "<group>";
 		};
@@ -250,6 +257,8 @@
 			children = (
 				D396166AD20A761B3007BE05 /* Pods-ReactionSDK.debug.xcconfig */,
 				0775D1249F50402AE63DCB42 /* Pods-ReactionSDK.release.xcconfig */,
+				043CD0322FBA319DC1BA834F /* Pods-ReActionSDK.debug.xcconfig */,
+				342FE614E3D44A4EB4D4AADE /* Pods-ReActionSDK.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -327,6 +336,9 @@
 		42F04D121DE301CF004FFCE7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = IronSource;
 				TargetAttributes = {
@@ -390,7 +402,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactionSDK/Pods-ReactionSDK-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReActionSDK/Pods-ReActionSDK-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C0A93901ECE3022644BC869F /* [CP] Check Pods Manifest.lock */ = {
@@ -551,7 +563,7 @@
 		};
 		42F04D301DE301CF004FFCE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D396166AD20A761B3007BE05 /* Pods-ReactionSDK.debug.xcconfig */;
+			baseConfigurationReference = 043CD0322FBA319DC1BA834F /* Pods-ReActionSDK.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -561,13 +573,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)",
-					"$(inherited)",
-					"$(PROJECT_DIR)/Libraries",
-					"$(PROJECT_DIR)/build/Release-iphoneos/AtomSDK",
-					"$(PROJECT_DIR)/build/Release-iphoneos/sqlite3",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ReactionSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -576,6 +582,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libraries",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
@@ -591,7 +598,7 @@
 		};
 		42F04D311DE301CF004FFCE7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0775D1249F50402AE63DCB42 /* Pods-ReactionSDK.release.xcconfig */;
+			baseConfigurationReference = 342FE614E3D44A4EB4D4AADE /* Pods-ReActionSDK.release.xcconfig */;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -601,13 +608,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)",
-					"$(inherited)",
-					"$(PROJECT_DIR)/Libraries",
-					"$(PROJECT_DIR)/build/Release-iphoneos/AtomSDK",
-					"$(PROJECT_DIR)/build/Release-iphoneos/sqlite3",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ReactionSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

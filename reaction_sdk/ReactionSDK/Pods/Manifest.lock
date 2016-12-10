@@ -2,8 +2,6 @@ PODS:
   - AtomSDK (1.1.4):
     - sqlite3 (~> 3)
   - GGLInstanceID (1.2.1)
-  - Google (2.0.4):
-    - Google/Core (= 2.0.4)
   - Google/CloudMessaging (2.0.4):
     - GGLInstanceID (~> 1.0)
     - Google/Core
@@ -33,7 +31,6 @@ PODS:
 
 DEPENDENCIES:
   - AtomSDK
-  - Google
   - Google/CloudMessaging
 
 SPEC CHECKSUMS:
@@ -48,6 +45,6 @@ SPEC CHECKSUMS:
   GoogleUtilities: 8bbc733218aad26306f9d4a253823986110e3358
   sqlite3: 85c03fced2fc4df2374c8bee4299ccf0aee381b8
 
-PODFILE CHECKSUM: 1cb35685afa1c0c991e17324f5d43353c5538711
+PODFILE CHECKSUM: d85ea0f524d21a1ce3d12325f4dd3eac64dc35b9
 
 COCOAPODS: 1.2.0.beta.1
