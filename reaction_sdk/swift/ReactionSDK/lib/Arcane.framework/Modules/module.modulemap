@@ -1,0 +1,10 @@
+framework module Arcane {
+  umbrella header "Arcane-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module Arcane.Swift {
+    header "Arcane-Swift.h"
+}

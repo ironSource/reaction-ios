@@ -2,6 +2,11 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'ReactionSDKExample' do
-    pod 'AtomSDK'
     pod 'Google/CloudMessaging'
+
+    pod 'ReActionSDK'
+end
+
+pre_install do |installer|
+    def installer.verify_no_static_framework_transitive_dependencies; end
 end

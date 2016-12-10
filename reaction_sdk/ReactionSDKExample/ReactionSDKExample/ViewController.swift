@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import ReactionSDK
+import ReActionSDK
 
 import AVFoundation
 
