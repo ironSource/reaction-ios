@@ -7,88 +7,73 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04B1FCA1CCE95F267DC53C0ED51C863B /* GGLInstanceIDHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CE7A87D4297A646F1805E98633E0D2E /* GGLInstanceIDHeaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0BA865AF326AC6136AB210ABE65F788F /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9045218525F679F7147E37352B4DD /* sqlite3.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		0E799B516F97E08648DED346192FAA1E /* ISRUrlHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3338ABE70766C6FEF045711FE78582A0 /* ISRUrlHandler.m */; };
+		0156B72ACB0347F3485005CA4E5EFFEA /* ISRConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F92E96D5F75ADFEB50DA38BA43BCB083 /* ISRConfig.m */; };
+		021BE449FD8F43546F020BB015824225 /* ISRWebInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 74772AD74E6C8F9EFD8C033C326B31ED /* ISRWebInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02933CC64DB1D7E4005D45DC629C36C2 /* ISReaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BC262BD7972BEFBDC7A5C694C97BFB /* ISReaction.m */; };
+		08091FA59EA0E6EB380F429ED7316786 /* ISRNotificationHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CC63FB58A43655D87C9D781DA249321 /* ISRNotificationHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BA865AF326AC6136AB210ABE65F788F /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 4928D8F0189F1D69D4278CD2526BA2AD /* sqlite3.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0CCCBF17EC54919EF45CD264207C94DC /* ISRHttpHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = DF34BE7DDBFDFC7340D958C8EFAC9EE6 /* ISRHttpHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FAE110859CF345AEF8A7FFDD99EB567 /* ISRUrlHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA351B57AD1A804B1C275C6A049B4AC /* ISRUrlHandler.m */; };
+		125D231B700020512DBC371606354CCD /* ISRLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 785BCEB366B720473D701FF4B10CB8EF /* ISRLogger.m */; };
 		12C11E8059619D215741F676F61D5652 /* sqlite3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F83A8F02C6E937CC02099B784299BE /* sqlite3.framework */; };
-		15CA04F7A28FC3B2E8EEE35276457DE2 /* ISDatabaseAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E799762B8DB4226A94DB741FFDA491D /* ISDatabaseAdapter.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1753BF7DE80E121E26440D6D3C82B3B2 /* GGLContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 98B97FDBD277FA40C734D8684325FCB5 /* GGLContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		187A58C6A1B873C9260B415A22BBD96A /* ISRMessageHandlerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 00161CBCFA5A9181A9A55DF7E76E917E /* ISRMessageHandlerFactory.m */; };
-		19271A6CABC6631295DBAB58B5C7D69F /* ISStreamData.h in Headers */ = {isa = PBXBuildFile; fileRef = 405614FA4C4BF25EF9BBEFAFB77B4A45 /* ISStreamData.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1A57B0D97746B7BBE101ECF087531613 /* GCMConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 890AF50DD4800F7B3DC0539905F9EE82 /* GCMConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1E740E99D40BDF21745153275C998C1C /* ISRWebInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 086102A8B10564450317F0DE9C7DAC7C /* ISRWebInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		206D23B21B746CF3DC0645640E2F004E /* ISRHtmlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D77E06541BF80D116E7DB446408588 /* ISRHtmlView.m */; };
-		23D291D03458C76FE3E0584FB573EAFF /* ISResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE1AEA888241C8DED2F0F7ACE614937 /* ISResponse.m */; };
-		2D2BCEEFD80FD163580ACE2AAB416C79 /* ISRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = D8814076A1C98A210F4121B3777F0D00 /* ISRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2F7E7EA0280051DC6F0B4613E116F8E8 /* GGLInstanceIDConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E2A139114477F9E2EFAB786144AD8E5 /* GGLInstanceIDConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3304D4257162F4A0DA14B9337AF08A93 /* ISRRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C65805E7BBFCF47DBE307D029024A2E /* ISRRequest.m */; };
-		3DF638F0791350D75004DAB8F246C3A9 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 54C9DD4BFED233CDF03EAD407ABBB3BD /* Info.plist */; };
-		429CC2C3C2E825AF9E3F7D365D927FFA /* AtomSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = E0C918F1BE2FC6070B0229F6049D75A2 /* AtomSDK.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		434641C0CB19D59D5A626533205F981E /* ISAtom.m in Sources */ = {isa = PBXBuildFile; fileRef = 48016AC565CA61890DCE758887E84FAA /* ISAtom.m */; };
-		45D5CE4C49EE6A117BF815ACA6A7CE7C /* sqlite3-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 118769D6BDB0B3D096D7DE4606A407AA /* sqlite3-dummy.m */; };
-		46C63448312430802D3D086672A7336E /* ISRNotificationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C270A5D131EE751C40980F81C83F0E97 /* ISRNotificationHandler.m */; };
+		15CA04F7A28FC3B2E8EEE35276457DE2 /* ISDatabaseAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = A886CA31157C417D632B5FAAC7C0FF8C /* ISDatabaseAdapter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		167062207760EC25476C8610B2457F39 /* ISRUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B47D82C0E5426BF0CD9A5B07718C4FD3 /* ISRUtils.m */; };
+		19271A6CABC6631295DBAB58B5C7D69F /* ISStreamData.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CD419C2B45E396AD057BE7761555AF0 /* ISStreamData.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1BAEAA4DB02D84EB73A8CF8AA296AB0D /* ISReactionApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9826C8B88313FFAB20BA17BB2C2770 /* ISReactionApp.m */; };
+		20847546785189DE5258410DFBC37717 /* ISReaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C7443457F4CB87EF6C256D2B3BD9F4B /* ISReaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23D291D03458C76FE3E0584FB573EAFF /* ISResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E3CE81E6096B642BD6D6923C5C64FCAC /* ISResponse.m */; };
+		2D2BCEEFD80FD163580ACE2AAB416C79 /* ISRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 33F516F7D3C4E1F72BD9DF24B343E748 /* ISRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		378F83FF9C8799216F063A6562BD8629 /* ISRMessageHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EB7DCBE43D83FAF467DA51C06FAF053 /* ISRMessageHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D545D14B9324D119293724EE666244D /* ISRUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 72833952080D401DD35C3D5C119E8748 /* ISRUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		429CC2C3C2E825AF9E3F7D365D927FFA /* AtomSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 743C7ED037E080845B109B0426DB27FF /* AtomSDK.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		434641C0CB19D59D5A626533205F981E /* ISAtom.m in Sources */ = {isa = PBXBuildFile; fileRef = A00EDA53AEF03B2436AD2EDA2011C2DC /* ISAtom.m */; };
+		45D5CE4C49EE6A117BF815ACA6A7CE7C /* sqlite3-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D1FCF6F4EA3D1B0F8D22808F1D0983 /* sqlite3-dummy.m */; };
+		47FB7667AC30EBFD2379755D210E2810 /* ISReactionApp.h in Headers */ = {isa = PBXBuildFile; fileRef = 648B8EBE726E86A58854A3CBC331BC30 /* ISReactionApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A1EA3FD92F5506E47A5206781A133A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5013C69A59C513B2EB1C1224EFAA85 /* Foundation.framework */; };
 		4A9955D1B85CAD10E50B06A08B32E077 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5013C69A59C513B2EB1C1224EFAA85 /* Foundation.framework */; };
-		4CC4CBBE98F7E0453EF576BCCFE305EE /* ISSQLiteHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C85A93D733608F38B1F010E94C3E4B /* ISSQLiteHandler.m */; };
+		4CC4CBBE98F7E0453EF576BCCFE305EE /* ISSQLiteHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E786B881042C7DEBBE800F79D135C954 /* ISSQLiteHandler.m */; };
 		4D8152F1C8FFC52FCC5B78855E4993F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5013C69A59C513B2EB1C1224EFAA85 /* Foundation.framework */; };
-		4DA2D8B400F691D7B8D73DD06A76D27E /* ISReactionApp.m in Sources */ = {isa = PBXBuildFile; fileRef = A619612644F71C0ACDBC99B261CF6028 /* ISReactionApp.m */; };
-		516A80B12FD60F9262DCE80D473293FE /* ISRConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5F663D13B7CCC88C0A5AF9AD2B7DB3 /* ISRConfig.m */; };
-		589657A5762E02E4D60CDE91A4175ED7 /* ISResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 0692215BFF2EF1D91613AEB02432CA00 /* ISResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B852ABCC4394C025B6B036308DCA008 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 9621A9B77CEF641C3980A7F9DB83BEF6 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5F4A1081D867E75BEC7D0B159DAB3C3B /* ISRNotificationHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 26AF752FF4A8AF8730B2974E5B1908BF /* ISRNotificationHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6221830F8A5E89973F450ABC1DDEBD3E /* ISSQLiteHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E90D87897657B57FFE7937AF79E8BCB /* ISSQLiteHandler.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6969F10CDD047DC6626209D0C0CD3354 /* ISAtomTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 4938547FDC8C783D3D70B354741529E6 /* ISAtomTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		69D5B97A961070629F293A9332A91365 /* ReActionSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 986CA32984F83203F21656A3697CE0D4 /* ReActionSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		711711595C7AAC7D9D8B586E3935071F /* ReactionSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = F3786A91DC4E8366A2FAD6497A5F78A3 /* ReactionSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		714994DFD4D568B3E7BC518D8693F095 /* ISBatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4369A3134B2C033D78732B0B9ED36EA3 /* ISBatch.m */; };
-		74154360E75F399395FD7FB43DF13E02 /* GGLInstanceID.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A499B20C553630D742A4F4DA611C68 /* GGLInstanceID.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		77143D197A20B8F2002B4DC961AA2EC8 /* sqlite3-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FC44283A1E3E1F7B1BC005DBAA06307 /* sqlite3-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7F4BE4DC3CF66B4EE641BED6489D82BC /* AtomSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C01B70CC17B305A1431BF6FC56F5B9 /* AtomSDK-dummy.m */; };
-		812E3C01513EA53E8A3FA67479954258 /* ISReaction.h in Headers */ = {isa = PBXBuildFile; fileRef = D2474FDB4FFB183C7D8394634103526C /* ISReaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		818ABD43D6001D5D1D9A6F6C960B2A73 /* ISBatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A26F1AB8EF4D5ED4B7A7DA32D48F63B /* ISBatch.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		81C36AC2E24FA9A63314451492088A5C /* ReActionSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CD95BE1CBEBE3C667DC757A3846E49 /* ReActionSDK-dummy.m */; };
-		83F9291BD75A053728E10585735D1F9E /* ISRLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = E068C0A173E45C72F9CBD8D47EC3C028 /* ISRLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		889931B8F77702989274E0373FB81E67 /* ISReaction.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B9F425AA6CDAB7C5EB1C0BA4C82216 /* ISReaction.m */; };
-		894EE6B2F149C70D24831B3505EF1042 /* sqlite3ext.h in Headers */ = {isa = PBXBuildFile; fileRef = A87BEC79126DDC34D6F1D9E289DF0D08 /* sqlite3ext.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8D0824252D5E985D3D8053494AE0D8B5 /* GGLErrorCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 49BCADD5F5D11CD9BA0482AA8C09D02B /* GGLErrorCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		93C04F5CF878AD7AAD89A9DBB48F76AE /* ISReactionApp.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E20B4BF44A8AFB1F64D9DF69293E7B8 /* ISReactionApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		972FE10BE2C31A149828A63DEDBE4EA7 /* ISStreamData.m in Sources */ = {isa = PBXBuildFile; fileRef = E9243DDC93B1F9848A62BDEC0E49AAB2 /* ISStreamData.m */; };
-		97E16592E2316BD828ACF82D3B20062B /* AtomSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C6CF9F4E0A689E2DC9BAF92EB805A996 /* AtomSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		97E4347AEB2325C5D499738ACE230759 /* ISRConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3D7341A893B60011AD578703E8C586 /* ISRConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		998A69941193DB61DE801F82FC018F4F /* GGLContext+CloudMessaging.h in Headers */ = {isa = PBXBuildFile; fileRef = ABDC92109E060D9B44DAB34EC3119743 /* GGLContext+CloudMessaging.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A4280686C672E6F91C5D50CC27474147 /* ISUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = AFAC357EB19D357C337CAABADD9251DC /* ISUtils.m */; };
-		A6DCCF2EA04114329EBCE85DBE7C3BFF /* ISRUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = F2C41BC4FB8C66A11EE8F5642069E59F /* ISRUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A9CA9FB18D6F2F43B6FF75617F07CFD1 /* ISRWebInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 9558E4031EAB66D78EDCB4E431566FF3 /* ISRWebInterface.m */; };
-		A9E376577579214C30BAE555CDE57C53 /* ISRUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 05932F6398322B7F78E1075A4FCACFD3 /* ISRUtils.m */; };
-		AC443EFB1FA378060D1E2637230D3EBD /* ISRResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F360BF1C3BEFD6FFC810BEFF593C7A /* ISRResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51D2F380FA02C81D9B0B51C12E84412B /* ISRHtmlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D2326053499DC6C8E31938F90D5936 /* ISRHtmlView.m */; };
+		54C0D395510ECE7879D35871CFE21A7C /* ISRResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C9CD2C5887873596DD81170690ED642 /* ISRResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		589657A5762E02E4D60CDE91A4175ED7 /* ISResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 2483AC1C9ED0B4E80351E5772942B92C /* ISResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6221830F8A5E89973F450ABC1DDEBD3E /* ISSQLiteHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 997102817520DCCC652AB3B410478EE2 /* ISSQLiteHandler.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		62CCFBADDAF1E32FCEA228B1E25143E7 /* ISRRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E96356051BFF37A97D430746A5ED2D86 /* ISRRequest.m */; };
+		6969F10CDD047DC6626209D0C0CD3354 /* ISAtomTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 94F6BF99327D6D76C8B3CCC581F8868E /* ISAtomTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0C470A9CCDC03EAF3CC0CE9EB2F96B /* ISRMessageHandlerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = ED915BD7883ED9E372E3953CABA00B45 /* ISRMessageHandlerFactory.m */; };
+		6A1765E8FD3D26CB8D9CA5120F15B7EA /* ISRHttpHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 41031D79256DC8DBB871FD360E55FCBC /* ISRHttpHandler.m */; };
+		6B07DC8E2DCE92A7A77A62DC7F8F5721 /* ISRHtmlView.h in Headers */ = {isa = PBXBuildFile; fileRef = AC954A674C5FFB1E89C136AF77AB2793 /* ISRHtmlView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C2ED1FDCD385A4370F5EC410B0C58DD /* ISRLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = EC6732D9AFBB993B4F01D468B8D6682A /* ISRLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		714994DFD4D568B3E7BC518D8693F095 /* ISBatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B39022D600FF3E476E4476A3F9B33E /* ISBatch.m */; };
+		77143D197A20B8F2002B4DC961AA2EC8 /* sqlite3-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F23C88240D73BF5630E04A76B7BE7763 /* sqlite3-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E3D3F033D869A00BBD0AACE10F303DE /* ReActionSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCB8CEA566A1FFB433152291AD0A593 /* ReActionSDK-dummy.m */; };
+		7E7BC251A7024310B321DD2953EC6BBD /* ISRAtomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 597F50DC373874446FE28795B0CF8056 /* ISRAtomController.m */; };
+		7F4BE4DC3CF66B4EE641BED6489D82BC /* AtomSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA06C53DF5BAC2038C2D503A0A0E9060 /* AtomSDK-dummy.m */; };
+		818ABD43D6001D5D1D9A6F6C960B2A73 /* ISBatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 983C07CC2AADAB7CBEE03842D7E72E24 /* ISBatch.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		822D3AB8D870ABCB8CF4B36A87DEB82E /* ISRWebInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B897ED4814ED007C185079F9F80B69A /* ISRWebInterface.m */; };
+		894EE6B2F149C70D24831B3505EF1042 /* sqlite3ext.h in Headers */ = {isa = PBXBuildFile; fileRef = 441AB3E31C5341984533F1704C742604 /* sqlite3ext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E6769AD63EBD2B35C15B19C62FC8E6C /* ISRResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9356671AB6889B7A02ECE168E071F5 /* ISRResponse.m */; };
+		9721E204FCE97A7DDE8A64694EB2D3BB /* ReActionSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AEC329480DB876C6F0C0CE0B0E6198F2 /* ReActionSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		972FE10BE2C31A149828A63DEDBE4EA7 /* ISStreamData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC2F02AE715D2618D7037DC618A89DA /* ISStreamData.m */; };
+		97E16592E2316BD828ACF82D3B20062B /* AtomSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 423DE78E4AD50F28EBE4B6952AB2DE93 /* AtomSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4280686C672E6F91C5D50CC27474147 /* ISUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 12ED7C749A44B15EB07297C372623075 /* ISUtils.m */; };
 		AF91BE270F52ABB4783EE2BF4FA20821 /* Pods-ReactionSDKExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A017108FC245B39202C0B9249D6E83 /* Pods-ReactionSDKExample-dummy.m */; };
-		AFA12122A00FD9117B2EF8EC8428F0DE /* GMRConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F7FEF253DBB50A2E8D20AB7817F34B7 /* GMRConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B4C9609D82950DB688651CBD05B7D538 /* ISRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFCBF0160AD9CCC75FC34D7210154C9 /* ISRequest.m */; };
-		BAED5BDCFCF793892E8C48AD38203A36 /* ISRUrlHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E8E9A238FB92D873F794CE586480EE0 /* ISRUrlHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BD4CDB36E8EF00C08EFB04494546FFAC /* ISRRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E15838DADCAAF08079524CF53D1393 /* ISRRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BDC1B1E829C4B9FC3E49C44BCD2EF886 /* ISRMessageHandlerFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = B64584DBC92574A86B9915AFD876BE1D /* ISRMessageHandlerFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BED707273B0FC1E6ED4AA0377E9C1AAF /* GCMService.h in Headers */ = {isa = PBXBuildFile; fileRef = 179F014B23E45B943FA5B392065D6668 /* GCMService.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C55B14646846DCA79C603485EB21F83B /* ISRLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB46BE57361837C7007C139249922D2 /* ISRLogger.m */; };
+		B4C9609D82950DB688651CBD05B7D538 /* ISRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADAA114B43694337DA0A9BD17B4CAF9 /* ISRequest.m */; };
 		C7272983B6EBB57C7EEE59CA4FFE5AF5 /* AtomSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC5FDDD954F05C24888CAFDA45D43C2 /* AtomSDK.framework */; };
-		CD44E40D56EFA0D1D1FBD7EF08BABFF5 /* ISRMessageHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 166EEC857C1CF4A6875AC608436B3291 /* ISRMessageHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D21F3354AB69820024774CC006AEB612 /* ISRHttpHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A740002752D29439BD226BC159BCF7B5 /* ISRHttpHandler.m */; };
-		D259DB5090B0914935E76C741D94F7AE /* ISRAtomController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E1D1E4E7170EBF17A14E49661FDEFF4 /* ISRAtomController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3842655D1D860F7967E227704B36E26 /* ISRHtmlView.h in Headers */ = {isa = PBXBuildFile; fileRef = 90360312B92213DC7A7855EFC12526C7 /* ISRHtmlView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D62CB9331CDB73058AE74DCCFCED83B5 /* GCMReceiverDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E0C4E471C3A9EE16661AAA1FBB492A2 /* GCMReceiverDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D8313F92208C57B0837D98E8F8B932A5 /* ISAtom.h in Headers */ = {isa = PBXBuildFile; fileRef = 53938CD8B51C55A7DA350F0FF79725A7 /* ISAtom.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D89CA049190C5856AEC98EDAF55EC2A9 /* ISRResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0080E994B52AD6C5E6089622D63B3101 /* ISRResponse.m */; };
-		DB55E2D6CF7421645523349FCCEC233C /* GGLInstanceIDDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DD5D0CFE8575C58A92EE28BCC2028214 /* GGLInstanceIDDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DE6D8CC853BA9729515A681EE4DE4A56 /* ISUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = E9E5CF762D472F96729494B6798B116F /* ISUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DEFCA54A7A3AB0D94382FB91B3FE16DB /* GGLConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C4E80D4542F534BA7E820A5AC94CF50 /* GGLConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDB4928F6C3E574C456BF544E2417269 /* ReActionSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CAA7B6B1F165D2D36A3FF8CFF320E45 /* ReActionSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8313F92208C57B0837D98E8F8B932A5 /* ISAtom.h in Headers */ = {isa = PBXBuildFile; fileRef = D64D07B061C0B210872D6B67C87F1026 /* ISAtom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE6D8CC853BA9729515A681EE4DE4A56 /* ISUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A7C21AE76291F851E87FC11C20844332 /* ISUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEA854054895E0B9A5775DE2D49F6508 /* ISRConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 5446EE040609EE1EB08396312EBF88C8 /* ISRConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF3ECE5792F05FD8C55A69747EA0F11A /* ISRRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 12403EDD5E27092EFCA50848298105C0 /* ISRRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF4CA710AB38023C19A5B1A5BD756179 /* ISRNotificationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E82F3B047D2356C13A8A889E3C26C5BD /* ISRNotificationHandler.m */; };
 		E3BA8BCCEB7A5B77A184D63673E5D20F /* Pods-ReactionSDKExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F0093DA80F16954608C08E00D932C61 /* Pods-ReactionSDKExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E9E6AE79582A517E6D06437FE71198C9 /* sqlite3.h in Headers */ = {isa = PBXBuildFile; fileRef = 71C8F78BBB2F5CCC3A85E0A46BCB63E3 /* sqlite3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4B80E0BE4EE08940B81B2808435AEA1 /* ISRAtomController.h in Headers */ = {isa = PBXBuildFile; fileRef = 278B5B101FE7011A9FFF34199254C54C /* ISRAtomController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9E6AE79582A517E6D06437FE71198C9 /* sqlite3.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B0D3FDEBC6B0E9CB802F9008383F115 /* sqlite3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC996B6521498C836036013E5B286EC0 /* ISRUrlHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B1432F9154B5F0A1E3FF82DA5395ED0 /* ISRUrlHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF08763D6C06904F5969CC6BC10FACDA /* sqlite3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F83A8F02C6E937CC02099B784299BE /* sqlite3.framework */; };
-		EF3219D98C43FBE936362D9F3E1D8FA1 /* ISAtomTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB5ADD44FF7B6073F621AEE16C7CD24 /* ISAtomTracker.m */; };
-		F184027646A76E49366FBA5D4E3AD599 /* ISRHttpHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = C68533E357ECAC189BACEE0BADF76BE1 /* ISRHttpHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F35149967ED481FCF7AAC4CDF394ED18 /* ISRAtomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 149ADB6B127CA8A9A8A465975FCC54C1 /* ISRAtomController.m */; };
-		F69226EB05C6DBE975843913E4AD9CDD /* ISDatabaseAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 99982454FA222C2219D9044AF798BEBD /* ISDatabaseAdapter.m */; };
+		EF3219D98C43FBE936362D9F3E1D8FA1 /* ISAtomTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = DE40514A25B4B8EAF7699F36137B1D95 /* ISAtomTracker.m */; };
+		F1C1015130F4554071A1C69A47063BDE /* ISRMessageHandlerFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 93466808BB6C250BB6AFC1B977169586 /* ISRMessageHandlerFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F69226EB05C6DBE975843913E4AD9CDD /* ISDatabaseAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 05762C4F9FBB92FDD2D39702096153C5 /* ISDatabaseAdapter.m */; };
 		F7F2CD796039D50272F76661AA250DAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5013C69A59C513B2EB1C1224EFAA85 /* Foundation.framework */; };
-		F9935266010FFFC50917C643E045E607 /* GCMPubSub.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A689F18367E24487356D7F7D5E3D0FF /* GCMPubSub.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,140 +122,125 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00161CBCFA5A9181A9A55DF7E76E917E /* ISRMessageHandlerFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISRMessageHandlerFactory.m; path = reaction_sdk/ReactionSDK/ReactionSDK/message/ISRMessageHandlerFactory.m; sourceTree = "<group>"; };
-		0080E994B52AD6C5E6089622D63B3101 /* ISRResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISRResponse.m; path = reaction_sdk/ReactionSDK/ReactionSDK/http/ISRResponse.m; sourceTree = "<group>"; };
-		00C85A93D733608F38B1F010E94C3E4B /* ISSQLiteHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISSQLiteHandler.m; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISSQLiteHandler.m"; sourceTree = "<group>"; };
 		021AD8B8FD0843E8D56834260F0C7475 /* sqlite3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = sqlite3.framework; path = sqlite3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		026577CD162B6B2E774B51531BD5B831 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
-		05932F6398322B7F78E1075A4FCACFD3 /* ISRUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISRUtils.m; path = reaction_sdk/ReactionSDK/ReactionSDK/helper/ISRUtils.m; sourceTree = "<group>"; };
-		0692215BFF2EF1D91613AEB02432CA00 /* ISResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISResponse.h; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISResponse.h"; sourceTree = "<group>"; };
-		086102A8B10564450317F0DE9C7DAC7C /* ISRWebInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISRWebInterface.h; path = reaction_sdk/ReactionSDK/ReactionSDK/view/ISRWebInterface.h; sourceTree = "<group>"; };
-		0AEE996251C9F561B01FD461879F7412 /* GGLConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLConfiguration.h; path = Headers/GGLCore/Public/GGLConfiguration.h; sourceTree = "<group>"; };
-		0BB46BE57361837C7007C139249922D2 /* ISRLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISRLogger.m; path = reaction_sdk/ReactionSDK/ReactionSDK/helper/ISRLogger.m; sourceTree = "<group>"; };
-		0C4E80D4542F534BA7E820A5AC94CF50 /* GGLConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLConfiguration.h; path = reaction_sdk/ReactionSDK/ReactionSDK/gcm/GGLConfiguration.h; sourceTree = "<group>"; };
-		0CE7A87D4297A646F1805E98633E0D2E /* GGLInstanceIDHeaders.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLInstanceIDHeaders.h; path = reaction_sdk/ReactionSDK/ReactionSDK/gcm/GGLInstanceIDHeaders.h; sourceTree = "<group>"; };
-		0E2A139114477F9E2EFAB786144AD8E5 /* GGLInstanceIDConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLInstanceIDConfig.h; path = reaction_sdk/ReactionSDK/ReactionSDK/gcm/GGLInstanceIDConfig.h; sourceTree = "<group>"; };
-		0EBB8ADB028FCA158124A0F8B0F98B94 /* GCMPubSub.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCMPubSub.h; path = Headers/Public/GCMPubSub.h; sourceTree = "<group>"; };
-		118769D6BDB0B3D096D7DE4606A407AA /* sqlite3-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "sqlite3-dummy.m"; sourceTree = "<group>"; };
-		149ADB6B127CA8A9A8A465975FCC54C1 /* ISRAtomController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISRAtomController.m; path = reaction_sdk/ReactionSDK/ReactionSDK/helper/ISRAtomController.m; sourceTree = "<group>"; };
-		1595612E71D6A8B8FD54ADA589D0FBD5 /* GoogleIPhoneUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleIPhoneUtilities.framework; path = Frameworks/GoogleIPhoneUtilities.framework; sourceTree = "<group>"; };
-		166EEC857C1CF4A6875AC608436B3291 /* ISRMessageHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISRMessageHandler.h; path = reaction_sdk/ReactionSDK/ReactionSDK/message/ISRMessageHandler.h; sourceTree = "<group>"; };
-		179F014B23E45B943FA5B392065D6668 /* GCMService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCMService.h; path = reaction_sdk/ReactionSDK/ReactionSDK/gcm/GCMService.h; sourceTree = "<group>"; };
-		1B4D4A7C74C49CD0CAB74DE195A0D344 /* GGLContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLContext.h; path = Headers/GGLCore/Public/GGLContext.h; sourceTree = "<group>"; };
-		1E3D7341A893B60011AD578703E8C586 /* ISRConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISRConfig.h; path = reaction_sdk/ReactionSDK/ReactionSDK/helper/ISRConfig.h; sourceTree = "<group>"; };
-		1F3353C93D84A477847234829D4AFDB4 /* CloudMessaging-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CloudMessaging-Module.h"; path = "Headers/ModuleHeaders/CloudMessaging-Module.h"; sourceTree = "<group>"; };
-		1FC44283A1E3E1F7B1BC005DBAA06307 /* sqlite3-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "sqlite3-umbrella.h"; sourceTree = "<group>"; };
-		20E15838DADCAAF08079524CF53D1393 /* ISRRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISRRequest.h; path = reaction_sdk/ReactionSDK/ReactionSDK/http/ISRRequest.h; sourceTree = "<group>"; };
+		045759BE67505F5AD8C37412A5CDEB10 /* libGGLInstanceIDLib.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGGLInstanceIDLib.a; path = Libraries/libGGLInstanceIDLib.a; sourceTree = "<group>"; };
+		05762C4F9FBB92FDD2D39702096153C5 /* ISDatabaseAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISDatabaseAdapter.m; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISDatabaseAdapter.m"; sourceTree = "<group>"; };
+		05A5F92FC1CBA2FD9ACE49CE29DBFEAB /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		06B39022D600FF3E476E4476A3F9B33E /* ISBatch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISBatch.m; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISBatch.m"; sourceTree = "<group>"; };
+		0A9356671AB6889B7A02ECE168E071F5 /* ISRResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISRResponse.m; path = "reaction_sdk/objective-c/ReActionSDK/ReActionSDK/http/ISRResponse.m"; sourceTree = "<group>"; };
+		0C9CD2C5887873596DD81170690ED642 /* ISRResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISRResponse.h; path = "reaction_sdk/objective-c/ReActionSDK/ReActionSDK/http/ISRResponse.h"; sourceTree = "<group>"; };
+		0CBBB26F081C3E3D05742CB1606DCE38 /* GGLInstanceIDDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLInstanceIDDelegate.h; path = Headers/Public/GGLInstanceIDDelegate.h; sourceTree = "<group>"; };
+		1084D90AE20BBE60303F458D3EB04629 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		12403EDD5E27092EFCA50848298105C0 /* ISRRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISRRequest.h; path = "reaction_sdk/objective-c/ReActionSDK/ReActionSDK/http/ISRRequest.h"; sourceTree = "<group>"; };
+		12ED7C749A44B15EB07297C372623075 /* ISUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISUtils.m; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISUtils.m"; sourceTree = "<group>"; };
+		16D18EFB423599DE5CED68A298BDF9D1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		191CAA7D28E104A1BEC56826FC8FACD8 /* CloudMessaging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CloudMessaging.h; path = Headers/GGLCloudMessaging/Public/CloudMessaging.h; sourceTree = "<group>"; };
+		1D7099512117F3FD55298194DFB9C34A /* sqlite3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "sqlite3-prefix.pch"; sourceTree = "<group>"; };
 		2184269D20C82150B2BB1938036596DD /* Pods-ReactionSDKExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReactionSDKExample.release.xcconfig"; sourceTree = "<group>"; };
-		26AF752FF4A8AF8730B2974E5B1908BF /* ISRNotificationHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISRNotificationHandler.h; path = reaction_sdk/ReactionSDK/ReactionSDK/message/ISRNotificationHandler.h; sourceTree = "<group>"; };
-		298F455D967EEBAEFDD6E160C9BB011F /* libGGLInstanceIDLib.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGGLInstanceIDLib.a; path = Libraries/libGGLInstanceIDLib.a; sourceTree = "<group>"; };
-		2AF9C1A93B38DACEA7BC0A6E085E9E7A /* Core-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Core-Module.h"; path = "Headers/ModuleHeaders/Core-Module.h"; sourceTree = "<group>"; };
-		2CE1772BB74BC70BF29F573E9D298BC5 /* GGLInstanceIDConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLInstanceIDConfig.h; path = Headers/Public/GGLInstanceIDConfig.h; sourceTree = "<group>"; };
-		2E20B4BF44A8AFB1F64D9DF69293E7B8 /* ISReactionApp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISReactionApp.h; path = reaction_sdk/ReactionSDK/ReactionSDK/ISReactionApp.h; sourceTree = "<group>"; };
-		2EB9045218525F679F7147E37352B4DD /* sqlite3.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sqlite3.c; path = "sqlite-amalgamation-3150200/sqlite3.c"; sourceTree = "<group>"; };
-		2FE1AEA888241C8DED2F0F7ACE614937 /* ISResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISResponse.m; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISResponse.m"; sourceTree = "<group>"; };
-		3338ABE70766C6FEF045711FE78582A0 /* ISRUrlHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISRUrlHandler.m; path = reaction_sdk/ReactionSDK/ReactionSDK/message/ISRUrlHandler.m; sourceTree = "<group>"; };
+		2483AC1C9ED0B4E80351E5772942B92C /* ISResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISResponse.h; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISResponse.h"; sourceTree = "<group>"; };
+		275A1A72D4D9BE67707E536279683D45 /* GCMPubSub.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCMPubSub.h; path = Headers/Public/GCMPubSub.h; sourceTree = "<group>"; };
+		278B5B101FE7011A9FFF34199254C54C /* ISRAtomController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISRAtomController.h; path = "reaction_sdk/objective-c/ReActionSDK/ReActionSDK/helper/ISRAtomController.h"; sourceTree = "<group>"; };
+		2875BD8B9F6BA42EED8899E896FC1128 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2ADAA114B43694337DA0A9BD17B4CAF9 /* ISRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISRequest.m; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISRequest.m"; sourceTree = "<group>"; };
+		2C5F3F5092AF819D6E52B86A4FCA82BD /* GCMReceiverDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCMReceiverDelegate.h; path = Headers/Public/GCMReceiverDelegate.h; sourceTree = "<group>"; };
+		2E9826C8B88313FFAB20BA17BB2C2770 /* ISReactionApp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISReactionApp.m; path = "reaction_sdk/objective-c/ReActionSDK/ReActionSDK/ISReactionApp.m"; sourceTree = "<group>"; };
+		30352F38690D1DCDF23E981BF09449F9 /* GGLContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLContext.h; path = Headers/GGLCore/Public/GGLContext.h; sourceTree = "<group>"; };
+		318A0D87520E1A7E9855CFDBB3B9C0F9 /* libGGLCloudMessaging.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGGLCloudMessaging.a; path = Libraries/libGGLCloudMessaging.a; sourceTree = "<group>"; };
+		32D46C93D85A1B8FD5F188055CD33BF5 /* ReActionSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ReActionSDK.modulemap; sourceTree = "<group>"; };
+		33F516F7D3C4E1F72BD9DF24B343E748 /* ISRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISRequest.h; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISRequest.h"; sourceTree = "<group>"; };
 		354C89F6FB9CC2A8272D9691BBAC6DFD /* AtomSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AtomSDK.framework; path = AtomSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3555B61E89714EA5162631783689401D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3E1D1E4E7170EBF17A14E49661FDEFF4 /* ISRAtomController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISRAtomController.h; path = reaction_sdk/ReactionSDK/ReactionSDK/helper/ISRAtomController.h; sourceTree = "<group>"; };
-		3E8E9A238FB92D873F794CE586480EE0 /* ISRUrlHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISRUrlHandler.h; path = reaction_sdk/ReactionSDK/ReactionSDK/message/ISRUrlHandler.h; sourceTree = "<group>"; };
-		405614FA4C4BF25EF9BBEFAFB77B4A45 /* ISStreamData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISStreamData.h; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISStreamData.h"; sourceTree = "<group>"; };
-		4369A3134B2C033D78732B0B9ED36EA3 /* ISBatch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISBatch.m; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISBatch.m"; sourceTree = "<group>"; };
+		3B6CF2F80EBB55C3964EF98A9BDD4258 /* AtomSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AtomSDK.xcconfig; sourceTree = "<group>"; };
+		3B897ED4814ED007C185079F9F80B69A /* ISRWebInterface.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISRWebInterface.m; path = "reaction_sdk/objective-c/ReActionSDK/ReActionSDK/view/ISRWebInterface.m"; sourceTree = "<group>"; };
+		3B90CC36570AB9F69D41BEF9C59CB031 /* AdMob-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AdMob-Module.h"; path = "Headers/ModuleHeaders/AdMob-Module.h"; sourceTree = "<group>"; };
+		3CC63FB58A43655D87C9D781DA249321 /* ISRNotificationHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISRNotificationHandler.h; path = "reaction_sdk/objective-c/ReActionSDK/ReActionSDK/message/ISRNotificationHandler.h"; sourceTree = "<group>"; };
+		3FC325B3ADFBDD7781E9830B192B7A64 /* SignIn-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SignIn-Module.h"; path = "Headers/ModuleHeaders/SignIn-Module.h"; sourceTree = "<group>"; };
+		41031D79256DC8DBB871FD360E55FCBC /* ISRHttpHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISRHttpHandler.m; path = "reaction_sdk/objective-c/ReActionSDK/ReActionSDK/message/ISRHttpHandler.m"; sourceTree = "<group>"; };
+		423DE78E4AD50F28EBE4B6952AB2DE93 /* AtomSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AtomSDK-umbrella.h"; sourceTree = "<group>"; };
+		441AB3E31C5341984533F1704C742604 /* sqlite3ext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sqlite3ext.h; path = "sqlite-amalgamation-3150200/sqlite3ext.h"; sourceTree = "<group>"; };
+		4737619929F6D373E542CEC992C087B5 /* GMRConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMRConfiguration.h; path = Headers/GGLCore/Public/GMRConfiguration.h; sourceTree = "<group>"; };
 		47C076F8D0E436643909CC732BC6C0D3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		47DACDD6EFEE4426029689EF66D4440D /* GGLContext+CloudMessaging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GGLContext+CloudMessaging.h"; path = "Headers/GGLCloudMessaging/Public/GGLContext+CloudMessaging.h"; sourceTree = "<group>"; };
-		48016AC565CA61890DCE758887E84FAA /* ISAtom.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISAtom.m; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISAtom.m"; sourceTree = "<group>"; };
-		4938547FDC8C783D3D70B354741529E6 /* ISAtomTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISAtomTracker.h; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISAtomTracker.h"; sourceTree = "<group>"; };
-		49BCADD5F5D11CD9BA0482AA8C09D02B /* GGLErrorCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLErrorCode.h; path = reaction_sdk/ReactionSDK/ReactionSDK/gcm/GGLErrorCode.h; sourceTree = "<group>"; };
-		519BF267A84096C7E697B162C5F98E94 /* libGGLCloudMessaging.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGGLCloudMessaging.a; path = Libraries/libGGLCloudMessaging.a; sourceTree = "<group>"; };
-		53938CD8B51C55A7DA350F0FF79725A7 /* ISAtom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISAtom.h; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISAtom.h"; sourceTree = "<group>"; };
-		54C9DD4BFED233CDF03EAD407ABBB3BD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = reaction_sdk/ReactionSDK/ReactionSDK/Info.plist; sourceTree = "<group>"; };
-		56D77E06541BF80D116E7DB446408588 /* ISRHtmlView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISRHtmlView.m; path = reaction_sdk/ReactionSDK/ReactionSDK/view/ISRHtmlView.m; sourceTree = "<group>"; };
-		59336E193F92EC8CA3D6E98426156284 /* sqlite3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "sqlite3-prefix.pch"; sourceTree = "<group>"; };
-		59A499B20C553630D742A4F4DA611C68 /* GGLInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLInstanceID.h; path = reaction_sdk/ReactionSDK/ReactionSDK/gcm/GGLInstanceID.h; sourceTree = "<group>"; };
-		5A26F1AB8EF4D5ED4B7A7DA32D48F63B /* ISBatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISBatch.h; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISBatch.h"; sourceTree = "<group>"; };
-		5E90D87897657B57FFE7937AF79E8BCB /* ISSQLiteHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISSQLiteHandler.h; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISSQLiteHandler.h"; sourceTree = "<group>"; };
-		5F65005FC771CD2426828709F7B26C19 /* GGLInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLInstanceID.h; path = Headers/Public/GGLInstanceID.h; sourceTree = "<group>"; };
-		61FE850B9F240FE9DDC72C64EE9BDFF3 /* ReActionSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReActionSDK-prefix.pch"; sourceTree = "<group>"; };
-		6DE6B2DFECC4845AC853E166ECC4091F /* libGcmLib.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGcmLib.a; path = Libraries/libGcmLib.a; sourceTree = "<group>"; };
-		6F7FEF253DBB50A2E8D20AB7817F34B7 /* GMRConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMRConfiguration.h; path = reaction_sdk/ReactionSDK/ReactionSDK/gcm/GMRConfiguration.h; sourceTree = "<group>"; };
-		7112F804E379E3F51A17394287496DF5 /* GGLErrorCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLErrorCode.h; path = Headers/GGLCore/Public/GGLErrorCode.h; sourceTree = "<group>"; };
-		71C8F78BBB2F5CCC3A85E0A46BCB63E3 /* sqlite3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sqlite3.h; path = "sqlite-amalgamation-3150200/sqlite3.h"; sourceTree = "<group>"; };
-		75826124F4515E24DB89531040326E48 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
-		75D302FB5904074484BC07CA15F30112 /* GMRConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMRConfiguration.h; path = Headers/GGLCore/Public/GMRConfiguration.h; sourceTree = "<group>"; };
-		7A689F18367E24487356D7F7D5E3D0FF /* GCMPubSub.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCMPubSub.h; path = reaction_sdk/ReactionSDK/ReactionSDK/gcm/GCMPubSub.h; sourceTree = "<group>"; };
-		7E0C4E471C3A9EE16661AAA1FBB492A2 /* GCMReceiverDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCMReceiverDelegate.h; path = reaction_sdk/ReactionSDK/ReactionSDK/gcm/GCMReceiverDelegate.h; sourceTree = "<group>"; };
+		48568D09F80B832A3AEFCD3F6EDA32A3 /* Core.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Core.h; path = Headers/GGLCore/Public/Core.h; sourceTree = "<group>"; };
+		4928D8F0189F1D69D4278CD2526BA2AD /* sqlite3.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sqlite3.c; path = "sqlite-amalgamation-3150200/sqlite3.c"; sourceTree = "<group>"; };
+		4B0D3FDEBC6B0E9CB802F9008383F115 /* sqlite3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sqlite3.h; path = "sqlite-amalgamation-3150200/sqlite3.h"; sourceTree = "<group>"; };
+		51EE9A9A2BD2F93D57236A6ED0F907B2 /* Analytics-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Analytics-Module.h"; path = "Headers/ModuleHeaders/Analytics-Module.h"; sourceTree = "<group>"; };
+		536AB327446C0DCF7427343228E48732 /* sqlite3.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = sqlite3.xcconfig; sourceTree = "<group>"; };
+		5446EE040609EE1EB08396312EBF88C8 /* ISRConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISRConfig.h; path = "reaction_sdk/objective-c/ReActionSDK/ReActionSDK/helper/ISRConfig.h"; sourceTree = "<group>"; };
+		55730C69A3265B8BC2E45BB772292536 /* GCMConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCMConfig.h; path = Headers/Public/GCMConfig.h; sourceTree = "<group>"; };
+		597F50DC373874446FE28795B0CF8056 /* ISRAtomController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISRAtomController.m; path = "reaction_sdk/objective-c/ReActionSDK/ReActionSDK/helper/ISRAtomController.m"; sourceTree = "<group>"; };
+		5CAA7B6B1F165D2D36A3FF8CFF320E45 /* ReActionSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReActionSDK.h; path = "reaction_sdk/objective-c/ReActionSDK/ReActionSDK/ReActionSDK.h"; sourceTree = "<group>"; };
+		5FCB8CEA566A1FFB433152291AD0A593 /* ReActionSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReActionSDK-dummy.m"; sourceTree = "<group>"; };
+		6007790F92F2E56061E5C648AC21F15F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		643CF695B8459EAF0D9FCFB7443591B4 /* Core-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Core-Module.h"; path = "Headers/ModuleHeaders/Core-Module.h"; sourceTree = "<group>"; };
+		648B8EBE726E86A58854A3CBC331BC30 /* ISReactionApp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISReactionApp.h; path = "reaction_sdk/objective-c/ReActionSDK/ReActionSDK/ISReactionApp.h"; sourceTree = "<group>"; };
+		6CC2F02AE715D2618D7037DC618A89DA /* ISStreamData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISStreamData.m; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISStreamData.m"; sourceTree = "<group>"; };
+		6EB7DCBE43D83FAF467DA51C06FAF053 /* ISRMessageHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISRMessageHandler.h; path = "reaction_sdk/objective-c/ReActionSDK/ReActionSDK/message/ISRMessageHandler.h"; sourceTree = "<group>"; };
+		72833952080D401DD35C3D5C119E8748 /* ISRUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISRUtils.h; path = "reaction_sdk/objective-c/ReActionSDK/ReActionSDK/helper/ISRUtils.h"; sourceTree = "<group>"; };
+		743C7ED037E080845B109B0426DB27FF /* AtomSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AtomSDK.h; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/AtomSDK.h"; sourceTree = "<group>"; };
+		74772AD74E6C8F9EFD8C033C326B31ED /* ISRWebInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISRWebInterface.h; path = "reaction_sdk/objective-c/ReActionSDK/ReActionSDK/view/ISRWebInterface.h"; sourceTree = "<group>"; };
+		7605D320BEA5E08BFB86D8FD3AA3E82F /* AppInvite-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AppInvite-Module.h"; path = "Headers/ModuleHeaders/AppInvite-Module.h"; sourceTree = "<group>"; };
+		785BCEB366B720473D701FF4B10CB8EF /* ISRLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISRLogger.m; path = "reaction_sdk/objective-c/ReActionSDK/ReActionSDK/helper/ISRLogger.m"; sourceTree = "<group>"; };
+		78D2326053499DC6C8E31938F90D5936 /* ISRHtmlView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISRHtmlView.m; path = "reaction_sdk/objective-c/ReActionSDK/ReActionSDK/view/ISRHtmlView.m"; sourceTree = "<group>"; };
 		7F0093DA80F16954608C08E00D932C61 /* Pods-ReactionSDKExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ReactionSDKExample-umbrella.h"; sourceTree = "<group>"; };
-		80DD2A26762C41D0B67854C2FAC10046 /* Analytics-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Analytics-Module.h"; path = "Headers/ModuleHeaders/Analytics-Module.h"; sourceTree = "<group>"; };
-		8245522991EB4DF6C035C9FB49E7D8EA /* GCMReceiverDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCMReceiverDelegate.h; path = Headers/Public/GCMReceiverDelegate.h; sourceTree = "<group>"; };
-		890AF50DD4800F7B3DC0539905F9EE82 /* GCMConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCMConfig.h; path = reaction_sdk/ReactionSDK/ReactionSDK/gcm/GCMConfig.h; sourceTree = "<group>"; };
-		8B7C866EB6844B550BC1CF5206011408 /* AtomSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AtomSDK.modulemap; sourceTree = "<group>"; };
-		8BFCBF0160AD9CCC75FC34D7210154C9 /* ISRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISRequest.m; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISRequest.m"; sourceTree = "<group>"; };
-		8D8902CC3405731C1DA84F48892003D9 /* libGGLCore.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGGLCore.a; path = Libraries/libGGLCore.a; sourceTree = "<group>"; };
-		8E799762B8DB4226A94DB741FFDA491D /* ISDatabaseAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISDatabaseAdapter.h; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISDatabaseAdapter.h"; sourceTree = "<group>"; };
-		90360312B92213DC7A7855EFC12526C7 /* ISRHtmlView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISRHtmlView.h; path = reaction_sdk/ReactionSDK/ReactionSDK/view/ISRHtmlView.h; sourceTree = "<group>"; };
+		7FA351B57AD1A804B1C275C6A049B4AC /* ISRUrlHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISRUrlHandler.m; path = "reaction_sdk/objective-c/ReActionSDK/ReActionSDK/message/ISRUrlHandler.m"; sourceTree = "<group>"; };
+		88BC262BD7972BEFBDC7A5C694C97BFB /* ISReaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISReaction.m; path = "reaction_sdk/objective-c/ReActionSDK/ReActionSDK/ISReaction.m"; sourceTree = "<group>"; };
+		8F15E5F8A27A55429DF15E543FDBC5C0 /* GCMService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCMService.h; path = Headers/Public/GCMService.h; sourceTree = "<group>"; };
+		923F050E23B7DFC6CE5C9A29B76617AE /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
+		93466808BB6C250BB6AFC1B977169586 /* ISRMessageHandlerFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISRMessageHandlerFactory.h; path = "reaction_sdk/objective-c/ReActionSDK/ReActionSDK/message/ISRMessageHandlerFactory.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9558E4031EAB66D78EDCB4E431566FF3 /* ISRWebInterface.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISRWebInterface.m; path = reaction_sdk/ReactionSDK/ReactionSDK/view/ISRWebInterface.m; sourceTree = "<group>"; };
-		9621A9B77CEF641C3980A7F9DB83BEF6 /* Core.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Core.h; path = reaction_sdk/ReactionSDK/ReactionSDK/gcm/Core.h; sourceTree = "<group>"; };
-		986CA32984F83203F21656A3697CE0D4 /* ReActionSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReActionSDK-umbrella.h"; sourceTree = "<group>"; };
-		98AA0EC544302E15BB5E3C9E188E3FD5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		98B97FDBD277FA40C734D8684325FCB5 /* GGLContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLContext.h; path = reaction_sdk/ReactionSDK/ReactionSDK/gcm/GGLContext.h; sourceTree = "<group>"; };
-		99982454FA222C2219D9044AF798BEBD /* ISDatabaseAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISDatabaseAdapter.m; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISDatabaseAdapter.m"; sourceTree = "<group>"; };
+		94F6BF99327D6D76C8B3CCC581F8868E /* ISAtomTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISAtomTracker.h; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISAtomTracker.h"; sourceTree = "<group>"; };
+		983C07CC2AADAB7CBEE03842D7E72E24 /* ISBatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISBatch.h; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISBatch.h"; sourceTree = "<group>"; };
+		997102817520DCCC652AB3B410478EE2 /* ISSQLiteHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISSQLiteHandler.h; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISSQLiteHandler.h"; sourceTree = "<group>"; };
+		9B1432F9154B5F0A1E3FF82DA5395ED0 /* ISRUrlHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISRUrlHandler.h; path = "reaction_sdk/objective-c/ReActionSDK/ReActionSDK/message/ISRUrlHandler.h"; sourceTree = "<group>"; };
 		9BC5FDDD954F05C24888CAFDA45D43C2 /* AtomSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AtomSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C65805E7BBFCF47DBE307D029024A2E /* ISRRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISRRequest.m; path = reaction_sdk/ReactionSDK/ReactionSDK/http/ISRRequest.m; sourceTree = "<group>"; };
-		9E3B465B44FFAF7FBBAA424BCDA8728F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F1781B7DD092C047541F68ACE7214D6 /* sqlite3.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = sqlite3.xcconfig; sourceTree = "<group>"; };
-		A221DBCCC64CAAEF3A474031F1E98A27 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
+		9C7443457F4CB87EF6C256D2B3BD9F4B /* ISReaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISReaction.h; path = "reaction_sdk/objective-c/ReActionSDK/ReActionSDK/ISReaction.h"; sourceTree = "<group>"; };
+		9CD419C2B45E396AD057BE7761555AF0 /* ISStreamData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISStreamData.h; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISStreamData.h"; sourceTree = "<group>"; };
+		A00EDA53AEF03B2436AD2EDA2011C2DC /* ISAtom.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISAtom.m; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISAtom.m"; sourceTree = "<group>"; };
 		A4B04783881367865F84DAB979B7EF17 /* Pods-ReactionSDKExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReactionSDKExample.debug.xcconfig"; sourceTree = "<group>"; };
-		A4DE08454DDDE4D64EA1042E141AF532 /* SignIn-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SignIn-Module.h"; path = "Headers/ModuleHeaders/SignIn-Module.h"; sourceTree = "<group>"; };
-		A619612644F71C0ACDBC99B261CF6028 /* ISReactionApp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISReactionApp.m; path = reaction_sdk/ReactionSDK/ReactionSDK/ISReactionApp.m; sourceTree = "<group>"; };
-		A72F7A322769878C9094248149A127DF /* AtomSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AtomSDK.xcconfig; sourceTree = "<group>"; };
-		A740002752D29439BD226BC159BCF7B5 /* ISRHttpHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISRHttpHandler.m; path = reaction_sdk/ReactionSDK/ReactionSDK/message/ISRHttpHandler.m; sourceTree = "<group>"; };
-		A87BEC79126DDC34D6F1D9E289DF0D08 /* sqlite3ext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sqlite3ext.h; path = "sqlite-amalgamation-3150200/sqlite3ext.h"; sourceTree = "<group>"; };
-		AA665B679993B95F53E3E1CE7D820900 /* ReActionSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReActionSDK.xcconfig; sourceTree = "<group>"; };
+		A6C5A7280B8ADCD585C634730ACB8F02 /* ReActionSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReActionSDK-prefix.pch"; sourceTree = "<group>"; };
+		A7C21AE76291F851E87FC11C20844332 /* ISUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISUtils.h; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISUtils.h"; sourceTree = "<group>"; };
+		A886CA31157C417D632B5FAAC7C0FF8C /* ISDatabaseAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISDatabaseAdapter.h; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISDatabaseAdapter.h"; sourceTree = "<group>"; };
+		A8B72C8AA23118234D0A80BC5D8953C8 /* CloudMessaging-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CloudMessaging-Module.h"; path = "Headers/ModuleHeaders/CloudMessaging-Module.h"; sourceTree = "<group>"; };
 		AB142434905C70F5F477E8274915CFD6 /* Pods-ReactionSDKExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ReactionSDKExample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		ABDC92109E060D9B44DAB34EC3119743 /* GGLContext+CloudMessaging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GGLContext+CloudMessaging.h"; path = "reaction_sdk/ReactionSDK/ReactionSDK/gcm/GGLContext+CloudMessaging.h"; sourceTree = "<group>"; };
-		AC5F663D13B7CCC88C0A5AF9AD2B7DB3 /* ISRConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISRConfig.m; path = reaction_sdk/ReactionSDK/ReactionSDK/helper/ISRConfig.m; sourceTree = "<group>"; };
-		AD865313CB69BD92D310D4A690B4E87E /* GoogleCloudMessaging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GoogleCloudMessaging.h; path = Headers/Public/GoogleCloudMessaging.h; sourceTree = "<group>"; };
-		AFAC357EB19D357C337CAABADD9251DC /* ISUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISUtils.m; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISUtils.m"; sourceTree = "<group>"; };
-		B4620B25388BF608A319917CDC0C4893 /* sqlite3.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = sqlite3.modulemap; sourceTree = "<group>"; };
-		B64584DBC92574A86B9915AFD876BE1D /* ISRMessageHandlerFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISRMessageHandlerFactory.h; path = reaction_sdk/ReactionSDK/ReactionSDK/message/ISRMessageHandlerFactory.h; sourceTree = "<group>"; };
+		AC954A674C5FFB1E89C136AF77AB2793 /* ISRHtmlView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISRHtmlView.h; path = "reaction_sdk/objective-c/ReActionSDK/ReActionSDK/view/ISRHtmlView.h"; sourceTree = "<group>"; };
+		AD66CCA78F6EF703EB685A62BF6D035A /* libGGLCore.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGGLCore.a; path = Libraries/libGGLCore.a; sourceTree = "<group>"; };
+		ADF619C68680B21B986ABDB0E6AEBE4F /* GGLInstanceIDHeaders.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLInstanceIDHeaders.h; path = Headers/Public/GGLInstanceIDHeaders.h; sourceTree = "<group>"; };
+		AEC329480DB876C6F0C0CE0B0E6198F2 /* ReActionSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReActionSDK-umbrella.h"; sourceTree = "<group>"; };
+		AF307F08A2C50E4743C26B3E5BFE0186 /* libGcmLib.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGcmLib.a; path = Libraries/libGcmLib.a; sourceTree = "<group>"; };
+		B47D82C0E5426BF0CD9A5B07718C4FD3 /* ISRUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISRUtils.m; path = "reaction_sdk/objective-c/ReActionSDK/ReActionSDK/helper/ISRUtils.m"; sourceTree = "<group>"; };
+		B5D907204084F7BE850B84DAD5B8EEA6 /* GoogleCloudMessaging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GoogleCloudMessaging.h; path = Headers/Public/GoogleCloudMessaging.h; sourceTree = "<group>"; };
+		B73B5611B902ABB6F2E7E74E9B0CE23B /* GGLConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLConfiguration.h; path = Headers/GGLCore/Public/GGLConfiguration.h; sourceTree = "<group>"; };
 		B7F83A8F02C6E937CC02099B784299BE /* sqlite3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = sqlite3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB6796F4062125916BA3D86DEE1A3FF8 /* GCMConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCMConfig.h; path = Headers/Public/GCMConfig.h; sourceTree = "<group>"; };
-		BCB5ADD44FF7B6073F621AEE16C7CD24 /* ISAtomTracker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISAtomTracker.m; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISAtomTracker.m"; sourceTree = "<group>"; };
-		C0F147DFD6F818DE38090E5A25693259 /* CloudMessaging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CloudMessaging.h; path = Headers/GGLCloudMessaging/Public/CloudMessaging.h; sourceTree = "<group>"; };
-		C270A5D131EE751C40980F81C83F0E97 /* ISRNotificationHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISRNotificationHandler.m; path = reaction_sdk/ReactionSDK/ReactionSDK/message/ISRNotificationHandler.m; sourceTree = "<group>"; };
-		C68533E357ECAC189BACEE0BADF76BE1 /* ISRHttpHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISRHttpHandler.h; path = reaction_sdk/ReactionSDK/ReactionSDK/message/ISRHttpHandler.h; sourceTree = "<group>"; };
-		C6CF9F4E0A689E2DC9BAF92EB805A996 /* AtomSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AtomSDK-umbrella.h"; sourceTree = "<group>"; };
-		CEF83A3AE30E2F70101957F534C80DBA /* AdMob-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AdMob-Module.h"; path = "Headers/ModuleHeaders/AdMob-Module.h"; sourceTree = "<group>"; };
+		BAEC39B1AEE453FB2D0CF56DCD9D81E6 /* GGLInstanceIDConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLInstanceIDConfig.h; path = Headers/Public/GGLInstanceIDConfig.h; sourceTree = "<group>"; };
+		C348DFA6F4C9AC888EC309F8908D3AF2 /* GGLContext+CloudMessaging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GGLContext+CloudMessaging.h"; path = "Headers/GGLCloudMessaging/Public/GGLContext+CloudMessaging.h"; sourceTree = "<group>"; };
+		CA06C53DF5BAC2038C2D503A0A0E9060 /* AtomSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AtomSDK-dummy.m"; sourceTree = "<group>"; };
+		CE33480CB722975AB22328E0C0DE9670 /* GGLInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLInstanceID.h; path = Headers/Public/GGLInstanceID.h; sourceTree = "<group>"; };
+		CECE336BA252A6B4A1EECB3FD946D055 /* GGLErrorCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLErrorCode.h; path = Headers/GGLCore/Public/GGLErrorCode.h; sourceTree = "<group>"; };
+		D03F83C646D467945C70613535C9B329 /* GoogleIPhoneUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleIPhoneUtilities.framework; path = Frameworks/GoogleIPhoneUtilities.framework; sourceTree = "<group>"; };
 		D19A9F36C2F84F385F43878001BDCB2A /* ReActionSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ReActionSDK.framework; path = ReActionSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2474FDB4FFB183C7D8394634103526C /* ISReaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISReaction.h; path = reaction_sdk/ReactionSDK/ReactionSDK/ISReaction.h; sourceTree = "<group>"; };
-		D299E22A2210BF55A8D55CC9CBEFBA80 /* AtomSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AtomSDK-prefix.pch"; sourceTree = "<group>"; };
+		D28046A34B0AF1EE2161957233F820E1 /* AtomSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AtomSDK-prefix.pch"; sourceTree = "<group>"; };
 		D356689AB09EE2D2F812E1549359B92E /* Pods-ReactionSDKExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ReactionSDKExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		D64D07B061C0B210872D6B67C87F1026 /* ISAtom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISAtom.h; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISAtom.h"; sourceTree = "<group>"; };
 		D84F808109FB8EFBC39ED8B8649A9400 /* Pods-ReactionSDKExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReactionSDKExample-resources.sh"; sourceTree = "<group>"; };
-		D8814076A1C98A210F4121B3777F0D00 /* ISRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISRequest.h; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISRequest.h"; sourceTree = "<group>"; };
-		D8D8C757576FFE668E03CCAE51D99E3B /* Core.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Core.h; path = Headers/GGLCore/Public/Core.h; sourceTree = "<group>"; };
 		D9A017108FC245B39202C0B9249D6E83 /* Pods-ReactionSDKExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ReactionSDKExample-dummy.m"; sourceTree = "<group>"; };
-		D9F360BF1C3BEFD6FFC810BEFF593C7A /* ISRResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISRResponse.h; path = reaction_sdk/ReactionSDK/ReactionSDK/http/ISRResponse.h; sourceTree = "<group>"; };
-		DD5D0CFE8575C58A92EE28BCC2028214 /* GGLInstanceIDDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLInstanceIDDelegate.h; path = reaction_sdk/ReactionSDK/ReactionSDK/gcm/GGLInstanceIDDelegate.h; sourceTree = "<group>"; };
+		DE40514A25B4B8EAF7699F36137B1D95 /* ISAtomTracker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISAtomTracker.m; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISAtomTracker.m"; sourceTree = "<group>"; };
 		DEF37E354F6BB087A5275C660357DC5B /* Pods-ReactionSDKExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ReactionSDKExample.modulemap"; sourceTree = "<group>"; };
-		E068C0A173E45C72F9CBD8D47EC3C028 /* ISRLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISRLogger.h; path = reaction_sdk/ReactionSDK/ReactionSDK/helper/ISRLogger.h; sourceTree = "<group>"; };
-		E0C918F1BE2FC6070B0229F6049D75A2 /* AtomSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AtomSDK.h; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/AtomSDK.h"; sourceTree = "<group>"; };
-		E1B9F425AA6CDAB7C5EB1C0BA4C82216 /* ISReaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISReaction.m; path = reaction_sdk/ReactionSDK/ReactionSDK/ISReaction.m; sourceTree = "<group>"; };
+		DF079345932EBA17A71AFD6E24E4DC9E /* sqlite3.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = sqlite3.modulemap; sourceTree = "<group>"; };
+		DF34BE7DDBFDFC7340D958C8EFAC9EE6 /* ISRHttpHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISRHttpHandler.h; path = "reaction_sdk/objective-c/ReActionSDK/ReActionSDK/message/ISRHttpHandler.h"; sourceTree = "<group>"; };
+		E102DD038C669EE3392021DDCED05DA8 /* AtomSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AtomSDK.modulemap; sourceTree = "<group>"; };
+		E3CE36AA05E09A65712A531E19DEF056 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		E3CE81E6096B642BD6D6923C5C64FCAC /* ISResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISResponse.m; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISResponse.m"; sourceTree = "<group>"; };
 		E499807AEF66637F8F8A6BA31F640BA9 /* Pods-ReactionSDKExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReactionSDKExample-frameworks.sh"; sourceTree = "<group>"; };
-		E4CD95BE1CBEBE3C667DC757A3846E49 /* ReActionSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReActionSDK-dummy.m"; sourceTree = "<group>"; };
-		E734CECCAC2947609211E1950CC38318 /* GCMService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCMService.h; path = Headers/Public/GCMService.h; sourceTree = "<group>"; };
-		E73FF1554E3A2815730ACD931F902550 /* GGLInstanceIDDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLInstanceIDDelegate.h; path = Headers/Public/GGLInstanceIDDelegate.h; sourceTree = "<group>"; };
-		E9243DDC93B1F9848A62BDEC0E49AAB2 /* ISStreamData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISStreamData.m; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISStreamData.m"; sourceTree = "<group>"; };
-		E9E5CF762D472F96729494B6798B116F /* ISUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISUtils.h; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISUtils.h"; sourceTree = "<group>"; };
+		E786B881042C7DEBBE800F79D135C954 /* ISSQLiteHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISSQLiteHandler.m; path = "atom-sdk/objective-c/AtomSDK/AtomSDK/ISSQLiteHandler.m"; sourceTree = "<group>"; };
+		E82F3B047D2356C13A8A889E3C26C5BD /* ISRNotificationHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISRNotificationHandler.m; path = "reaction_sdk/objective-c/ReActionSDK/ReActionSDK/message/ISRNotificationHandler.m"; sourceTree = "<group>"; };
+		E96356051BFF37A97D430746A5ED2D86 /* ISRRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISRRequest.m; path = "reaction_sdk/objective-c/ReActionSDK/ReActionSDK/http/ISRRequest.m"; sourceTree = "<group>"; };
 		EA8EE1F62A726121D73FDE510616CBE6 /* Pods_ReactionSDKExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ReactionSDKExample.framework; path = "Pods-ReactionSDKExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F1C01B70CC17B305A1431BF6FC56F5B9 /* AtomSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AtomSDK-dummy.m"; sourceTree = "<group>"; };
-		F2C41BC4FB8C66A11EE8F5642069E59F /* ISRUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISRUtils.h; path = reaction_sdk/ReactionSDK/ReactionSDK/helper/ISRUtils.h; sourceTree = "<group>"; };
-		F3786A91DC4E8366A2FAD6497A5F78A3 /* ReactionSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReactionSDK.h; path = reaction_sdk/ReactionSDK/ReactionSDK/ReactionSDK.h; sourceTree = "<group>"; };
-		F43B5855DF0E26145A801CFA7649ED04 /* GGLInstanceIDHeaders.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLInstanceIDHeaders.h; path = Headers/Public/GGLInstanceIDHeaders.h; sourceTree = "<group>"; };
-		F75945BBFB4AA5F4188A4EA9A21F7A67 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
-		F8A8CB42356176C0C1E03312329922BE /* AppInvite-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AppInvite-Module.h"; path = "Headers/ModuleHeaders/AppInvite-Module.h"; sourceTree = "<group>"; };
+		EC6732D9AFBB993B4F01D468B8D6682A /* ISRLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISRLogger.h; path = "reaction_sdk/objective-c/ReActionSDK/ReActionSDK/helper/ISRLogger.h"; sourceTree = "<group>"; };
+		ED915BD7883ED9E372E3953CABA00B45 /* ISRMessageHandlerFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISRMessageHandlerFactory.m; path = "reaction_sdk/objective-c/ReActionSDK/ReActionSDK/message/ISRMessageHandlerFactory.m"; sourceTree = "<group>"; };
+		F1B5896C7CBCF4434A3DF297CCFA2CAE /* ReActionSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReActionSDK.xcconfig; sourceTree = "<group>"; };
+		F23C88240D73BF5630E04A76B7BE7763 /* sqlite3-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "sqlite3-umbrella.h"; sourceTree = "<group>"; };
+		F5D1FCF6F4EA3D1B0F8D22808F1D0983 /* sqlite3-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "sqlite3-dummy.m"; sourceTree = "<group>"; };
+		F92E96D5F75ADFEB50DA38BA43BCB083 /* ISRConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISRConfig.m; path = "reaction_sdk/objective-c/ReActionSDK/ReActionSDK/helper/ISRConfig.m"; sourceTree = "<group>"; };
 		FB5013C69A59C513B2EB1C1224EFAA85 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		FF93C20FCFFA9E7FD1B54142A453D94A /* ReActionSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ReActionSDK.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -312,20 +282,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0DDA2497846ABDECA74F215227077E7E /* Core */ = {
+		01626F9247ACB3C49C306C061E927117 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				54C9DD4BFED233CDF03EAD407ABBB3BD /* Info.plist */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		151CD9E2E07D36D65CFE0FCFE9CE1087 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				75826124F4515E24DB89531040326E48 /* GoogleUtilities.framework */,
+				1084D90AE20BBE60303F458D3EB04629 /* GoogleSymbolUtilities.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		065AA6CD0BEB9DC2429F6A605DB0EF3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD66CCA78F6EF703EB685A62BF6D035A /* libGGLCore.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		20DC39BCA62BC949CFC020D196C8EDE4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6007790F92F2E56061E5C648AC21F15F /* Info.plist */,
+				DF079345932EBA17A71AFD6E24E4DC9E /* sqlite3.modulemap */,
+				536AB327446C0DCF7427343228E48732 /* sqlite3.xcconfig */,
+				F5D1FCF6F4EA3D1B0F8D22808F1D0983 /* sqlite3-dummy.m */,
+				1D7099512117F3FD55298194DFB9C34A /* sqlite3-prefix.pch */,
+				F23C88240D73BF5630E04A76B7BE7763 /* sqlite3-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/sqlite3";
+			sourceTree = "<group>";
+		};
+		2152E091031D70634218F37FB83A2F46 /* CloudMessaging */ = {
+			isa = PBXGroup;
+			children = (
+				191CAA7D28E104A1BEC56826FC8FACD8 /* CloudMessaging.h */,
+				C348DFA6F4C9AC888EC309F8908D3AF2 /* GGLContext+CloudMessaging.h */,
+				B03595F4568F46C4B02F7DE25FE946E1 /* Frameworks */,
+			);
+			name = CloudMessaging;
 			sourceTree = "<group>";
 		};
 		265D8FB580571B4A08715567C1CF588C /* Frameworks */ = {
@@ -346,26 +340,49 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		27A11370E88D61987D17A014B866AA23 /* Frameworks */ = {
+		2957446EC664A10B80D66175F2A464A6 /* GGLInstanceID */ = {
 			isa = PBXGroup;
 			children = (
-				519BF267A84096C7E697B162C5F98E94 /* libGGLCloudMessaging.a */,
+				CE33480CB722975AB22328E0C0DE9670 /* GGLInstanceID.h */,
+				BAEC39B1AEE453FB2D0CF56DCD9D81E6 /* GGLInstanceIDConfig.h */,
+				0CBBB26F081C3E3D05742CB1606DCE38 /* GGLInstanceIDDelegate.h */,
+				ADF619C68680B21B986ABDB0E6AEBE4F /* GGLInstanceIDHeaders.h */,
+				4F2718760DA1A0AE3F8EEF2A755CBBF8 /* Frameworks */,
 			);
-			name = Frameworks;
+			name = GGLInstanceID;
+			path = GGLInstanceID;
 			sourceTree = "<group>";
 		};
-		2EFDD2E9F0A586BC6733E7AFFC058212 /* Support Files */ = {
+		2A853C9B76E3A4EA74251A53A5BC1918 /* GoogleCloudMessaging */ = {
 			isa = PBXGroup;
 			children = (
-				9E3B465B44FFAF7FBBAA424BCDA8728F /* Info.plist */,
-				B4620B25388BF608A319917CDC0C4893 /* sqlite3.modulemap */,
-				9F1781B7DD092C047541F68ACE7214D6 /* sqlite3.xcconfig */,
-				118769D6BDB0B3D096D7DE4606A407AA /* sqlite3-dummy.m */,
-				59336E193F92EC8CA3D6E98426156284 /* sqlite3-prefix.pch */,
-				1FC44283A1E3E1F7B1BC005DBAA06307 /* sqlite3-umbrella.h */,
+				55730C69A3265B8BC2E45BB772292536 /* GCMConfig.h */,
+				275A1A72D4D9BE67707E536279683D45 /* GCMPubSub.h */,
+				2C5F3F5092AF819D6E52B86A4FCA82BD /* GCMReceiverDelegate.h */,
+				8F15E5F8A27A55429DF15E543FDBC5C0 /* GCMService.h */,
+				B5D907204084F7BE850B84DAD5B8EEA6 /* GoogleCloudMessaging.h */,
+				75155ECAC4273B23D3ADFC841A3DFD12 /* Frameworks */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/sqlite3";
+			name = GoogleCloudMessaging;
+			path = GoogleCloudMessaging;
+			sourceTree = "<group>";
+		};
+		2AD736A4385E285548DCF4712F8278C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E76A48F0F2DDAA6B35AC227E9D04B91D /* AtomSDK */,
+				2957446EC664A10B80D66175F2A464A6 /* GGLInstanceID */,
+				64240BB48E1FD81D9DADF853756E02D5 /* Google */,
+				2A853C9B76E3A4EA74251A53A5BC1918 /* GoogleCloudMessaging */,
+				F3F6D9CB3B2AAEB97D175524C420FD32 /* GoogleInterchangeUtilities */,
+				DB51A66603B275B554EF6BB645AFB189 /* GoogleIPhoneUtilities */,
+				E82D83E1E70CD6DDAD5623D6249338FC /* GoogleNetworkingUtilities */,
+				713604C2C712E042B1A8ECA9D95AFD04 /* GoogleSymbolUtilities */,
+				44463794F6126E562D6176864379BD97 /* GoogleUtilities */,
+				A78884545C829439C9D0E06A88010D08 /* ReActionSDK */,
+				E5168E77A55DA87F915CECCA909BFF39 /* sqlite3 */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		39D8D410E7481F0B7E96E6493F5925D3 /* Products */ = {
@@ -379,24 +396,43 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		41F53043EE7CD05D764A828D364CC3FB /* common */ = {
+		3FCC00AE7494E70D911676DD17343A34 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2EB9045218525F679F7147E37352B4DD /* sqlite3.c */,
-				71C8F78BBB2F5CCC3A85E0A46BCB63E3 /* sqlite3.h */,
-				A87BEC79126DDC34D6F1D9E289DF0D08 /* sqlite3ext.h */,
+				E102DD038C669EE3392021DDCED05DA8 /* AtomSDK.modulemap */,
+				3B6CF2F80EBB55C3964EF98A9BDD4258 /* AtomSDK.xcconfig */,
+				CA06C53DF5BAC2038C2D503A0A0E9060 /* AtomSDK-dummy.m */,
+				D28046A34B0AF1EE2161957233F820E1 /* AtomSDK-prefix.pch */,
+				423DE78E4AD50F28EBE4B6952AB2DE93 /* AtomSDK-umbrella.h */,
+				2875BD8B9F6BA42EED8899E896FC1128 /* Info.plist */,
 			);
-			name = common;
+			name = "Support Files";
+			path = "../Target Support Files/AtomSDK";
 			sourceTree = "<group>";
 		};
-		42BA7AC962B9FF9B50E2D7434C7E8EB5 /* sqlite3 */ = {
+		44463794F6126E562D6176864379BD97 /* GoogleUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				41F53043EE7CD05D764A828D364CC3FB /* common */,
-				2EFDD2E9F0A586BC6733E7AFFC058212 /* Support Files */,
+				65739889025E887E2F53071616ADDEAB /* Frameworks */,
 			);
-			name = sqlite3;
-			path = sqlite3;
+			name = GoogleUtilities;
+			path = GoogleUtilities;
+			sourceTree = "<group>";
+		};
+		4C20DAAFA319869313FD8A383F4171EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				923F050E23B7DFC6CE5C9A29B76617AE /* GoogleNetworkingUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F2718760DA1A0AE3F8EEF2A755CBBF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				045759BE67505F5AD8C37412A5CDEB10 /* libGGLInstanceIDLib.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		5683BEF48300C3946AF6DFDA6510E6EA /* Targets Support Files */ = {
@@ -407,109 +443,61 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		5B679FBA85DFD1CB57BEC584D0BC47F9 /* ReActionSDK */ = {
+		6129A601C0483A94B08F5042E3A8F659 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9621A9B77CEF641C3980A7F9DB83BEF6 /* Core.h */,
-				890AF50DD4800F7B3DC0539905F9EE82 /* GCMConfig.h */,
-				7A689F18367E24487356D7F7D5E3D0FF /* GCMPubSub.h */,
-				7E0C4E471C3A9EE16661AAA1FBB492A2 /* GCMReceiverDelegate.h */,
-				179F014B23E45B943FA5B392065D6668 /* GCMService.h */,
-				0C4E80D4542F534BA7E820A5AC94CF50 /* GGLConfiguration.h */,
-				98B97FDBD277FA40C734D8684325FCB5 /* GGLContext.h */,
-				ABDC92109E060D9B44DAB34EC3119743 /* GGLContext+CloudMessaging.h */,
-				49BCADD5F5D11CD9BA0482AA8C09D02B /* GGLErrorCode.h */,
-				59A499B20C553630D742A4F4DA611C68 /* GGLInstanceID.h */,
-				0E2A139114477F9E2EFAB786144AD8E5 /* GGLInstanceIDConfig.h */,
-				DD5D0CFE8575C58A92EE28BCC2028214 /* GGLInstanceIDDelegate.h */,
-				0CE7A87D4297A646F1805E98633E0D2E /* GGLInstanceIDHeaders.h */,
-				6F7FEF253DBB50A2E8D20AB7817F34B7 /* GMRConfiguration.h */,
-				3E1D1E4E7170EBF17A14E49661FDEFF4 /* ISRAtomController.h */,
-				149ADB6B127CA8A9A8A465975FCC54C1 /* ISRAtomController.m */,
-				1E3D7341A893B60011AD578703E8C586 /* ISRConfig.h */,
-				AC5F663D13B7CCC88C0A5AF9AD2B7DB3 /* ISRConfig.m */,
-				D2474FDB4FFB183C7D8394634103526C /* ISReaction.h */,
-				E1B9F425AA6CDAB7C5EB1C0BA4C82216 /* ISReaction.m */,
-				2E20B4BF44A8AFB1F64D9DF69293E7B8 /* ISReactionApp.h */,
-				A619612644F71C0ACDBC99B261CF6028 /* ISReactionApp.m */,
-				90360312B92213DC7A7855EFC12526C7 /* ISRHtmlView.h */,
-				56D77E06541BF80D116E7DB446408588 /* ISRHtmlView.m */,
-				C68533E357ECAC189BACEE0BADF76BE1 /* ISRHttpHandler.h */,
-				A740002752D29439BD226BC159BCF7B5 /* ISRHttpHandler.m */,
-				E068C0A173E45C72F9CBD8D47EC3C028 /* ISRLogger.h */,
-				0BB46BE57361837C7007C139249922D2 /* ISRLogger.m */,
-				166EEC857C1CF4A6875AC608436B3291 /* ISRMessageHandler.h */,
-				B64584DBC92574A86B9915AFD876BE1D /* ISRMessageHandlerFactory.h */,
-				00161CBCFA5A9181A9A55DF7E76E917E /* ISRMessageHandlerFactory.m */,
-				26AF752FF4A8AF8730B2974E5B1908BF /* ISRNotificationHandler.h */,
-				C270A5D131EE751C40980F81C83F0E97 /* ISRNotificationHandler.m */,
-				20E15838DADCAAF08079524CF53D1393 /* ISRRequest.h */,
-				9C65805E7BBFCF47DBE307D029024A2E /* ISRRequest.m */,
-				D9F360BF1C3BEFD6FFC810BEFF593C7A /* ISRResponse.h */,
-				0080E994B52AD6C5E6089622D63B3101 /* ISRResponse.m */,
-				3E8E9A238FB92D873F794CE586480EE0 /* ISRUrlHandler.h */,
-				3338ABE70766C6FEF045711FE78582A0 /* ISRUrlHandler.m */,
-				F2C41BC4FB8C66A11EE8F5642069E59F /* ISRUtils.h */,
-				05932F6398322B7F78E1075A4FCACFD3 /* ISRUtils.m */,
-				086102A8B10564450317F0DE9C7DAC7C /* ISRWebInterface.h */,
-				9558E4031EAB66D78EDCB4E431566FF3 /* ISRWebInterface.m */,
-				F3786A91DC4E8366A2FAD6497A5F78A3 /* ReactionSDK.h */,
-				0DDA2497846ABDECA74F215227077E7E /* Core */,
-				9ECF7E731BFD6CD455D13357B2BC1088 /* Support Files */,
-			);
-			name = ReActionSDK;
-			path = ReActionSDK;
-			sourceTree = "<group>";
-		};
-		5FE8D63F787ADE10A3AF28523D43442C /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				CEF83A3AE30E2F70101957F534C80DBA /* AdMob-Module.h */,
-				80DD2A26762C41D0B67854C2FAC10046 /* Analytics-Module.h */,
-				F8A8CB42356176C0C1E03312329922BE /* AppInvite-Module.h */,
-				1F3353C93D84A477847234829D4AFDB4 /* CloudMessaging-Module.h */,
-				D8D8C757576FFE668E03CCAE51D99E3B /* Core.h */,
-				2AF9C1A93B38DACEA7BC0A6E085E9E7A /* Core-Module.h */,
-				0AEE996251C9F561B01FD461879F7412 /* GGLConfiguration.h */,
-				1B4D4A7C74C49CD0CAB74DE195A0D344 /* GGLContext.h */,
-				7112F804E379E3F51A17394287496DF5 /* GGLErrorCode.h */,
-				75D302FB5904074484BC07CA15F30112 /* GMRConfiguration.h */,
-				A4DE08454DDDE4D64EA1042E141AF532 /* SignIn-Module.h */,
-				DC849985FEA2596F1D38606FF978D004 /* Frameworks */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		6677DF406C3A6636B14C8E2B89ABDF73 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8B7C866EB6844B550BC1CF5206011408 /* AtomSDK.modulemap */,
-				A72F7A322769878C9094248149A127DF /* AtomSDK.xcconfig */,
-				F1C01B70CC17B305A1431BF6FC56F5B9 /* AtomSDK-dummy.m */,
-				D299E22A2210BF55A8D55CC9CBEFBA80 /* AtomSDK-prefix.pch */,
-				C6CF9F4E0A689E2DC9BAF92EB805A996 /* AtomSDK-umbrella.h */,
-				98AA0EC544302E15BB5E3C9E188E3FD5 /* Info.plist */,
+				16D18EFB423599DE5CED68A298BDF9D1 /* Info.plist */,
+				32D46C93D85A1B8FD5F188055CD33BF5 /* ReActionSDK.modulemap */,
+				F1B5896C7CBCF4434A3DF297CCFA2CAE /* ReActionSDK.xcconfig */,
+				5FCB8CEA566A1FFB433152291AD0A593 /* ReActionSDK-dummy.m */,
+				A6C5A7280B8ADCD585C634730ACB8F02 /* ReActionSDK-prefix.pch */,
+				AEC329480DB876C6F0C0CE0B0E6198F2 /* ReActionSDK-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/AtomSDK";
+			path = "../Target Support Files/ReActionSDK";
 			sourceTree = "<group>";
 		};
-		674C4281CF2A4AD90680BDAB9CD377C4 /* GoogleNetworkingUtilities */ = {
+		64240BB48E1FD81D9DADF853756E02D5 /* Google */ = {
 			isa = PBXGroup;
 			children = (
-				C3C6EBDF1FABDE404D406A2B86C5FEA4 /* Frameworks */,
+				2152E091031D70634218F37FB83A2F46 /* CloudMessaging */,
+				D6E3289E25F354CCA402D2E9E73F1724 /* Core */,
 			);
-			name = GoogleNetworkingUtilities;
-			path = GoogleNetworkingUtilities;
+			name = Google;
+			path = Google;
 			sourceTree = "<group>";
 		};
-		6991350EC97F69A60F3C6124ABC0CEFD /* GoogleUtilities */ = {
+		65739889025E887E2F53071616ADDEAB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				151CD9E2E07D36D65CFE0FCFE9CE1087 /* Frameworks */,
+				05A5F92FC1CBA2FD9ACE49CE29DBFEAB /* GoogleUtilities.framework */,
 			);
-			name = GoogleUtilities;
-			path = GoogleUtilities;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E0C73101EB51BCE647ECD71DA9C3A9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3CE36AA05E09A65712A531E19DEF056 /* GoogleInterchangeUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		713604C2C712E042B1A8ECA9D95AFD04 /* GoogleSymbolUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				01626F9247ACB3C49C306C061E927117 /* Frameworks */,
+			);
+			name = GoogleSymbolUtilities;
+			path = GoogleSymbolUtilities;
+			sourceTree = "<group>";
+		};
+		75155ECAC4273B23D3ADFC841A3DFD12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF307F08A2C50E4743C26B3E5BFE0186 /* libGcmLib.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -517,143 +505,93 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				265D8FB580571B4A08715567C1CF588C /* Frameworks */,
-				BE561A4FF6B3E7DC94FC2EA7C90E55B2 /* Pods */,
+				2AD736A4385E285548DCF4712F8278C3 /* Pods */,
 				39D8D410E7481F0B7E96E6493F5925D3 /* Products */,
 				5683BEF48300C3946AF6DFDA6510E6EA /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		820C6668265EA6E3401CFD7FB26D4417 /* GoogleInterchangeUtilities */ = {
+		A78884545C829439C9D0E06A88010D08 /* ReActionSDK */ = {
 			isa = PBXGroup;
 			children = (
-				D524ADF92005D36B44A376EC82F9F5AE /* Frameworks */,
+				278B5B101FE7011A9FFF34199254C54C /* ISRAtomController.h */,
+				597F50DC373874446FE28795B0CF8056 /* ISRAtomController.m */,
+				5446EE040609EE1EB08396312EBF88C8 /* ISRConfig.h */,
+				F92E96D5F75ADFEB50DA38BA43BCB083 /* ISRConfig.m */,
+				9C7443457F4CB87EF6C256D2B3BD9F4B /* ISReaction.h */,
+				88BC262BD7972BEFBDC7A5C694C97BFB /* ISReaction.m */,
+				648B8EBE726E86A58854A3CBC331BC30 /* ISReactionApp.h */,
+				2E9826C8B88313FFAB20BA17BB2C2770 /* ISReactionApp.m */,
+				AC954A674C5FFB1E89C136AF77AB2793 /* ISRHtmlView.h */,
+				78D2326053499DC6C8E31938F90D5936 /* ISRHtmlView.m */,
+				DF34BE7DDBFDFC7340D958C8EFAC9EE6 /* ISRHttpHandler.h */,
+				41031D79256DC8DBB871FD360E55FCBC /* ISRHttpHandler.m */,
+				EC6732D9AFBB993B4F01D468B8D6682A /* ISRLogger.h */,
+				785BCEB366B720473D701FF4B10CB8EF /* ISRLogger.m */,
+				6EB7DCBE43D83FAF467DA51C06FAF053 /* ISRMessageHandler.h */,
+				93466808BB6C250BB6AFC1B977169586 /* ISRMessageHandlerFactory.h */,
+				ED915BD7883ED9E372E3953CABA00B45 /* ISRMessageHandlerFactory.m */,
+				3CC63FB58A43655D87C9D781DA249321 /* ISRNotificationHandler.h */,
+				E82F3B047D2356C13A8A889E3C26C5BD /* ISRNotificationHandler.m */,
+				12403EDD5E27092EFCA50848298105C0 /* ISRRequest.h */,
+				E96356051BFF37A97D430746A5ED2D86 /* ISRRequest.m */,
+				0C9CD2C5887873596DD81170690ED642 /* ISRResponse.h */,
+				0A9356671AB6889B7A02ECE168E071F5 /* ISRResponse.m */,
+				9B1432F9154B5F0A1E3FF82DA5395ED0 /* ISRUrlHandler.h */,
+				7FA351B57AD1A804B1C275C6A049B4AC /* ISRUrlHandler.m */,
+				72833952080D401DD35C3D5C119E8748 /* ISRUtils.h */,
+				B47D82C0E5426BF0CD9A5B07718C4FD3 /* ISRUtils.m */,
+				74772AD74E6C8F9EFD8C033C326B31ED /* ISRWebInterface.h */,
+				3B897ED4814ED007C185079F9F80B69A /* ISRWebInterface.m */,
+				5CAA7B6B1F165D2D36A3FF8CFF320E45 /* ReActionSDK.h */,
+				6129A601C0483A94B08F5042E3A8F659 /* Support Files */,
 			);
-			name = GoogleInterchangeUtilities;
-			path = GoogleInterchangeUtilities;
+			name = ReActionSDK;
+			path = ReActionSDK;
 			sourceTree = "<group>";
 		};
-		8DFE01960C0A72102B6C9CD84623C4CF /* Frameworks */ = {
+		B03595F4568F46C4B02F7DE25FE946E1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1595612E71D6A8B8FD54ADA589D0FBD5 /* GoogleIPhoneUtilities.framework */,
+				318A0D87520E1A7E9855CFDBB3B9C0F9 /* libGGLCloudMessaging.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8E3592084266F9E9479D066A16B5BD9B /* AtomSDK */ = {
+		B9F43E3C1E0EC18447093298D0A27F3F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E0C918F1BE2FC6070B0229F6049D75A2 /* AtomSDK.h */,
-				53938CD8B51C55A7DA350F0FF79725A7 /* ISAtom.h */,
-				48016AC565CA61890DCE758887E84FAA /* ISAtom.m */,
-				4938547FDC8C783D3D70B354741529E6 /* ISAtomTracker.h */,
-				BCB5ADD44FF7B6073F621AEE16C7CD24 /* ISAtomTracker.m */,
-				5A26F1AB8EF4D5ED4B7A7DA32D48F63B /* ISBatch.h */,
-				4369A3134B2C033D78732B0B9ED36EA3 /* ISBatch.m */,
-				8E799762B8DB4226A94DB741FFDA491D /* ISDatabaseAdapter.h */,
-				99982454FA222C2219D9044AF798BEBD /* ISDatabaseAdapter.m */,
-				D8814076A1C98A210F4121B3777F0D00 /* ISRequest.h */,
-				8BFCBF0160AD9CCC75FC34D7210154C9 /* ISRequest.m */,
-				0692215BFF2EF1D91613AEB02432CA00 /* ISResponse.h */,
-				2FE1AEA888241C8DED2F0F7ACE614937 /* ISResponse.m */,
-				5E90D87897657B57FFE7937AF79E8BCB /* ISSQLiteHandler.h */,
-				00C85A93D733608F38B1F010E94C3E4B /* ISSQLiteHandler.m */,
-				405614FA4C4BF25EF9BBEFAFB77B4A45 /* ISStreamData.h */,
-				E9243DDC93B1F9848A62BDEC0E49AAB2 /* ISStreamData.m */,
-				E9E5CF762D472F96729494B6798B116F /* ISUtils.h */,
-				AFAC357EB19D357C337CAABADD9251DC /* ISUtils.m */,
-				6677DF406C3A6636B14C8E2B89ABDF73 /* Support Files */,
-			);
-			name = AtomSDK;
-			path = AtomSDK;
-			sourceTree = "<group>";
-		};
-		9271521250D5A96F1A781B17EDA8E4B2 /* GoogleCloudMessaging */ = {
-			isa = PBXGroup;
-			children = (
-				BB6796F4062125916BA3D86DEE1A3FF8 /* GCMConfig.h */,
-				0EBB8ADB028FCA158124A0F8B0F98B94 /* GCMPubSub.h */,
-				8245522991EB4DF6C035C9FB49E7D8EA /* GCMReceiverDelegate.h */,
-				E734CECCAC2947609211E1950CC38318 /* GCMService.h */,
-				AD865313CB69BD92D310D4A690B4E87E /* GoogleCloudMessaging.h */,
-				AFD4B76C705870CE0DFE0FE344B2A56F /* Frameworks */,
-			);
-			name = GoogleCloudMessaging;
-			path = GoogleCloudMessaging;
-			sourceTree = "<group>";
-		};
-		9ECF7E731BFD6CD455D13357B2BC1088 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3555B61E89714EA5162631783689401D /* Info.plist */,
-				FF93C20FCFFA9E7FD1B54142A453D94A /* ReActionSDK.modulemap */,
-				AA665B679993B95F53E3E1CE7D820900 /* ReActionSDK.xcconfig */,
-				E4CD95BE1CBEBE3C667DC757A3846E49 /* ReActionSDK-dummy.m */,
-				61FE850B9F240FE9DDC72C64EE9BDFF3 /* ReActionSDK-prefix.pch */,
-				986CA32984F83203F21656A3697CE0D4 /* ReActionSDK-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/ReActionSDK";
-			sourceTree = "<group>";
-		};
-		A04908FE4F5BAC210A97EE78FF0DA936 /* Google */ = {
-			isa = PBXGroup;
-			children = (
-				FF7E731C07A91645DE27AC34338B933B /* CloudMessaging */,
-				5FE8D63F787ADE10A3AF28523D43442C /* Core */,
-			);
-			name = Google;
-			path = Google;
-			sourceTree = "<group>";
-		};
-		AFD4B76C705870CE0DFE0FE344B2A56F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6DE6B2DFECC4845AC853E166ECC4091F /* libGcmLib.a */,
+				D03F83C646D467945C70613535C9B329 /* GoogleIPhoneUtilities.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BE561A4FF6B3E7DC94FC2EA7C90E55B2 /* Pods */ = {
+		D6E3289E25F354CCA402D2E9E73F1724 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				8E3592084266F9E9479D066A16B5BD9B /* AtomSDK */,
-				F385DFD1E763C077D93F9A59A253A471 /* GGLInstanceID */,
-				A04908FE4F5BAC210A97EE78FF0DA936 /* Google */,
-				9271521250D5A96F1A781B17EDA8E4B2 /* GoogleCloudMessaging */,
-				820C6668265EA6E3401CFD7FB26D4417 /* GoogleInterchangeUtilities */,
-				EC830E517E82AB69DF653D291EF6AA94 /* GoogleIPhoneUtilities */,
-				674C4281CF2A4AD90680BDAB9CD377C4 /* GoogleNetworkingUtilities */,
-				E20C6EB3986D3C76A39CA33848EA6B7B /* GoogleSymbolUtilities */,
-				6991350EC97F69A60F3C6124ABC0CEFD /* GoogleUtilities */,
-				5B679FBA85DFD1CB57BEC584D0BC47F9 /* ReActionSDK */,
-				42BA7AC962B9FF9B50E2D7434C7E8EB5 /* sqlite3 */,
+				3B90CC36570AB9F69D41BEF9C59CB031 /* AdMob-Module.h */,
+				51EE9A9A2BD2F93D57236A6ED0F907B2 /* Analytics-Module.h */,
+				7605D320BEA5E08BFB86D8FD3AA3E82F /* AppInvite-Module.h */,
+				A8B72C8AA23118234D0A80BC5D8953C8 /* CloudMessaging-Module.h */,
+				48568D09F80B832A3AEFCD3F6EDA32A3 /* Core.h */,
+				643CF695B8459EAF0D9FCFB7443591B4 /* Core-Module.h */,
+				B73B5611B902ABB6F2E7E74E9B0CE23B /* GGLConfiguration.h */,
+				30352F38690D1DCDF23E981BF09449F9 /* GGLContext.h */,
+				CECE336BA252A6B4A1EECB3FD946D055 /* GGLErrorCode.h */,
+				4737619929F6D373E542CEC992C087B5 /* GMRConfiguration.h */,
+				3FC325B3ADFBDD7781E9830B192B7A64 /* SignIn-Module.h */,
+				065AA6CD0BEB9DC2429F6A605DB0EF3A /* Frameworks */,
 			);
-			name = Pods;
+			name = Core;
 			sourceTree = "<group>";
 		};
-		C3C6EBDF1FABDE404D406A2B86C5FEA4 /* Frameworks */ = {
+		DB51A66603B275B554EF6BB645AFB189 /* GoogleIPhoneUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				A221DBCCC64CAAEF3A474031F1E98A27 /* GoogleNetworkingUtilities.framework */,
+				B9F43E3C1E0EC18447093298D0A27F3F /* Frameworks */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C8C242774D600AF875A81DCBD3B5C09B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				298F455D967EEBAEFDD6E160C9BB011F /* libGGLInstanceIDLib.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D524ADF92005D36B44A376EC82F9F5AE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F75945BBFB4AA5F4188A4EA9A21F7A67 /* GoogleInterchangeUtilities.framework */,
-			);
-			name = Frameworks;
+			name = GoogleIPhoneUtilities;
+			path = GoogleIPhoneUtilities;
 			sourceTree = "<group>";
 		};
 		DC1F5EDB97E8B1257A970191CC62D002 /* Pods-ReactionSDKExample */ = {
@@ -674,61 +612,70 @@
 			path = "Target Support Files/Pods-ReactionSDKExample";
 			sourceTree = "<group>";
 		};
-		DC849985FEA2596F1D38606FF978D004 /* Frameworks */ = {
+		E3ED9ADA8C56DC7F477F31B9D1FFCBD5 /* common */ = {
 			isa = PBXGroup;
 			children = (
-				8D8902CC3405731C1DA84F48892003D9 /* libGGLCore.a */,
+				4928D8F0189F1D69D4278CD2526BA2AD /* sqlite3.c */,
+				4B0D3FDEBC6B0E9CB802F9008383F115 /* sqlite3.h */,
+				441AB3E31C5341984533F1704C742604 /* sqlite3ext.h */,
 			);
-			name = Frameworks;
+			name = common;
 			sourceTree = "<group>";
 		};
-		DE98812C8247763074737DDF0139AB11 /* Frameworks */ = {
+		E5168E77A55DA87F915CECCA909BFF39 /* sqlite3 */ = {
 			isa = PBXGroup;
 			children = (
-				026577CD162B6B2E774B51531BD5B831 /* GoogleSymbolUtilities.framework */,
+				E3ED9ADA8C56DC7F477F31B9D1FFCBD5 /* common */,
+				20DC39BCA62BC949CFC020D196C8EDE4 /* Support Files */,
 			);
-			name = Frameworks;
+			name = sqlite3;
+			path = sqlite3;
 			sourceTree = "<group>";
 		};
-		E20C6EB3986D3C76A39CA33848EA6B7B /* GoogleSymbolUtilities */ = {
+		E76A48F0F2DDAA6B35AC227E9D04B91D /* AtomSDK */ = {
 			isa = PBXGroup;
 			children = (
-				DE98812C8247763074737DDF0139AB11 /* Frameworks */,
+				743C7ED037E080845B109B0426DB27FF /* AtomSDK.h */,
+				D64D07B061C0B210872D6B67C87F1026 /* ISAtom.h */,
+				A00EDA53AEF03B2436AD2EDA2011C2DC /* ISAtom.m */,
+				94F6BF99327D6D76C8B3CCC581F8868E /* ISAtomTracker.h */,
+				DE40514A25B4B8EAF7699F36137B1D95 /* ISAtomTracker.m */,
+				983C07CC2AADAB7CBEE03842D7E72E24 /* ISBatch.h */,
+				06B39022D600FF3E476E4476A3F9B33E /* ISBatch.m */,
+				A886CA31157C417D632B5FAAC7C0FF8C /* ISDatabaseAdapter.h */,
+				05762C4F9FBB92FDD2D39702096153C5 /* ISDatabaseAdapter.m */,
+				33F516F7D3C4E1F72BD9DF24B343E748 /* ISRequest.h */,
+				2ADAA114B43694337DA0A9BD17B4CAF9 /* ISRequest.m */,
+				2483AC1C9ED0B4E80351E5772942B92C /* ISResponse.h */,
+				E3CE81E6096B642BD6D6923C5C64FCAC /* ISResponse.m */,
+				997102817520DCCC652AB3B410478EE2 /* ISSQLiteHandler.h */,
+				E786B881042C7DEBBE800F79D135C954 /* ISSQLiteHandler.m */,
+				9CD419C2B45E396AD057BE7761555AF0 /* ISStreamData.h */,
+				6CC2F02AE715D2618D7037DC618A89DA /* ISStreamData.m */,
+				A7C21AE76291F851E87FC11C20844332 /* ISUtils.h */,
+				12ED7C749A44B15EB07297C372623075 /* ISUtils.m */,
+				3FCC00AE7494E70D911676DD17343A34 /* Support Files */,
 			);
-			name = GoogleSymbolUtilities;
-			path = GoogleSymbolUtilities;
+			name = AtomSDK;
+			path = AtomSDK;
 			sourceTree = "<group>";
 		};
-		EC830E517E82AB69DF653D291EF6AA94 /* GoogleIPhoneUtilities */ = {
+		E82D83E1E70CD6DDAD5623D6249338FC /* GoogleNetworkingUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				8DFE01960C0A72102B6C9CD84623C4CF /* Frameworks */,
+				4C20DAAFA319869313FD8A383F4171EC /* Frameworks */,
 			);
-			name = GoogleIPhoneUtilities;
-			path = GoogleIPhoneUtilities;
+			name = GoogleNetworkingUtilities;
+			path = GoogleNetworkingUtilities;
 			sourceTree = "<group>";
 		};
-		F385DFD1E763C077D93F9A59A253A471 /* GGLInstanceID */ = {
+		F3F6D9CB3B2AAEB97D175524C420FD32 /* GoogleInterchangeUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				5F65005FC771CD2426828709F7B26C19 /* GGLInstanceID.h */,
-				2CE1772BB74BC70BF29F573E9D298BC5 /* GGLInstanceIDConfig.h */,
-				E73FF1554E3A2815730ACD931F902550 /* GGLInstanceIDDelegate.h */,
-				F43B5855DF0E26145A801CFA7649ED04 /* GGLInstanceIDHeaders.h */,
-				C8C242774D600AF875A81DCBD3B5C09B /* Frameworks */,
+				6E0C73101EB51BCE647ECD71DA9C3A9B /* Frameworks */,
 			);
-			name = GGLInstanceID;
-			path = GGLInstanceID;
-			sourceTree = "<group>";
-		};
-		FF7E731C07A91645DE27AC34338B933B /* CloudMessaging */ = {
-			isa = PBXGroup;
-			children = (
-				C0F147DFD6F818DE38090E5A25693259 /* CloudMessaging.h */,
-				47DACDD6EFEE4426029689EF66D4440D /* GGLContext+CloudMessaging.h */,
-				27A11370E88D61987D17A014B866AA23 /* Frameworks */,
-			);
-			name = CloudMessaging;
+			name = GoogleInterchangeUtilities;
+			path = GoogleInterchangeUtilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -752,41 +699,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		600A749E40D3E473B420720F082924DA /* Headers */ = {
+		445A084E5692933622725F4B8B3A4638 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B852ABCC4394C025B6B036308DCA008 /* Core.h in Headers */,
-				1A57B0D97746B7BBE101ECF087531613 /* GCMConfig.h in Headers */,
-				F9935266010FFFC50917C643E045E607 /* GCMPubSub.h in Headers */,
-				D62CB9331CDB73058AE74DCCFCED83B5 /* GCMReceiverDelegate.h in Headers */,
-				BED707273B0FC1E6ED4AA0377E9C1AAF /* GCMService.h in Headers */,
-				DEFCA54A7A3AB0D94382FB91B3FE16DB /* GGLConfiguration.h in Headers */,
-				998A69941193DB61DE801F82FC018F4F /* GGLContext+CloudMessaging.h in Headers */,
-				1753BF7DE80E121E26440D6D3C82B3B2 /* GGLContext.h in Headers */,
-				8D0824252D5E985D3D8053494AE0D8B5 /* GGLErrorCode.h in Headers */,
-				74154360E75F399395FD7FB43DF13E02 /* GGLInstanceID.h in Headers */,
-				2F7E7EA0280051DC6F0B4613E116F8E8 /* GGLInstanceIDConfig.h in Headers */,
-				DB55E2D6CF7421645523349FCCEC233C /* GGLInstanceIDDelegate.h in Headers */,
-				04B1FCA1CCE95F267DC53C0ED51C863B /* GGLInstanceIDHeaders.h in Headers */,
-				AFA12122A00FD9117B2EF8EC8428F0DE /* GMRConfiguration.h in Headers */,
-				D259DB5090B0914935E76C741D94F7AE /* ISRAtomController.h in Headers */,
-				97E4347AEB2325C5D499738ACE230759 /* ISRConfig.h in Headers */,
-				812E3C01513EA53E8A3FA67479954258 /* ISReaction.h in Headers */,
-				93C04F5CF878AD7AAD89A9DBB48F76AE /* ISReactionApp.h in Headers */,
-				D3842655D1D860F7967E227704B36E26 /* ISRHtmlView.h in Headers */,
-				F184027646A76E49366FBA5D4E3AD599 /* ISRHttpHandler.h in Headers */,
-				83F9291BD75A053728E10585735D1F9E /* ISRLogger.h in Headers */,
-				CD44E40D56EFA0D1D1FBD7EF08BABFF5 /* ISRMessageHandler.h in Headers */,
-				BDC1B1E829C4B9FC3E49C44BCD2EF886 /* ISRMessageHandlerFactory.h in Headers */,
-				5F4A1081D867E75BEC7D0B159DAB3C3B /* ISRNotificationHandler.h in Headers */,
-				BD4CDB36E8EF00C08EFB04494546FFAC /* ISRRequest.h in Headers */,
-				AC443EFB1FA378060D1E2637230D3EBD /* ISRResponse.h in Headers */,
-				BAED5BDCFCF793892E8C48AD38203A36 /* ISRUrlHandler.h in Headers */,
-				A6DCCF2EA04114329EBCE85DBE7C3BFF /* ISRUtils.h in Headers */,
-				1E740E99D40BDF21745153275C998C1C /* ISRWebInterface.h in Headers */,
-				69D5B97A961070629F293A9332A91365 /* ReActionSDK-umbrella.h in Headers */,
-				711711595C7AAC7D9D8B586E3935071F /* ReactionSDK.h in Headers */,
+				E4B80E0BE4EE08940B81B2808435AEA1 /* ISRAtomController.h in Headers */,
+				DEA854054895E0B9A5775DE2D49F6508 /* ISRConfig.h in Headers */,
+				20847546785189DE5258410DFBC37717 /* ISReaction.h in Headers */,
+				47FB7667AC30EBFD2379755D210E2810 /* ISReactionApp.h in Headers */,
+				6B07DC8E2DCE92A7A77A62DC7F8F5721 /* ISRHtmlView.h in Headers */,
+				0CCCBF17EC54919EF45CD264207C94DC /* ISRHttpHandler.h in Headers */,
+				6C2ED1FDCD385A4370F5EC410B0C58DD /* ISRLogger.h in Headers */,
+				378F83FF9C8799216F063A6562BD8629 /* ISRMessageHandler.h in Headers */,
+				F1C1015130F4554071A1C69A47063BDE /* ISRMessageHandlerFactory.h in Headers */,
+				08091FA59EA0E6EB380F429ED7316786 /* ISRNotificationHandler.h in Headers */,
+				DF3ECE5792F05FD8C55A69747EA0F11A /* ISRRequest.h in Headers */,
+				54C0D395510ECE7879D35871CFE21A7C /* ISRResponse.h in Headers */,
+				EC996B6521498C836036013E5B286EC0 /* ISRUrlHandler.h in Headers */,
+				3D545D14B9324D119293724EE666244D /* ISRUtils.h in Headers */,
+				021BE449FD8F43546F020BB015824225 /* ISRWebInterface.h in Headers */,
+				9721E204FCE97A7DDE8A64694EB2D3BB /* ReActionSDK-umbrella.h in Headers */,
+				CDB4928F6C3E574C456BF544E2417269 /* ReActionSDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -833,9 +766,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F135F75D4251D484B7B60380BB42AF58 /* Build configuration list for PBXNativeTarget "ReActionSDK" */;
 			buildPhases = (
-				4B43372561ADCBA7313341C6969E3FCC /* Sources */,
+				E1AC49946B6C2E90C9FC638EF3A6E861 /* Sources */,
 				F563300DCB4B536609B42286592B79F3 /* Frameworks */,
-				600A749E40D3E473B420720F082924DA /* Headers */,
+				445A084E5692933622725F4B8B3A4638 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -924,29 +857,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4B43372561ADCBA7313341C6969E3FCC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3DF638F0791350D75004DAB8F246C3A9 /* Info.plist in Sources */,
-				F35149967ED481FCF7AAC4CDF394ED18 /* ISRAtomController.m in Sources */,
-				516A80B12FD60F9262DCE80D473293FE /* ISRConfig.m in Sources */,
-				889931B8F77702989274E0373FB81E67 /* ISReaction.m in Sources */,
-				4DA2D8B400F691D7B8D73DD06A76D27E /* ISReactionApp.m in Sources */,
-				206D23B21B746CF3DC0645640E2F004E /* ISRHtmlView.m in Sources */,
-				D21F3354AB69820024774CC006AEB612 /* ISRHttpHandler.m in Sources */,
-				C55B14646846DCA79C603485EB21F83B /* ISRLogger.m in Sources */,
-				187A58C6A1B873C9260B415A22BBD96A /* ISRMessageHandlerFactory.m in Sources */,
-				46C63448312430802D3D086672A7336E /* ISRNotificationHandler.m in Sources */,
-				3304D4257162F4A0DA14B9337AF08A93 /* ISRRequest.m in Sources */,
-				D89CA049190C5856AEC98EDAF55EC2A9 /* ISRResponse.m in Sources */,
-				0E799B516F97E08648DED346192FAA1E /* ISRUrlHandler.m in Sources */,
-				A9E376577579214C30BAE555CDE57C53 /* ISRUtils.m in Sources */,
-				A9CA9FB18D6F2F43B6FF75617F07CFD1 /* ISRWebInterface.m in Sources */,
-				81C36AC2E24FA9A63314451492088A5C /* ReActionSDK-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4F64B85E04018756058F1F7A86B8C58B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -969,6 +879,28 @@
 				4CC4CBBE98F7E0453EF576BCCFE305EE /* ISSQLiteHandler.m in Sources */,
 				972FE10BE2C31A149828A63DEDBE4EA7 /* ISStreamData.m in Sources */,
 				A4280686C672E6F91C5D50CC27474147 /* ISUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1AC49946B6C2E90C9FC638EF3A6E861 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E7BC251A7024310B321DD2953EC6BBD /* ISRAtomController.m in Sources */,
+				0156B72ACB0347F3485005CA4E5EFFEA /* ISRConfig.m in Sources */,
+				02933CC64DB1D7E4005D45DC629C36C2 /* ISReaction.m in Sources */,
+				1BAEAA4DB02D84EB73A8CF8AA296AB0D /* ISReactionApp.m in Sources */,
+				51D2F380FA02C81D9B0B51C12E84412B /* ISRHtmlView.m in Sources */,
+				6A1765E8FD3D26CB8D9CA5120F15B7EA /* ISRHttpHandler.m in Sources */,
+				125D231B700020512DBC371606354CCD /* ISRLogger.m in Sources */,
+				6A0C470A9CCDC03EAF3CC0CE9EB2F96B /* ISRMessageHandlerFactory.m in Sources */,
+				DF4CA710AB38023C19A5B1A5BD756179 /* ISRNotificationHandler.m in Sources */,
+				62CCFBADDAF1E32FCEA228B1E25143E7 /* ISRRequest.m in Sources */,
+				8E6769AD63EBD2B35C15B19C62FC8E6C /* ISRResponse.m in Sources */,
+				0FAE110859CF345AEF8A7FFDD99EB567 /* ISRUrlHandler.m in Sources */,
+				167062207760EC25476C8610B2457F39 /* ISRUtils.m in Sources */,
+				822D3AB8D870ABCB8CF4B36A87DEB82E /* ISRWebInterface.m in Sources */,
+				7E3D3F033D869A00BBD0AACE10F303DE /* ReActionSDK-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1060,7 +992,7 @@
 		};
 		0AF3BE5E38B3F26BE3B860A1874C24CF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA665B679993B95F53E3E1CE7D820900 /* ReActionSDK.xcconfig */;
+			baseConfigurationReference = F1B5896C7CBCF4434A3DF297CCFA2CAE /* ReActionSDK.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1167,7 +1099,7 @@
 		};
 		84C3AA38283DA5C7B1E96CCF70002C63 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F1781B7DD092C047541F68ACE7214D6 /* sqlite3.xcconfig */;
+			baseConfigurationReference = 536AB327446C0DCF7427343228E48732 /* sqlite3.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1199,7 +1131,7 @@
 		};
 		9D661DC003DD4790452B8A0EF538C0FD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA665B679993B95F53E3E1CE7D820900 /* ReActionSDK.xcconfig */;
+			baseConfigurationReference = F1B5896C7CBCF4434A3DF297CCFA2CAE /* ReActionSDK.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1231,7 +1163,7 @@
 		};
 		AF4883A2C60E140DC840E2C2C6120328 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A72F7A322769878C9094248149A127DF /* AtomSDK.xcconfig */;
+			baseConfigurationReference = 3B6CF2F80EBB55C3964EF98A9BDD4258 /* AtomSDK.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1263,7 +1195,7 @@
 		};
 		C95B9ADF1C0E16B3CDEDC0C0022FBC68 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A72F7A322769878C9094248149A127DF /* AtomSDK.xcconfig */;
+			baseConfigurationReference = 3B6CF2F80EBB55C3964EF98A9BDD4258 /* AtomSDK.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1330,7 +1262,7 @@
 		};
 		D18EC5F42049C942B7434F5E555120A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F1781B7DD092C047541F68ACE7214D6 /* sqlite3.xcconfig */;
+			baseConfigurationReference = 536AB327446C0DCF7427343228E48732 /* sqlite3.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

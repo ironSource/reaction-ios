@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		422F69991DFCB97E0013E094 /* Pods_ReactionSDKExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 026BD51FC275E3194ADE1E28 /* Pods_ReactionSDKExample.framework */; };
 		42B79FD51DA7A3CE003291B3 /* ViewInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B79FD31DA7A3CE003291B3 /* ViewInfo.swift */; };
 		42B79FD61DA7A3CE003291B3 /* ViewInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42B79FD41DA7A3CE003291B3 /* ViewInfo.xib */; };
 		42D16B851D92B1290094E457 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D16B841D92B1290094E457 /* AppDelegate.swift */; };
@@ -39,7 +40,6 @@
 		42631F741DF8650A00FEF5AF /* AtomSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AtomSDK.framework; path = "../../../../../../../Library/Developer/Xcode/DerivedData/ReactionSDKExample-auqmokvbbjxqanbohiggtlmnvxte/Build/Products/Debug-iphoneos/AtomSDK/AtomSDK.framework"; sourceTree = "<group>"; };
 		42631F751DF8650A00FEF5AF /* sqlite3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = sqlite3.framework; path = "../../../../../../../Library/Developer/Xcode/DerivedData/ReactionSDKExample-auqmokvbbjxqanbohiggtlmnvxte/Build/Products/Debug-iphoneos/sqlite3/sqlite3.framework"; sourceTree = "<group>"; };
 		4285802F1DA27BC4000EF4B7 /* ReactionSDKExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReactionSDKExample.entitlements; sourceTree = "<group>"; };
-		42ABD8E81DFAABD500895041 /* ReactionSDKExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactionSDKExample-Bridging-Header.h"; sourceTree = "<group>"; };
 		42B79FD31DA7A3CE003291B3 /* ViewInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInfo.swift; sourceTree = "<group>"; };
 		42B79FD41DA7A3CE003291B3 /* ViewInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewInfo.xib; sourceTree = "<group>"; };
 		42D16B811D92B1290094E457 /* ReactionSDKExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactionSDKExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				422F69991DFCB97E0013E094 /* Pods_ReactionSDKExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +108,6 @@
 				42D16B901D92B1290094E457 /* Info.plist */,
 				42B79FD31DA7A3CE003291B3 /* ViewInfo.swift */,
 				42B79FD41DA7A3CE003291B3 /* ViewInfo.xib */,
-				42ABD8E81DFAABD500895041 /* ReactionSDKExample-Bridging-Header.h */,
 			);
 			path = ReactionSDKExample;
 			sourceTree = "<group>";
@@ -469,7 +469,7 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.reaction.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "ReactionSDKExample/ReactionSDKExample-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -499,7 +499,7 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.reaction.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "ReactionSDKExample/ReactionSDKExample-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
