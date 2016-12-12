@@ -10,9 +10,6 @@
 @import Google.CloudMessaging;
 
 @interface ISReactionApp : NSObject
-/* UIResponder <UIApplicationDelegate, GCMReceiverDelegate>
-
-@property (strong, nonatomic) UIWindow *window; */
 NS_ASSUME_NONNULL_BEGIN
 +(void)registerGCMServiceWithApplication: (UIApplication*)application
                              deviceToken: (NSData*)deviceToken;

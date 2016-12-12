@@ -12,6 +12,8 @@ import ReActionSDK
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GCMReceiverDelegate {
     
+    var window: UIWindow?
+    
     func application(application: UIApplication,
                      didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
         ISReactionApp.registerGCMServiceWithApplication(application,
