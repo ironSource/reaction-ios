@@ -32,7 +32,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     let appKeyStr_ = "IgbM_92Buth84Akobv9Ate20Dk"
     let senderId_ = "139121052578"
     
-    var reactionSDK_: ISReaction2?
+    var reactionSDK_: ISReaction?
     
     var captureSession_: AVCaptureSession?
     var videoPreviewLayer_: AVCaptureVideoPreviewLayer?
@@ -49,7 +49,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        reactionSDK_ = ISReaction2(senderID: senderId_,
+        reactionSDK_ = ISReaction(senderID: senderId_,
                          applicationKey: appKeyStr_,
                          isDebug: true)
         
