@@ -1,0 +1,6 @@
+framework module Pods_ReactionSDKExample {
+  umbrella header "Pods-ReactionSDKExample-umbrella.h"
+
+  export *
+  module * { export * }
+}

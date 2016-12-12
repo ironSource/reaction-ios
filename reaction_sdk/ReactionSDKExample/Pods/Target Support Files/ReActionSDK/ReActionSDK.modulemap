@@ -1,0 +1,6 @@
+framework module ReActionSDK {
+  umbrella header "ReActionSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

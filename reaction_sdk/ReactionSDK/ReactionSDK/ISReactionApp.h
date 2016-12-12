@@ -7,11 +7,25 @@
 //
 
 #import <UIKit/UIKit.h>
-
 @import Google.CloudMessaging;
 
-@interface ISReactionApp : UIResponder <UIApplicationDelegate, GCMReceiverDelegate>
+@interface ISReactionApp : NSObject
+NS_ASSUME_NONNULL_BEGIN
++(void)registerGCMServiceWithApplication: (UIApplication*)application
+                             deviceToken: (NSData*)deviceToken;
 
-@property (strong, nonatomic) UIWindow *window;
++(void)applicationDidBecomeActive: (UIApplication*)application;
 
++(void)applicationDidEnterBackground: (UIApplication*)application;
+
++(void)receiveRemoteNotificationWithApplication: (UIApplication*)application
+                                       userInfo: (NSDictionary*)userInfo;
+
++(void)receiveRemoteNotificationWithApplication: (UIApplication*)application
+                                       userInfo: (NSDictionary*)userInfo
+                         fetchCompletionHandler: (void (^)(UIBackgroundFetchResult))completionHandler;
+
++(void)receiveLocalNotificationWithApplication: (UIApplication*)application
+                                  notification: (nonnull UILocalNotification*)notification;
+NS_ASSUME_NONNULL_END
 @end
