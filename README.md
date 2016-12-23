@@ -7,6 +7,8 @@
 ### Installation from [CocoaPods](https://cocoapods.org/?q=reactionsdk).
 Add dependency in your pod file
 ```ruby
+use_frameworks!
+
 pod 'ReActionSDK'
 
 pre_install do |installer|
@@ -60,6 +62,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GCMReceiverDelegate {
 ### Add methods to your application in Objective-c
 In application header add GCMReceiverDelegate interface delegate:
 ```objc
+@import ReActionSDK;
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate, GCMReceiverDelegate>
 ```
 
@@ -123,6 +127,8 @@ class ViewController: UIViewController {
 
 Example of using SDK in Objective-C:
 ```objc
+@import ReActionSDK;
+
 ISReaction* reaction_;
 
 @implementation ViewController
