@@ -46,7 +46,11 @@ static NSString* TAG_ = @"ISReactionNotificationHandler";
     
     localNotification.fireDate = dateToFire;
     localNotification.alertBody = message;
-    localNotification.alertTitle = title;
+    
+    if ([localNotification respondsToSelector:@selector(alertTitle)] ) {
+        localNotification.alertTitle = title;
+    }
+    
     localNotification.soundName = UILocalNotificationDefaultSoundName;
     localNotification.applicationIconBadgeNumber = 1; // increment
     

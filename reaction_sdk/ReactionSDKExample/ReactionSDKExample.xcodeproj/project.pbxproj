@@ -463,7 +463,7 @@
 				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ReactionSDKExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -493,7 +493,7 @@
 				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ReactionSDKExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
