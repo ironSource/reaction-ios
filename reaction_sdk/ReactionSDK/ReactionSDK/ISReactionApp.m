@@ -15,14 +15,14 @@ static NSString* TAG_ = @"ISReactionApp";
 
 @implementation ISReactionApp
 
--(void)application: (UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:
-        (NSData*)deviceToken {
++(void)registerGCMServiceWithApplication: (UIApplication*)application
+                             deviceToken:(NSData*)deviceToken {
     NSMutableDictionary<NSString*, NSObject*>* userInfo = [[NSMutableDictionary alloc] init];
     
     [userInfo setObject:deviceToken forKey:@"deviceToken"];
     
     GCMConfig* gcmConfig = [GCMConfig defaultConfig];
-    [gcmConfig setReceiverDelegate:self];
+    [gcmConfig setReceiverDelegate: (NSObject<GCMReceiverDelegate>*)application];
     
     [[GCMService sharedInstance] startWithConfig:gcmConfig];
     
@@ -40,7 +40,7 @@ static NSString* TAG_ = @"ISReactionApp";
      [ISRConfig REGISTER_SUCCESS_CALLBACK] object:nil userInfo:userInfo];
 }
 
--(void)applicationDidBecomeActive: (UIApplication*)application {
++(void)applicationDidBecomeActive:(UIApplication *)application {
     [[GCMService sharedInstance] connectWithHandler: ^ (NSError* error) {
         if (error != nil) {
             [[ISRLogger sharedLogger] debugWithTag:TAG_ message:
@@ -55,47 +55,68 @@ static NSString* TAG_ = @"ISReactionApp";
      [ISRConfig APPLICATION_ACTIVE_CALLBACK] object:nil userInfo:nil];
 }
 
--(void)applicationDidEnterBackground: (UIApplication*)application {
++(void)applicationDidEnterBackground: (UIApplication*)application {
     [[GCMService sharedInstance] disconnect];
     
     [[NSNotificationCenter defaultCenter] postNotificationName:
      [ISRConfig APPLICATION_BACKGROUND_CALLBACK] object:nil userInfo:nil];
 }
 
--(void)application: (UIApplication*)application didReceiveRemoteNotification:
-    (NSDictionary*)userInfo {
-    [[ISRLogger sharedLogger] debugWithTag:TAG_ message:@"Notification received!"];
-    
-    //long number = [[UIApplication sharedApplication] applicationIconBadgeNumber];
-    
-    //[[UIApplication sharedApplication] setApplicationIconBadgeNumber:++number];
-    
++(void)receiveRemoteNotificationWithApplication: (UIApplication*)application
+                                       userInfo: (NSDictionary*)userInfo {
     [[NSNotificationCenter defaultCenter] postNotificationName:
      [ISRConfig RECEIVE_MESSAGE_CALLBACK] object:nil userInfo:userInfo];
 }
 
--(void)application: (UIApplication*)application
-    didReceiveRemoteNotification: (NSDictionary*)userInfo
-    fetchCompletionHandler: (void (^)(UIBackgroundFetchResult))completionHandler {
-    
-    [[ISRLogger sharedLogger] debugWithTag:TAG_ message:@"Notification received! 1"];
-    
-    //long number = [application applicationIconBadgeNumber];
-    
-    //[application setApplicationIconBadgeNumber:++number];
-    
++(void)receiveRemoteNotificationWithApplication:(UIApplication *)application
+                                       userInfo:(NSDictionary *)userInfo
+                         fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
     [[NSNotificationCenter defaultCenter] postNotificationName:
      [ISRConfig RECEIVE_MESSAGE_CALLBACK] object:nil userInfo:userInfo];
-
+    
     completionHandler(UIBackgroundFetchResultNoData);
 }
 
-- (void)application: (UIApplication *)application
-    didReceiveLocalNotification:(nonnull UILocalNotification *)notification {
-    
-    
++(void)receiveLocalNotificationWithApplication:(UIApplication *)application
+                                  notification:(UILocalNotification *)notification {
     [[NSNotificationCenter defaultCenter] postNotificationName:
      [ISRConfig RECEIVE_MESSAGE_CALLBACK] object:nil userInfo:notification.userInfo];
 }
+
+/*
+ -(void)application: (UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:
+ (NSData*)deviceToken {
+ [ISReactionApp registerGCMServiceWithApplication:application
+ deviceToken:deviceToken];
+ }
+ 
+ -(void)applicationDidBecomeActive: (UIApplication*)application {
+ [ISReactionApp applicationDidBecomeActive:application];
+ }
+ 
+ -(void)applicationDidEnterBackground: (UIApplication*)application {
+ [ISReactionApp applicationDidEnterBackground:application];
+ }
+ 
+ -(void)application: (UIApplication*)application didReceiveRemoteNotification:
+ (NSDictionary*)userInfo {
+ [ISReactionApp receiveRemoteNotificationWithApplication:application
+ userInfo:userInfo];
+ }
+ 
+ -(void)application: (UIApplication*)application
+ didReceiveRemoteNotification: (NSDictionary*)userInfo
+ fetchCompletionHandler: (void (^)(UIBackgroundFetchResult))completionHandler {
+ [ISReactionApp receiveRemoteNotificationWithApplication:application
+ userInfo:userInfo
+ fetchCompletionHandler:completionHandler];
+ }
+ 
+ - (void)application: (UIApplication *)application
+ didReceiveLocalNotification:(nonnull UILocalNotification *)notification {
+ [ISReactionApp receiveLocalNotificationWithApplication:application
+ notification:notification];
+ }
+ */
 
 @end

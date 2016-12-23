@@ -1,18 +1,18 @@
 //
-//  ReactionSDKTests.m
-//  ReactionSDKTests
+//  ReActionSDKTests.m
+//  ReActionSDKTests
 //
-//  Created by Valentine.Pavchuk on 11/21/16.
+//  Created by Valentine.Pavchuk on 12/10/16.
 //  Copyright © 2016 IronSource. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface ReactionSDKTests : XCTestCase
+@interface ReActionSDKTests : XCTestCase
 
 @end
 
-@implementation ReactionSDKTests
+@implementation ReActionSDKTests
 
 - (void)setUp {
     [super setUp];

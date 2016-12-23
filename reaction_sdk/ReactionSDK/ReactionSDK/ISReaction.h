@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-
 @import Google.CloudMessaging;
 
 @interface ISReaction : NSObject <GGLInstanceIDDelegate>
