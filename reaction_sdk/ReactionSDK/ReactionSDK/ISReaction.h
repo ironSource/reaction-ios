@@ -21,10 +21,12 @@
     NSMutableDictionary<NSString*, NSObject*>* registrationOptions_;
     
     NSString* registrationToken_;
+    
+    int registrationGCMRetryTimeout_;
 }
 
--(id)initWithSenderID: (NSString*)senderID applicationKey: (NSString*)applicationKey
-              isDebug: (BOOL)isDebug;
++(id)createWithSenderID: (NSString*)senderID applicationKey: (NSString*)applicationKey
+                isDebug: (BOOL)isDebug;
 
 -(void)enableDebug: (BOOL)isDebug;
 

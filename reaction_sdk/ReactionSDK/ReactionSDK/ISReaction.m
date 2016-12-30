@@ -23,6 +23,9 @@
 
 @interface ISReaction()
 
+-(id)initWithSenderID: (NSString*)senderID applicationKey: (NSString*)applicationKey
+              isDebug: (BOOL)isDebug;
+
 -(void)initNotificationCallbacks;
 
 -(void)registerError: (NSNotification*)notification;
@@ -45,6 +48,18 @@ static NSString* TAG_ = @"ISReaction";
 
 @implementation ISReaction
 
++(id)createWithSenderID: (NSString*)senderID applicationKey: (NSString*)applicationKey
+                 isDebug: (BOOL)isDebug {
+    static ISReaction *sharedReaction = nil;
+    @synchronized(self) {
+        if (sharedReaction == nil)
+            sharedReaction = [[self alloc] initWithSenderID:senderID applicationKey:applicationKey isDebug:isDebug];
+    }
+    [sharedReaction enableDebug:isDebug];
+    
+    return sharedReaction;
+}
+
 -(id)initWithSenderID: (NSString*)senderID applicationKey: (NSString*)applicationKey
               isDebug: (BOOL)isDebug {
     self = [super init];
@@ -52,6 +67,8 @@ static NSString* TAG_ = @"ISReaction";
     if (self) {
         self->senderID_ =  senderID;
         self->applicationKey_ = applicationKey;
+        
+        self->registrationGCMRetryTimeout_ = 10;
         
         [ISRUtils setSharedPreferenceWithKey:[ISRConfig APP_KEY]
                                               value:applicationKey];
@@ -177,13 +194,21 @@ static NSString* TAG_ = @"ISReaction";
          [NSString stringWithFormat:@"Registration to GCM failed with error: %@",
           [error description]]];
         
-        [ISRUtils scheduleTimerTaskWithTIme:20 callback: ^() {
-            [[GGLInstanceID sharedInstance] tokenWithAuthorizedEntity:self->senderID_
-            scope:kGGLInstanceIDScopeGCM options:self->registrationOptions_
-            handler:^(NSString* registrationToken, NSError* error) {
-                [self registrationHandlerWithToken:registrationToken error:error];
+        int gmcTimeout = self->registrationGCMRetryTimeout_;
+        
+        if (gmcTimeout <= 1024 * 10) {
+            self->registrationGCMRetryTimeout_ = self->registrationGCMRetryTimeout_ * 2;
+            
+            
+            [ISRUtils scheduleTimerTaskWithTIme:gmcTimeout callback: ^() {
+                [[GGLInstanceID sharedInstance] tokenWithAuthorizedEntity:self->senderID_
+                    scope:kGGLInstanceIDScopeGCM options:self->registrationOptions_
+                    handler:^(NSString* registrationToken, NSError* error) {
+                        [self registrationHandlerWithToken:registrationToken error:error];
+                }];
             }];
-        }];
+ 
+        }
     }
 }
 

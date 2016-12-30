@@ -97,7 +97,8 @@ static NSString* STREAM_AD_ID = @"ironlabs.gcm.adid";
         
         [sendData setObject:sessionID forKey:@"session_id"];
         [sendData setObject:registrationToken forKey:@"reg_id"];
-        [sendData setObject:deviceID forKey:@"ios_id"];
+        //[sendData setObject:deviceID forKey:@"ios_id"];
+        [sendData setObject:deviceID forKey:@"android_id"];
         [sendData setObject:applicationKey forKey:@"app_key"];
         [sendData setObject:[[NSBundle mainBundle] bundleIdentifier] forKey:@"package"];
         [sendData setObject:[ISRUtils getCurrentAppVersion] forKey:@"app_version"];
@@ -128,18 +129,24 @@ static NSString* STREAM_AD_ID = @"ironlabs.gcm.adid";
     [self sendEventWithStream:STREAM_USERS data:eventObject isForceReport:false];
 }
 
--(void)sendClick: (NSString*)compaignID {
+-(void)sendClickWithCampaignID: (NSString*)compaignID variantID: (NSString*)variantID
+              variantLanguange: (NSString*)variantLanguage {
     NSMutableDictionary<NSString*, NSObject*>* eventObject = [[NSMutableDictionary
                                                                alloc] init];
     [eventObject setObject:compaignID forKey:@"campaign_id"];
+    [eventObject setObject:variantID forKey:@"variant_id"];
+    [eventObject setObject:variantLanguage forKey:@"variant_language"];
     
     [self sendEventWithStream:STREAM_CLICK data:eventObject isForceReport:false];
 }
 
--(void)sendImpressions: (NSString*)compaignID {
+-(void)sendImpressionsWithCampaignID: (NSString*)compaignID variantID: (NSString*)variantID
+                    variantLanguange: (NSString*)variantLanguage {
     NSMutableDictionary<NSString*, NSObject*>* eventObject = [[NSMutableDictionary
                                                                alloc] init];
     [eventObject setObject:compaignID forKey:@"campaign_id"];
+    [eventObject setObject:variantID forKey:@"variant_id"];
+    [eventObject setObject:variantLanguage forKey:@"variant_language"];
     
     [self sendEventWithStream:STREAM_IMPRESSIONS data:eventObject isForceReport:false];
 }
