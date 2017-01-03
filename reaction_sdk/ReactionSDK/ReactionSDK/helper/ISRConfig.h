@@ -13,6 +13,8 @@
 +(NSString*)ADD_USER_URL;
 +(NSString*)ADD_DEMO_USER;
 
++(NSString*)PULL_CAMPAIGN_URL;
+
 +(NSString*)SDK_VERSION;
 
 +(NSString*)TOKEN_KEY;

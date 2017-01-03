@@ -46,4 +46,6 @@
 
 -(void)reportRevenue: (float)value;
 
+-(void)pullCampaign;
+
 @end

@@ -356,4 +356,44 @@ static NSString* TAG_ = @"ISReaction";
     [[ISRAtomController sharedController] sendReportRevenue:value];
 }
 
+-(void)pullCampaign {
+    NSMutableDictionary<NSString*, NSObject*>* userData = [[NSMutableDictionary alloc] init];
+    
+    [userData setObject:self->registrationToken_ forKey:@"token"];
+    [userData setObject:self->deviceID_ forKey:@"android_id"];
+    
+    NSString* userDataJson = [ISRUtils objectToJsonStr:userData];
+    
+    NSMutableDictionary<NSString*, NSString*>* headers = [[NSMutableDictionary alloc] init];
+    [headers setObject:@"application/json" forKey:@"Content-type"];
+    
+    ISRRequest* request = [[ISRRequest alloc] initWithUrl:[ISRConfig PULL_CAMPAIGN_URL]
+                                                     data:userDataJson
+                                                  headers:headers
+                                                  isDebug:self->isDebug_];
+    
+    ISRRequestCallback httpCallback = ^(ISRResponse* response) {
+        [[ISRLogger sharedLogger] debugWithTag:TAG_ message:
+         [NSString stringWithFormat:@"From callback - (data): %@\n(error): %@\n(status):%ld",
+          [response data], [response error], [response status]]];
+        
+        NSDictionary* responseData = [ISRUtils jsonStrToDictionary:[response data]];
+        
+        NSString* type = responseData[@"type"];
+        NSString* compaignID = (NSString*)responseData[@"id"];
+        if (compaignID != nil) {
+            [[ISRAtomController sharedController] sendImpressions:compaignID];
+        }
+        
+        id<ISRMessageHandler> messageHandler = [ISRMessageHandlerFactory createMessageHandler:type];
+        if (messageHandler != nil) {
+            [messageHandler process:responseData];
+        }
+
+    };
+    
+    [request initListener:httpCallback];
+    [request post];
+}
+
 @end

@@ -18,6 +18,10 @@
     return @"https://rct-upopa.com/user/addDebugDevice";
 }
 
++(NSString*)PULL_CAMPAIGN_URL {
+    return @"https://rct-upopa.com/pull";
+}
+
 +(NSString*)SDK_VERSION {
     return @"1.0.0";
 }

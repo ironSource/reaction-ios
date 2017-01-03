@@ -51,6 +51,16 @@
     return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
 }
 
++(NSDictionary*)jsonStrToDictionary: (NSString*)jsonStr {
+    NSError* jsonError = nil;
+    NSData* objectData = [@"{\"2\":\"3\"}" dataUsingEncoding:NSUTF8StringEncoding];
+    
+    NSDictionary* json = [NSJSONSerialization JSONObjectWithData:objectData
+                                                         options:NSJSONReadingMutableContainers
+                                                           error:&jsonError];
+    return json;
+}
+
 +(void)openURLInView: (NSURL*)url {
     [[UIApplication sharedApplication] openURL:url];
 }
