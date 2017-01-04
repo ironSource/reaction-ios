@@ -24,6 +24,8 @@
 
 +(NSDictionary*)jsonStrToDictionary: (NSString*)jsonStr;
 
++(BOOL)canOpenURLInView: (NSURL*)url;
+
 +(void)openURLInView: (NSURL*)url;
 
 +(BOOL)validateUrl: (NSString*)url;

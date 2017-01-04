@@ -61,6 +61,10 @@
     return json;
 }
 
++(BOOL)canOpenURLInView: (NSURL*)url {
+    return [[UIApplication sharedApplication] canOpenURL:url];
+}
+
 +(void)openURLInView: (NSURL*)url {
     [[UIApplication sharedApplication] openURL:url];
 }

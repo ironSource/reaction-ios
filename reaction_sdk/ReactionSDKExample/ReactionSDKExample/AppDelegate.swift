@@ -46,5 +46,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GCMReceiverDelegate {
         ISReactionApp.receiveLocalNotificationWithApplication(application,
                                                               notification:notification);
     }
+    
+    func application(application: UIApplication, handleOpenURL url: NSURL) -> Bool {
+        if (url.host == "test_page") {
+            let alert = UIAlertController(title: "Alert", message: "Message", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
+            self.window?.rootViewController!.presentViewController(alert, animated: true, completion: nil)
+            
+            return true
+        } else {
+            return false
+        }
+    }
 }
 

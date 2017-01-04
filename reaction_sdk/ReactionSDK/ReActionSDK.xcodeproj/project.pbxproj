@@ -39,6 +39,8 @@
 		4286E07E1DFCAF10009E4226 /* ISRHtmlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4286E07A1DFCAF10009E4226 /* ISRHtmlView.m */; };
 		4286E07F1DFCAF10009E4226 /* ISRWebInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 4286E07B1DFCAF10009E4226 /* ISRWebInterface.h */; };
 		4286E0801DFCAF10009E4226 /* ISRWebInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 4286E07C1DFCAF10009E4226 /* ISRWebInterface.m */; };
+		42D1CAE61E1D371D00473485 /* ISRDeepLinkHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 42D1CAE41E1D371D00473485 /* ISRDeepLinkHandler.h */; };
+		42D1CAE71E1D371D00473485 /* ISRDeepLinkHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1CAE51E1D371D00473485 /* ISRDeepLinkHandler.m */; };
 		B8020C052796F5948857BD38 /* Pods_ReActionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E537AF8C42A198C859DA919 /* Pods_ReActionSDK.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +92,8 @@
 		4286E07B1DFCAF10009E4226 /* ISRWebInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISRWebInterface.h; path = view/ISRWebInterface.h; sourceTree = "<group>"; };
 		4286E07C1DFCAF10009E4226 /* ISRWebInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISRWebInterface.m; path = view/ISRWebInterface.m; sourceTree = "<group>"; };
 		4286E0811DFCAF2C009E4226 /* AtomSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AtomSDK.framework; path = "../../../../../../../../Library/Developer/Xcode/DerivedData/ReActionSDK-gqzgmldmbdxcccdmjabomvhezjqt/Build/Products/Debug-iphonesimulator/AtomSDK/AtomSDK.framework"; sourceTree = "<group>"; };
+		42D1CAE41E1D371D00473485 /* ISRDeepLinkHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISRDeepLinkHandler.h; path = message/ISRDeepLinkHandler.h; sourceTree = "<group>"; };
+		42D1CAE51E1D371D00473485 /* ISRDeepLinkHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISRDeepLinkHandler.m; path = message/ISRDeepLinkHandler.m; sourceTree = "<group>"; };
 		5E537AF8C42A198C859DA919 /* Pods_ReActionSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReActionSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65DEF87136F90E006A549CB1 /* Pods-ReActionSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReActionSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReActionSDK/Pods-ReActionSDK.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -198,6 +202,8 @@
 				4286E06C1DFCAEF6009E4226 /* ISRNotificationHandler.m */,
 				4286E06D1DFCAEF6009E4226 /* ISRUrlHandler.h */,
 				4286E06E1DFCAEF6009E4226 /* ISRUrlHandler.m */,
+				42D1CAE41E1D371D00473485 /* ISRDeepLinkHandler.h */,
+				42D1CAE51E1D371D00473485 /* ISRDeepLinkHandler.m */,
 			);
 			name = message;
 			sourceTree = "<group>";
@@ -250,6 +256,7 @@
 				4286E0711DFCAEF6009E4226 /* ISRMessageHandler.h in Headers */,
 				4286E0451DFCADDB009E4226 /* ISReactionApp.h in Headers */,
 				4286E0761DFCAEF6009E4226 /* ISRUrlHandler.h in Headers */,
+				42D1CAE61E1D371D00473485 /* ISRDeepLinkHandler.h in Headers */,
 				4286E0431DFCADDB009E4226 /* ISReaction.h in Headers */,
 				4286E0581DFCAEB8009E4226 /* ISRLogger.h in Headers */,
 				4286E05A1DFCAEB8009E4226 /* ISRUtils.h in Headers */,
@@ -401,6 +408,7 @@
 				4286E0441DFCADDB009E4226 /* ISReaction.m in Sources */,
 				4286E0731DFCAEF6009E4226 /* ISRMessageHandlerFactory.m in Sources */,
 				4286E07E1DFCAF10009E4226 /* ISRHtmlView.m in Sources */,
+				42D1CAE71E1D371D00473485 /* ISRDeepLinkHandler.m in Sources */,
 				4286E0801DFCAF10009E4226 /* ISRWebInterface.m in Sources */,
 				4286E0641DFCAECE009E4226 /* ISRResponse.m in Sources */,
 				4286E0771DFCAEF6009E4226 /* ISRUrlHandler.m in Sources */,

@@ -10,12 +10,14 @@
 
 #import "ISRHttpHandler.h"
 #import "ISRUrlHandler.h"
+#import "ISRDeepLinkHandler.h"
 #import "ISRNotificationHandler.h"
 
 static UIView* CURRENT_VIEW_;
 
 static NSString* HTML_TYPE = @"html";
 static NSString* URL_TYPE = @"url";
+static NSString* DEEP_LINK_TYPE = @"deepLink";
 static NSString* MESSAGE_TYPE = @"message";
 
 @implementation ISRMessageHandlerFactory
@@ -25,6 +27,8 @@ static NSString* MESSAGE_TYPE = @"message";
         return [[ISRHttpHandler alloc] init];
     } else if ([type isEqualToString:URL_TYPE]) {
         return [[ISRUrlHandler alloc] init];
+    } else if ([type isEqualToString:DEEP_LINK_TYPE]) {
+        return [[ISRDeepLinkHandler alloc] init];
     } else if ([type isEqualToString:MESSAGE_TYPE]) {
         return [[ISRNotificationHandler alloc] init];
     } else {

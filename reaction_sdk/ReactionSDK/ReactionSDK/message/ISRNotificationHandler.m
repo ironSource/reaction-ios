@@ -23,6 +23,7 @@ static NSString* TAG_ = @"ISReactionNotificationHandler";
     NSString* title = (NSString*)data[@"title"];
     
     NSString* url = (NSString*)data[@"url"];
+    NSString* deepLink = (NSString*)data[@"deepLink"];
     
     if (message == nil) {
         [[ISRLogger sharedLogger] debugWithTag:TAG_ message:
@@ -61,6 +62,10 @@ static NSString* TAG_ = @"ISReactionNotificationHandler";
     if (url != nil) {
         [dataMutable setValue:@"url" forKey:@"type"];
 
+        localNotification.userInfo = dataMutable;
+    } else if (deepLink != nil) {
+        [dataMutable setValue:@"deepLink" forKey:@"type"];
+        
         localNotification.userInfo = dataMutable;
     }
     

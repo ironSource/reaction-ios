@@ -27,7 +27,12 @@ static NSString* TAG_ = @"ISRUrlHandler";
             NSURL* url = [NSURL URLWithString:urlStr];
             
             if (url != nil) {
-                [ISRUtils openURLInView:url];
+                if ([ISRUtils canOpenURLInView:url]) {
+                    [ISRUtils openURLInView:url];
+                } else {
+                    [[ISRLogger sharedLogger] debugWithTag:TAG_ message:
+                     [NSString stringWithFormat:@"Can't open 'url': %@!", url.absoluteString]];
+                }
             } else {
                 [[ISRLogger sharedLogger] debugWithTag:TAG_ message:
                  [NSString stringWithFormat:@"Can't convert 'url': %@ to NSURL object!", urlStr]];
