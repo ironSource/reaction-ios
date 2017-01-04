@@ -49,9 +49,8 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        reactionSDK_ = ISReaction(senderID: senderId_,
-                         applicationKey: appKeyStr_,
-                         isDebug: true)
+        reactionSDK_ = ISReaction.createWithSenderID(senderId_, applicationKey: appKeyStr_,
+                         isDebug: true) as! ISReaction
         
         self.initQRScanner()
     }

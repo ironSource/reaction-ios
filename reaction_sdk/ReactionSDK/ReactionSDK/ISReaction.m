@@ -48,8 +48,8 @@ static NSString* TAG_ = @"ISReaction";
 
 @implementation ISReaction
 
-+(id)createWithSenderID: (NSString*)senderID applicationKey: (NSString*)applicationKey
-                 isDebug: (BOOL)isDebug {
++(ISReaction*)createWithSenderID: (NSString*)senderID applicationKey: (NSString*)applicationKey
+                         isDebug: (BOOL)isDebug {
     static ISReaction *sharedReaction = nil;
     @synchronized(self) {
         if (sharedReaction == nil)

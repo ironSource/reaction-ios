@@ -25,8 +25,8 @@
     int registrationGCMRetryTimeout_;
 }
 
-+(id)createWithSenderID: (NSString*)senderID applicationKey: (NSString*)applicationKey
-                isDebug: (BOOL)isDebug;
++(ISReaction*)createWithSenderID: (NSString*)senderID applicationKey: (NSString*)applicationKey
+                         isDebug: (BOOL)isDebug;
 
 -(void)enableDebug: (BOOL)isDebug;
 
