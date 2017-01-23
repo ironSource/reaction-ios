@@ -16,7 +16,7 @@ static NSString* TAG_ = @"ISReactionApp";
 @implementation ISReactionApp
 
 +(void)applicationDidFinishLaunching: (UIApplication*)application
-                       launchOptions: (NSDictionary*)launchOptions {
+                       launchOptions: (nullable NSDictionary*)launchOptions {
     if (launchOptions != nil) {
         NSDictionary* notification = [launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
         if (notification != nil) {

@@ -18,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GCMReceiverDelegate {
         launchOptions: [NSObject : AnyObject]?) -> Bool {
         ISReactionApp.applicationDidFinishLaunching(application,
                                                     launchOptions: launchOptions)
+        
+        return true
     }
     
     func application(application: UIApplication,
@@ -56,7 +58,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GCMReceiverDelegate {
     // deep link isrtest://test_page
     func application(application: UIApplication, handleOpenURL url: NSURL) -> Bool {
         if (url.host == "test_page") {
-            let alert = UIAlertController(title: "Alert", message: "Message", preferredStyle: UIAlertControllerStyle.Alert)
+            let alert = UIAlertController(title: "Deep Link", message: "Hi,test_page", preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
             self.window?.rootViewController!.presentViewController(alert, animated: true, completion: nil)
             
