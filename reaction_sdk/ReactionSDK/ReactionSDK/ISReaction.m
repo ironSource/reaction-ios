@@ -237,9 +237,14 @@ static NSString* TAG_ = @"ISReaction";
     
     NSString* type = [ISRUtils getTypeFromNotificationData:notificationData];
     
+    // send impression
     NSString* compaignID = (NSString*)notificationData[@"id"];
-    if (compaignID != nil) {
-        [[ISRAtomController sharedController] sendImpressions:compaignID];
+    
+    NSString* variantID = (NSString*)notificationData[@"variant_id"];
+    NSString* variantLanguange = (NSString*)notificationData[@"lang"];
+    if (compaignID != nil && variantID != nil && variantLanguange != nil) {
+        [[ISRAtomController sharedController] sendImpressionsWithCampaignID:compaignID
+                        variantID:variantID variantLanguange:variantLanguange];
     }
     
     id<ISRMessageHandler> messageHandler = [ISRMessageHandlerFactory createMessageHandler:type];
@@ -380,9 +385,15 @@ static NSString* TAG_ = @"ISReaction";
         NSDictionary* responseData = [ISRUtils jsonStrToDictionary:[response data]];
         
         NSString* type = responseData[@"type"];
+        
+        // send impressions
         NSString* compaignID = (NSString*)responseData[@"id"];
-        if (compaignID != nil) {
-            [[ISRAtomController sharedController] sendImpressions:compaignID];
+        
+        NSString* variantID = (NSString*)responseData[@"variant_id"];
+        NSString* variantLanguange = (NSString*)responseData[@"lang"];
+        if (compaignID != nil && variantID != nil && variantLanguange != nil) {
+            [[ISRAtomController sharedController] sendImpressionsWithCampaignID:compaignID
+                        variantID:variantID variantLanguange:variantLanguange];
         }
         
         id<ISRMessageHandler> messageHandler = [ISRMessageHandlerFactory createMessageHandler:type];

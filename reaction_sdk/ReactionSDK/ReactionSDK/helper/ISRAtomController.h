@@ -18,9 +18,11 @@
 
 -(void)sendUser: (BOOL)isNewUser;
 
--(void)sendClick: (NSString*)compaignID;
+-(void)sendClickWithCampaignID: (NSString*)compaignID variantID: (NSString*)variantID
+              variantLanguange: (NSString*)variantLanguage;
 
--(void)sendImpressions: (NSString*)compaignID;
+-(void)sendImpressionsWithCampaignID: (NSString*)compaignID variantID: (NSString*)variantID
+                    variantLanguange: (NSString*)variantLanguage;
 
 -(void)sendErrorWithName: (NSString*)name message: (NSString*)message
               stackTrace: (NSString*)stackTrace code: (double)code
