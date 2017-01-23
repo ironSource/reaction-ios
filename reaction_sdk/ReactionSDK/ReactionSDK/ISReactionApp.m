@@ -15,6 +15,17 @@ static NSString* TAG_ = @"ISReactionApp";
 
 @implementation ISReactionApp
 
++(void)applicationDidFinishLaunching: (UIApplication*)application
+                       launchOptions: (NSDictionary*)launchOptions {
+    if (launchOptions != nil) {
+        NSDictionary* notification = [launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
+        if (notification != nil) {
+            // here click on notification
+            
+        }
+    }
+}
+
 +(void)registerGCMServiceWithApplication: (UIApplication*)application
                              deviceToken:(NSData*)deviceToken {
     NSMutableDictionary<NSString*, NSObject*>* userInfo = [[NSMutableDictionary alloc] init];

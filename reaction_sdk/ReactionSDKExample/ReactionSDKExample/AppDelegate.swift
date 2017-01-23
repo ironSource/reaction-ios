@@ -14,6 +14,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GCMReceiverDelegate {
     
     var window: UIWindow?
     
+    func application(application: UIApplication, didFinishLaunchingWithOptions
+        launchOptions: [NSObject : AnyObject]?) -> Bool {
+        ISReactionApp.applicationDidFinishLaunching(application,
+                                                    launchOptions: launchOptions)
+    }
+    
     func application(application: UIApplication,
                      didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
         ISReactionApp.registerGCMServiceWithApplication(application,
@@ -47,6 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GCMReceiverDelegate {
                                                               notification:notification);
     }
     
+    // deep link isrtest://test_page
     func application(application: UIApplication, handleOpenURL url: NSURL) -> Bool {
         if (url.host == "test_page") {
             let alert = UIAlertController(title: "Alert", message: "Message", preferredStyle: UIAlertControllerStyle.Alert)

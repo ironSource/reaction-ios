@@ -11,6 +11,9 @@
 
 @interface ISReactionApp : NSObject
 NS_ASSUME_NONNULL_BEGIN
++(void)applicationDidFinishLaunching: (UIApplication*)application
+                       launchOptions: (NSDictionary*)launchOptions;
+
 +(void)registerGCMServiceWithApplication: (UIApplication*)application
                              deviceToken: (NSData*)deviceToken;
 
