@@ -198,7 +198,7 @@
 				TargetAttributes = {
 					42D16B801D92B1290094E457 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 7KH4VYZ7Y9;
+						DevelopmentTeam = UYFV8VN697;
 						LastSwiftMigration = 0800;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -454,7 +454,7 @@
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ReactionSDKExample/ReactionSDKExample.entitlements;
-				DEVELOPMENT_TEAM = 7KH4VYZ7Y9;
+				DEVELOPMENT_TEAM = UYFV8VN697;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/lib",
@@ -484,7 +484,7 @@
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ReactionSDKExample/ReactionSDKExample.entitlements;
-				DEVELOPMENT_TEAM = 7KH4VYZ7Y9;
+				DEVELOPMENT_TEAM = UYFV8VN697;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/lib",

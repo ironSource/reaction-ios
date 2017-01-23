@@ -10,7 +10,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "ISRUrlHandler.h"
+#import "ISRMessageHandlerFactory.h"
 
 #import "../helper/ISRAtomController.h"
 #import "../helper/ISRLogger.h"
@@ -50,7 +50,7 @@ static NSString* TAG_ = @"ISReactionNotificationHandler";
     UILocalNotification* localNotification = [[UILocalNotification alloc] init];
     
     // for tests: current time plus 10 secs
-    NSDate *now = [NSDate date];
+    /*NSDate *now = [NSDate date];
     NSDate *dateToFire = [now dateByAddingTimeInterval:10];
     
     NSLog(@"now time: %@", now);
@@ -65,22 +65,24 @@ static NSString* TAG_ = @"ISReactionNotificationHandler";
     
     localNotification.soundName = UILocalNotificationDefaultSoundName;
     localNotification.applicationIconBadgeNumber = 1; // increment
-    
+    */
     // add specific data if needed
     NSMutableDictionary* dataMutable = [data mutableCopy];
     
     
     if (url != nil) {
         [dataMutable setValue:@"url" forKey:@"type"];
-
-        localNotification.userInfo = dataMutable;
+        id<ISRMessageHandler> urlHandler = [ISRMessageHandlerFactory createMessageHandler:@"url"];
+        
+        [urlHandler process:dataMutable];
     } else if (deepLink != nil) {
         [dataMutable setValue:@"deepLink" forKey:@"type"];
+        id<ISRMessageHandler> deepLinkHandler = [ISRMessageHandlerFactory createMessageHandler:@"deepLink"];
         
-        localNotification.userInfo = dataMutable;
+        [deepLinkHandler process:dataMutable];
     }
     
-    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+    //[[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
 }
 
 
