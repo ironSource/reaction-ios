@@ -47,7 +47,7 @@ static NSString* TAG_ = @"ISReactionNotificationHandler";
     }
     
     // do stuff's here
-    UILocalNotification* localNotification = [[UILocalNotification alloc] init];
+    //UILocalNotification* localNotification = [[UILocalNotification alloc] init];
     
     // for tests: current time plus 10 secs
     /*NSDate *now = [NSDate date];

@@ -105,4 +105,11 @@
     return [view stringByEvaluatingJavaScriptFromString:@"navigator.userAgent"];
 }
 
++(NSString*)getCurrentDatetime {
+    NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateFormat = @"YYYY-MM-DD HH:mm:ss";
+
+    return [dateFormatter stringFromDate:[NSDate date]];
+}
+
 @end

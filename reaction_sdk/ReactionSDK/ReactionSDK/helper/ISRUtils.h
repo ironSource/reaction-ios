@@ -36,4 +36,6 @@
 
 +(NSString*)getUserAgentName;
 
++(NSString*)getCurrentDatetime;
+
 @end

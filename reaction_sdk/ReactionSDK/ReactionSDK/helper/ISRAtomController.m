@@ -103,7 +103,7 @@ static NSString* STREAM_AD_ID = @"ironlabs.gcm.adid";
         [sendData setObject:[[NSBundle mainBundle] bundleIdentifier] forKey:@"package"];
         [sendData setObject:[ISRUtils getCurrentAppVersion] forKey:@"app_version"];
         [sendData setObject:[ISRConfig SDK_VERSION] forKey:@"sdk_version"];
-        [sendData setObject:[ISRUtils getGMTOffset] forKey:@"datetime"];
+        [sendData setObject:[ISRUtils getCurrentDatetime] forKey:@"datetime"];
         
         [[ISRLogger sharedLogger]
          debugWithTag:TAG_ message:[NSString stringWithFormat:@"Add event: %@", sendData]];
