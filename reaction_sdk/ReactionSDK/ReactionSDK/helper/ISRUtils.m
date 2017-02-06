@@ -107,7 +107,7 @@
 
 +(NSString*)getCurrentDatetime {
     NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
-    dateFormatter.dateFormat = @"YYYY-MM-DD HH:mm:ss";
+    dateFormatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
 
     return [dateFormatter stringFromDate:[NSDate date]];
 }
