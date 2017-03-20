@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4286E0291DFCADA2009E4226 /* ReactionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4286E01F1DFCADA2009E4226 /* ReactionSDK.framework */; };
+		4286E02E1DFCADA2009E4226 /* ReactionSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4286E02D1DFCADA2009E4226 /* ReactionSDKTests.m */; };
+		4286E0301DFCADA2009E4226 /* ReactionSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 4286E0221DFCADA2009E4226 /* ReactionSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4286E0431DFCADDB009E4226 /* Reaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 4286E03A1DFCADDB009E4226 /* Reaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4286E0441DFCADDB009E4226 /* Reaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 4286E03B1DFCADDB009E4226 /* Reaction.m */; };
+		4286E0451DFCADDB009E4226 /* ReactionApp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4286E03C1DFCADDB009E4226 /* ReactionApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4286E0461DFCADDB009E4226 /* ReactionApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 4286E03D1DFCADDB009E4226 /* ReactionApp.m */; };
+		4286E0541DFCAEB8009E4226 /* ISRAtomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4286E04C1DFCAEB8009E4226 /* ISRAtomController.m */; };
+		4286E0551DFCAEB8009E4226 /* ISRAtomController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4286E04D1DFCAEB8009E4226 /* ISRAtomController.h */; };
+		4286E0561DFCAEB8009E4226 /* ISRConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 4286E04E1DFCAEB8009E4226 /* ISRConfig.h */; };
+		4286E0571DFCAEB8009E4226 /* ISRConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 4286E04F1DFCAEB8009E4226 /* ISRConfig.m */; };
+		4286E0581DFCAEB8009E4226 /* ISRLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 4286E0501DFCAEB8009E4226 /* ISRLogger.h */; };
+		4286E0591DFCAEB8009E4226 /* ISRLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4286E0511DFCAEB8009E4226 /* ISRLogger.m */; };
+		4286E05A1DFCAEB8009E4226 /* ISRUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 4286E0521DFCAEB8009E4226 /* ISRUtils.h */; };
+		4286E05B1DFCAEB8009E4226 /* ISRUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4286E0531DFCAEB8009E4226 /* ISRUtils.m */; };
+		4286E0611DFCAECE009E4226 /* ISRRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 4286E05D1DFCAECE009E4226 /* ISRRequest.h */; };
+		4286E0621DFCAECE009E4226 /* ISRRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4286E05E1DFCAECE009E4226 /* ISRRequest.m */; };
+		4286E0631DFCAECE009E4226 /* ISRResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 4286E05F1DFCAECE009E4226 /* ISRResponse.h */; };
+		4286E0641DFCAECE009E4226 /* ISRResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4286E0601DFCAECE009E4226 /* ISRResponse.m */; };
+		4286E06F1DFCAEF6009E4226 /* ISRHttpHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 4286E0661DFCAEF6009E4226 /* ISRHttpHandler.h */; };
+		4286E0701DFCAEF6009E4226 /* ISRHttpHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4286E0671DFCAEF6009E4226 /* ISRHttpHandler.m */; };
+		4286E0711DFCAEF6009E4226 /* ISRMessageHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 4286E0681DFCAEF6009E4226 /* ISRMessageHandler.h */; };
+		4286E0721DFCAEF6009E4226 /* ISRMessageHandlerFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 4286E0691DFCAEF6009E4226 /* ISRMessageHandlerFactory.h */; };
+		4286E0731DFCAEF6009E4226 /* ISRMessageHandlerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4286E06A1DFCAEF6009E4226 /* ISRMessageHandlerFactory.m */; };
+		4286E0741DFCAEF6009E4226 /* ISRNotificationHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 4286E06B1DFCAEF6009E4226 /* ISRNotificationHandler.h */; };
+		4286E0751DFCAEF6009E4226 /* ISRNotificationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4286E06C1DFCAEF6009E4226 /* ISRNotificationHandler.m */; };
+		4286E0761DFCAEF6009E4226 /* ISRUrlHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 4286E06D1DFCAEF6009E4226 /* ISRUrlHandler.h */; };
+		4286E0771DFCAEF6009E4226 /* ISRUrlHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4286E06E1DFCAEF6009E4226 /* ISRUrlHandler.m */; };
+		4286E07D1DFCAF10009E4226 /* ISRHtmlView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4286E0791DFCAF10009E4226 /* ISRHtmlView.h */; };
+		4286E07E1DFCAF10009E4226 /* ISRHtmlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4286E07A1DFCAF10009E4226 /* ISRHtmlView.m */; };
+		4286E07F1DFCAF10009E4226 /* ISRWebInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 4286E07B1DFCAF10009E4226 /* ISRWebInterface.h */; };
+		4286E0801DFCAF10009E4226 /* ISRWebInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 4286E07C1DFCAF10009E4226 /* ISRWebInterface.m */; };
+		42D1CAE61E1D371D00473485 /* ISRDeepLinkHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 42D1CAE41E1D371D00473485 /* ISRDeepLinkHandler.h */; };
+		42D1CAE71E1D371D00473485 /* ISRDeepLinkHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1CAE51E1D371D00473485 /* ISRDeepLinkHandler.m */; };
+		F93816F5AB76AE043D04CA17 /* Pods_ReactionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77F17785E17477681D2F9797 /* Pods_ReactionSDK.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4286E02A1DFCADA2009E4226 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4286E0161DFCADA1009E4226 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4286E01E1DFCADA1009E4226;
+			remoteInfo = ReActionSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4286E01F1DFCADA2009E4226 /* ReactionSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactionSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4286E0221DFCADA2009E4226 /* ReactionSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactionSDK.h; sourceTree = "<group>"; };
+		4286E0231DFCADA2009E4226 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4286E0281DFCADA2009E4226 /* ReactionSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactionSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4286E02D1DFCADA2009E4226 /* ReactionSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactionSDKTests.m; sourceTree = "<group>"; };
+		4286E02F1DFCADA2009E4226 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4286E03A1DFCADDB009E4226 /* Reaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reaction.h; sourceTree = "<group>"; };
+		4286E03B1DFCADDB009E4226 /* Reaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reaction.m; sourceTree = "<group>"; };
+		4286E03C1DFCADDB009E4226 /* ReactionApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactionApp.h; sourceTree = "<group>"; };
+		4286E03D1DFCADDB009E4226 /* ReactionApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactionApp.m; sourceTree = "<group>"; };
+		4286E04C1DFCAEB8009E4226 /* ISRAtomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISRAtomController.m; path = helper/ISRAtomController.m; sourceTree = "<group>"; };
+		4286E04D1DFCAEB8009E4226 /* ISRAtomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISRAtomController.h; path = helper/ISRAtomController.h; sourceTree = "<group>"; };
+		4286E04E1DFCAEB8009E4226 /* ISRConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISRConfig.h; path = helper/ISRConfig.h; sourceTree = "<group>"; };
+		4286E04F1DFCAEB8009E4226 /* ISRConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISRConfig.m; path = helper/ISRConfig.m; sourceTree = "<group>"; };
+		4286E0501DFCAEB8009E4226 /* ISRLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISRLogger.h; path = helper/ISRLogger.h; sourceTree = "<group>"; };
+		4286E0511DFCAEB8009E4226 /* ISRLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISRLogger.m; path = helper/ISRLogger.m; sourceTree = "<group>"; };
+		4286E0521DFCAEB8009E4226 /* ISRUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISRUtils.h; path = helper/ISRUtils.h; sourceTree = "<group>"; };
+		4286E0531DFCAEB8009E4226 /* ISRUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISRUtils.m; path = helper/ISRUtils.m; sourceTree = "<group>"; };
+		4286E05D1DFCAECE009E4226 /* ISRRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISRRequest.h; path = http/ISRRequest.h; sourceTree = "<group>"; };
+		4286E05E1DFCAECE009E4226 /* ISRRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISRRequest.m; path = http/ISRRequest.m; sourceTree = "<group>"; };
+		4286E05F1DFCAECE009E4226 /* ISRResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISRResponse.h; path = http/ISRResponse.h; sourceTree = "<group>"; };
+		4286E0601DFCAECE009E4226 /* ISRResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISRResponse.m; path = http/ISRResponse.m; sourceTree = "<group>"; };
+		4286E0661DFCAEF6009E4226 /* ISRHttpHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISRHttpHandler.h; path = message/ISRHttpHandler.h; sourceTree = "<group>"; };
+		4286E0671DFCAEF6009E4226 /* ISRHttpHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISRHttpHandler.m; path = message/ISRHttpHandler.m; sourceTree = "<group>"; };
+		4286E0681DFCAEF6009E4226 /* ISRMessageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISRMessageHandler.h; path = message/ISRMessageHandler.h; sourceTree = "<group>"; };
+		4286E0691DFCAEF6009E4226 /* ISRMessageHandlerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISRMessageHandlerFactory.h; path = message/ISRMessageHandlerFactory.h; sourceTree = "<group>"; };
+		4286E06A1DFCAEF6009E4226 /* ISRMessageHandlerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISRMessageHandlerFactory.m; path = message/ISRMessageHandlerFactory.m; sourceTree = "<group>"; };
+		4286E06B1DFCAEF6009E4226 /* ISRNotificationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISRNotificationHandler.h; path = message/ISRNotificationHandler.h; sourceTree = "<group>"; };
+		4286E06C1DFCAEF6009E4226 /* ISRNotificationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISRNotificationHandler.m; path = message/ISRNotificationHandler.m; sourceTree = "<group>"; };
+		4286E06D1DFCAEF6009E4226 /* ISRUrlHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISRUrlHandler.h; path = message/ISRUrlHandler.h; sourceTree = "<group>"; };
+		4286E06E1DFCAEF6009E4226 /* ISRUrlHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISRUrlHandler.m; path = message/ISRUrlHandler.m; sourceTree = "<group>"; };
+		4286E0791DFCAF10009E4226 /* ISRHtmlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISRHtmlView.h; path = view/ISRHtmlView.h; sourceTree = "<group>"; };
+		4286E07A1DFCAF10009E4226 /* ISRHtmlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISRHtmlView.m; path = view/ISRHtmlView.m; sourceTree = "<group>"; };
+		4286E07B1DFCAF10009E4226 /* ISRWebInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISRWebInterface.h; path = view/ISRWebInterface.h; sourceTree = "<group>"; };
+		4286E07C1DFCAF10009E4226 /* ISRWebInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISRWebInterface.m; path = view/ISRWebInterface.m; sourceTree = "<group>"; };
+		4286E0811DFCAF2C009E4226 /* AtomSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AtomSDK.framework; path = "../../../../../../../../Library/Developer/Xcode/DerivedData/ReActionSDK-gqzgmldmbdxcccdmjabomvhezjqt/Build/Products/Debug-iphonesimulator/AtomSDK/AtomSDK.framework"; sourceTree = "<group>"; };
+		42D1CAE41E1D371D00473485 /* ISRDeepLinkHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISRDeepLinkHandler.h; path = message/ISRDeepLinkHandler.h; sourceTree = "<group>"; };
+		42D1CAE51E1D371D00473485 /* ISRDeepLinkHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISRDeepLinkHandler.m; path = message/ISRDeepLinkHandler.m; sourceTree = "<group>"; };
+		42FB24EA1E7FDCFF00684BBB /* Pods_ReActionSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_ReActionSDK.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/ReactionSDK-arskohlcmbvcxqffvsffqvydnudi/Build/Products/Debug-iphonesimulator/Pods_ReActionSDK.framework"; sourceTree = "<group>"; };
+		5E537AF8C42A198C859DA919 /* Pods_ReActionSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReActionSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77F17785E17477681D2F9797 /* Pods_ReactionSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactionSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B1BE106FC31B1FB67EDC6DF /* Pods-ReactionSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactionSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactionSDK/Pods-ReactionSDK.release.xcconfig"; sourceTree = "<group>"; };
+		B7AA0B5694B8D94CEBA5E173 /* Pods-ReactionSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactionSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactionSDK/Pods-ReactionSDK.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4286E01B1DFCADA1009E4226 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F93816F5AB76AE043D04CA17 /* Pods_ReactionSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4286E0251DFCADA2009E4226 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4286E0291DFCADA2009E4226 /* ReactionSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4286E0151DFCADA1009E4226 = {
+			isa = PBXGroup;
+			children = (
+				4286E0211DFCADA2009E4226 /* ReactionSDK */,
+				4286E02C1DFCADA2009E4226 /* ReactionSDKTests */,
+				4286E0201DFCADA2009E4226 /* Products */,
+				AB3A538DA084A96C80F388BA /* Pods */,
+				53F983F437D65BA511219B22 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4286E0201DFCADA2009E4226 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4286E01F1DFCADA2009E4226 /* ReactionSDK.framework */,
+				4286E0281DFCADA2009E4226 /* ReactionSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4286E0211DFCADA2009E4226 /* ReactionSDK */ = {
+			isa = PBXGroup;
+			children = (
+				4286E0781DFCAEFC009E4226 /* view */,
+				4286E0651DFCAED1009E4226 /* message */,
+				4286E05C1DFCAEBC009E4226 /* http */,
+				4286E04B1DFCAEA3009E4226 /* helper */,
+				4286E03A1DFCADDB009E4226 /* Reaction.h */,
+				4286E03B1DFCADDB009E4226 /* Reaction.m */,
+				4286E03C1DFCADDB009E4226 /* ReactionApp.h */,
+				4286E03D1DFCADDB009E4226 /* ReactionApp.m */,
+				4286E0221DFCADA2009E4226 /* ReactionSDK.h */,
+				4286E0231DFCADA2009E4226 /* Info.plist */,
+			);
+			name = ReactionSDK;
+			path = ReActionSDK;
+			sourceTree = "<group>";
+		};
+		4286E02C1DFCADA2009E4226 /* ReactionSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				4286E02D1DFCADA2009E4226 /* ReactionSDKTests.m */,
+				4286E02F1DFCADA2009E4226 /* Info.plist */,
+			);
+			name = ReactionSDKTests;
+			path = ReActionSDKTests;
+			sourceTree = "<group>";
+		};
+		4286E04B1DFCAEA3009E4226 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				4286E04C1DFCAEB8009E4226 /* ISRAtomController.m */,
+				4286E04D1DFCAEB8009E4226 /* ISRAtomController.h */,
+				4286E04E1DFCAEB8009E4226 /* ISRConfig.h */,
+				4286E04F1DFCAEB8009E4226 /* ISRConfig.m */,
+				4286E0501DFCAEB8009E4226 /* ISRLogger.h */,
+				4286E0511DFCAEB8009E4226 /* ISRLogger.m */,
+				4286E0521DFCAEB8009E4226 /* ISRUtils.h */,
+				4286E0531DFCAEB8009E4226 /* ISRUtils.m */,
+			);
+			name = helper;
+			sourceTree = "<group>";
+		};
+		4286E05C1DFCAEBC009E4226 /* http */ = {
+			isa = PBXGroup;
+			children = (
+				4286E05D1DFCAECE009E4226 /* ISRRequest.h */,
+				4286E05E1DFCAECE009E4226 /* ISRRequest.m */,
+				4286E05F1DFCAECE009E4226 /* ISRResponse.h */,
+				4286E0601DFCAECE009E4226 /* ISRResponse.m */,
+			);
+			name = http;
+			sourceTree = "<group>";
+		};
+		4286E0651DFCAED1009E4226 /* message */ = {
+			isa = PBXGroup;
+			children = (
+				4286E0661DFCAEF6009E4226 /* ISRHttpHandler.h */,
+				4286E0671DFCAEF6009E4226 /* ISRHttpHandler.m */,
+				4286E0681DFCAEF6009E4226 /* ISRMessageHandler.h */,
+				4286E0691DFCAEF6009E4226 /* ISRMessageHandlerFactory.h */,
+				4286E06A1DFCAEF6009E4226 /* ISRMessageHandlerFactory.m */,
+				4286E06B1DFCAEF6009E4226 /* ISRNotificationHandler.h */,
+				4286E06C1DFCAEF6009E4226 /* ISRNotificationHandler.m */,
+				4286E06D1DFCAEF6009E4226 /* ISRUrlHandler.h */,
+				4286E06E1DFCAEF6009E4226 /* ISRUrlHandler.m */,
+				42D1CAE41E1D371D00473485 /* ISRDeepLinkHandler.h */,
+				42D1CAE51E1D371D00473485 /* ISRDeepLinkHandler.m */,
+			);
+			name = message;
+			sourceTree = "<group>";
+		};
+		4286E0781DFCAEFC009E4226 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				4286E0791DFCAF10009E4226 /* ISRHtmlView.h */,
+				4286E07A1DFCAF10009E4226 /* ISRHtmlView.m */,
+				4286E07B1DFCAF10009E4226 /* ISRWebInterface.h */,
+				4286E07C1DFCAF10009E4226 /* ISRWebInterface.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		53F983F437D65BA511219B22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42FB24EA1E7FDCFF00684BBB /* Pods_ReActionSDK.framework */,
+				4286E0811DFCAF2C009E4226 /* AtomSDK.framework */,
+				5E537AF8C42A198C859DA919 /* Pods_ReActionSDK.framework */,
+				77F17785E17477681D2F9797 /* Pods_ReactionSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB3A538DA084A96C80F388BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7AA0B5694B8D94CEBA5E173 /* Pods-ReactionSDK.debug.xcconfig */,
+				8B1BE106FC31B1FB67EDC6DF /* Pods-ReactionSDK.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4286E01C1DFCADA1009E4226 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4286E0551DFCAEB8009E4226 /* ISRAtomController.h in Headers */,
+				4286E0721DFCAEF6009E4226 /* ISRMessageHandlerFactory.h in Headers */,
+				4286E0611DFCAECE009E4226 /* ISRRequest.h in Headers */,
+				4286E0631DFCAECE009E4226 /* ISRResponse.h in Headers */,
+				4286E07F1DFCAF10009E4226 /* ISRWebInterface.h in Headers */,
+				4286E0561DFCAEB8009E4226 /* ISRConfig.h in Headers */,
+				4286E0741DFCAEF6009E4226 /* ISRNotificationHandler.h in Headers */,
+				4286E06F1DFCAEF6009E4226 /* ISRHttpHandler.h in Headers */,
+				4286E0301DFCADA2009E4226 /* ReactionSDK.h in Headers */,
+				4286E0711DFCAEF6009E4226 /* ISRMessageHandler.h in Headers */,
+				4286E0451DFCADDB009E4226 /* ReactionApp.h in Headers */,
+				4286E0761DFCAEF6009E4226 /* ISRUrlHandler.h in Headers */,
+				42D1CAE61E1D371D00473485 /* ISRDeepLinkHandler.h in Headers */,
+				4286E0431DFCADDB009E4226 /* Reaction.h in Headers */,
+				4286E0581DFCAEB8009E4226 /* ISRLogger.h in Headers */,
+				4286E05A1DFCAEB8009E4226 /* ISRUtils.h in Headers */,
+				4286E07D1DFCAF10009E4226 /* ISRHtmlView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4286E01E1DFCADA1009E4226 /* ReactionSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4286E0331DFCADA2009E4226 /* Build configuration list for PBXNativeTarget "ReactionSDK" */;
+			buildPhases = (
+				33FF8282C34BFE2CB5B071A1 /* [CP] Check Pods Manifest.lock */,
+				4286E01A1DFCADA1009E4226 /* Sources */,
+				4286E01B1DFCADA1009E4226 /* Frameworks */,
+				4286E01C1DFCADA1009E4226 /* Headers */,
+				4286E01D1DFCADA1009E4226 /* Resources */,
+				93128F2AFED06ED6AB0FF0FB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReactionSDK;
+			productName = ReActionSDK;
+			productReference = 4286E01F1DFCADA2009E4226 /* ReactionSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4286E0271DFCADA2009E4226 /* ReactionSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4286E0361DFCADA2009E4226 /* Build configuration list for PBXNativeTarget "ReactionSDKTests" */;
+			buildPhases = (
+				4286E0241DFCADA2009E4226 /* Sources */,
+				4286E0251DFCADA2009E4226 /* Frameworks */,
+				4286E0261DFCADA2009E4226 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4286E02B1DFCADA2009E4226 /* PBXTargetDependency */,
+			);
+			name = ReactionSDKTests;
+			productName = ReActionSDKTests;
+			productReference = 4286E0281DFCADA2009E4226 /* ReactionSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4286E0161DFCADA1009E4226 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = IronSource;
+				TargetAttributes = {
+					4286E01E1DFCADA1009E4226 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UYFV8VN697;
+						ProvisioningStyle = Automatic;
+					};
+					4286E0271DFCADA2009E4226 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UYFV8VN697;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4286E0191DFCADA1009E4226 /* Build configuration list for PBXProject "ReactionSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4286E0151DFCADA1009E4226;
+			productRefGroup = 4286E0201DFCADA2009E4226 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4286E01E1DFCADA1009E4226 /* ReactionSDK */,
+				4286E0271DFCADA2009E4226 /* ReactionSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4286E01D1DFCADA1009E4226 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4286E0261DFCADA2009E4226 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33FF8282C34BFE2CB5B071A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		93128F2AFED06ED6AB0FF0FB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactionSDK/Pods-ReactionSDK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4286E01A1DFCADA1009E4226 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4286E05B1DFCAEB8009E4226 /* ISRUtils.m in Sources */,
+				4286E0751DFCAEF6009E4226 /* ISRNotificationHandler.m in Sources */,
+				4286E0591DFCAEB8009E4226 /* ISRLogger.m in Sources */,
+				4286E0701DFCAEF6009E4226 /* ISRHttpHandler.m in Sources */,
+				4286E0621DFCAECE009E4226 /* ISRRequest.m in Sources */,
+				4286E0461DFCADDB009E4226 /* ReactionApp.m in Sources */,
+				4286E0441DFCADDB009E4226 /* Reaction.m in Sources */,
+				4286E0731DFCAEF6009E4226 /* ISRMessageHandlerFactory.m in Sources */,
+				4286E07E1DFCAF10009E4226 /* ISRHtmlView.m in Sources */,
+				42D1CAE71E1D371D00473485 /* ISRDeepLinkHandler.m in Sources */,
+				4286E0801DFCAF10009E4226 /* ISRWebInterface.m in Sources */,
+				4286E0641DFCAECE009E4226 /* ISRResponse.m in Sources */,
+				4286E0771DFCAEF6009E4226 /* ISRUrlHandler.m in Sources */,
+				4286E0571DFCAEB8009E4226 /* ISRConfig.m in Sources */,
+				4286E0541DFCAEB8009E4226 /* ISRAtomController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4286E0241DFCADA2009E4226 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4286E02E1DFCADA2009E4226 /* ReactionSDKTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4286E02B1DFCADA2009E4226 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4286E01E1DFCADA1009E4226 /* ReactionSDK */;
+			targetProxy = 4286E02A1DFCADA2009E4226 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4286E0311DFCADA2009E4226 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4286E0321DFCADA2009E4226 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4286E0341DFCADA2009E4226 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7AA0B5694B8D94CEBA5E173 /* Pods-ReactionSDK.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = UYFV8VN697;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ReActionSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reaction.sdk.ReactionSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4286E0351DFCADA2009E4226 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B1BE106FC31B1FB67EDC6DF /* Pods-ReactionSDK.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = UYFV8VN697;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ReActionSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reaction.sdk.ReactionSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4286E0371DFCADA2009E4226 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = UYFV8VN697;
+				INFOPLIST_FILE = ReActionSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reaction.sdk.ReActionSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4286E0381DFCADA2009E4226 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = UYFV8VN697;
+				INFOPLIST_FILE = ReActionSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reaction.sdk.ReActionSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4286E0191DFCADA1009E4226 /* Build configuration list for PBXProject "ReactionSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4286E0311DFCADA2009E4226 /* Debug */,
+				4286E0321DFCADA2009E4226 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4286E0331DFCADA2009E4226 /* Build configuration list for PBXNativeTarget "ReactionSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4286E0341DFCADA2009E4226 /* Debug */,
+				4286E0351DFCADA2009E4226 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4286E0361DFCADA2009E4226 /* Build configuration list for PBXNativeTarget "ReactionSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4286E0371DFCADA2009E4226 /* Debug */,
+				4286E0381DFCADA2009E4226 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4286E0161DFCADA1009E4226 /* Project object */;
+}
