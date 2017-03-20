@@ -11,6 +11,7 @@ import ReActionSDK
 
 import AVFoundation
 
+
 class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     @IBOutlet var logo: UIImageView!
     @IBOutlet var appKey: UILabel!
@@ -51,6 +52,8 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         
         reactionSDK_ = ISReaction.createWithSenderID(senderId_, applicationKey: appKeyStr_,
                          isDebug: true)
+        
+        var currentClass: AnyClass? = ISReaction.getClassByName("ISRWebInterface");
         
         self.initQRScanner()
     }
