@@ -4,7 +4,7 @@ use_frameworks!
 target 'ReactionSDKExample' do
     #pod 'Google/CloudMessaging'
 
-    pod 'ReActionSDK'
+    pod 'Reaction'
 end
 
 pre_install do |installer|

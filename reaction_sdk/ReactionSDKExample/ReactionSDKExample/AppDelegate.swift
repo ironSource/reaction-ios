@@ -7,60 +7,60 @@
 //
 
 import UIKit
-import ReActionSDK
+import Reaction
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GCMReceiverDelegate {
     
     var window: UIWindow?
     
-    func application(application: UIApplication, didFinishLaunchingWithOptions
-        launchOptions: [NSObject : AnyObject]?) -> Bool {
-        ISReactionApp.applicationDidFinishLaunching(application,
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions
+        launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        ReactionApp.applicationDidFinishLaunching(application,
                                                     launchOptions: launchOptions)
-        
         return true
     }
     
-    func application(application: UIApplication,
-                     didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
-        ISReactionApp.registerGCMServiceWithApplication(application,
+    func application(_ application: UIApplication,
+                     didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        ReactionApp.registerGCMService(with: application,
                                                         deviceToken:deviceToken)
     }
     
-    func applicationDidBecomeActive(application: UIApplication) {
-        ISReactionApp.applicationDidBecomeActive(application)
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        ReactionApp.applicationDidBecomeActive(application)
     }
     
-    func applicationDidEnterBackground(application: UIApplication) {
-        ISReactionApp.applicationDidEnterBackground(application)
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        ReactionApp.applicationDidEnterBackground(application)
     }
-    
-    func application(application: UIApplication,
-                     didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
-        ISReactionApp.receiveRemoteNotificationWithApplication(application,
+ 
+    func application(_ application: UIApplication,
+                     didReceiveRemoteNotification userInfo: [AnyHashable: Any]) {
+        ReactionApp.receiveRemoteNotification(with: application,
                                                                userInfo:userInfo);
     }
-    
-    func application(application: UIApplication,
-                     didReceiveRemoteNotification userInfo: [NSObject : AnyObject],
-                  fetchCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
-        ISReactionApp.receiveRemoteNotificationWithApplication(application,
+    /*
+    func application(_ application: UIApplication,
+                     didReceiveRemoteNotification userInfo: [AnyHashable: Any],
+                  fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        ReactionApp.receiveRemoteNotification(with: application,
                         userInfo:userInfo, fetchCompletionHandler:completionHandler)
+         completionHandler(.newData)
     }
     
-    func application(application: UIApplication,
-                     didReceiveLocalNotification notification: UILocalNotification) {
-        ISReactionApp.receiveLocalNotificationWithApplication(application,
+    func application(_ application: UIApplication,
+                     didReceive notification: UILocalNotification) {
+        ReactionApp.receiveLocalNotification(with: application,
                                                               notification:notification);
-    }
+    } */
     
     // deep link isrtest://test_page
-    func application(application: UIApplication, handleOpenURL url: NSURL) -> Bool {
+    func application(_ application: UIApplication, handleOpen url: URL) -> Bool {
         if (url.host == "test_page") {
-            let alert = UIAlertController(title: "Deep Link", message: "Hi,test_page", preferredStyle: UIAlertControllerStyle.Alert)
-            alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
-            self.window?.rootViewController!.presentViewController(alert, animated: true, completion: nil)
+            let alert = UIAlertController(title: "Deep Link", message: "Hi,test_page", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
+            self.window?.rootViewController!.present(alert, animated: true, completion: nil)
             
             return true
         } else {

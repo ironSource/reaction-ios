@@ -1,0 +1,20 @@
+{
+    "to": "cRZXnhS1vxA:APA91bFXDnmbq-fTdo0O3jv5NMAEEljhpz481KYLaBh_vWHyY-mz778STGfsy5i7wLiclGdIgk9XsO-VT6Sh3JqWbh92O-DmckVR9crC2vof7xv3-ubxYTghUPmo8erEJHem-wqd2TBC",
+ 
+    "priority": 10,
+    "content_available": true,
+    "mutable_content": true,
+    
+    "notification":{
+        "title": "test title",
+        "body": "Test body"
+     },
+     "data" : {
+        "subtitle": "Test subtitle",
+        "image" : "https://pusher.com/static_logos/320x320.png",
+        "type": "html",
+        "orientation": 0,
+        "percentage": "55",
+        "html": "<html>\r\n  <head>\r\n <style>\r\n  html, body {margin:0px;padding:0px;width:100%;height:100%;}\r\n  img {width:100%;height:100%;object-fit: cover;}\r\n  #close { position: absolute;top: 10px;right: 10px;z-index:5000;width:35px;height:35px;font-family:arial;font-size:15px;font-weight:bold;color:#2c3235;border-radius: 50%;border: 3px solid #ffffff;padding: 2px 2px 2px 2px;background: #cfcfcf;box-shadow: 2px 2px 2px #000000;}\r\n  #close:focus {background-color:#d6ffd4;outline:0;}\r\n </style>\r\n  </head>\r\n  <body>\r\n    <script>\r\n  function doAction() {\r\n       var actionId = 'my_id';\r\n      webkit.messageHandlers.closeView.postMessage(\"\");\r\n    if (actionId!=\"\") Android.doAction(actionId);\r\n  }\r\n  function closeView() {\r\n    webkit.messageHandlers.closeView.postMessage(\"\");\r\n  }\r\n    </script>\r\n  <button id=\"close\" onclick=\"closeView()\">X</button>\r\n  <img src=\"https://lh3.googleusercontent.com/J99_Sfoeqt_dwaQIl081ltjOup2UeC-YUVofw4V2cIIW8PxoSzKHCWyFkFDNhTID094=h900\" onclick=\"doAction()\">\r\n</body>\r\n</html>"
+     }
+}

@@ -7,9 +7,30 @@
 //
 
 import UIKit
-import ReActionSDK
+import Reaction
+import UserNotifications
 
 import AVFoundation
+fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l < r
+  case (nil, _?):
+    return true
+  default:
+    return false
+  }
+}
+
+fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l > r
+  default:
+    return rhs < lhs
+  }
+}
+
 
 
 class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
@@ -33,7 +54,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     let appKeyStr_ = "IgbM_92Buth84Akobv9Ate20Dk"
     let senderId_ = "139121052578"
     
-    var reactionSDK_: ISReaction?
+    var reactionSDK_: Reaction?
     
     var captureSession_: AVCaptureSession?
     var videoPreviewLayer_: AVCaptureVideoPreviewLayer?
@@ -50,18 +71,55 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        reactionSDK_ = ISReaction.createWithSenderID(senderId_, applicationKey: appKeyStr_,
-                         isDebug: true)
+        // 1. Request permitions
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound],
+                                                                completionHandler: { (granted, error) in
+            if granted {
+                print("Notification access granted!")
+            } else {
+                print(error?.localizedDescription)
+            }
+        })
         
-        var currentClass: AnyClass? = ISReaction.getClassByName("ISRWebInterface");
+        reactionSDK_ = Reaction.create(withSenderID: senderId_, applicationKey: appKeyStr_,
+                         isDebug: true) 
+        
+        //var currentClass: AnyClass? = Reaction.getClassByName("ISRWebInterface");
         
         self.initQRScanner()
+        
+        
     }
+    
+    /*
+    func scheduleNotification(timeout: TimeInterval, completion: @escaping (_ Success: Bool) -> ()) {
+        let notification = UNMutableNotificationContent()
+        
+        notification.title = "Test title"
+        notification.subtitle = "Test subtitle"
+        notification.body = "Test body"
+        
+        let notificationTrigger = UNTimeIntervalNotificationTrigger(timeInterval: timeout,
+                                                                    repeats: false)
+        
+        let request = UNNotificationRequest(identifier: "ReactionNotification",
+                                            content: notification,
+                                            trigger: notificationTrigger)
+        
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: { error in
+            if error != nil {
+                print(error?.localizedDescription)
+                completion(false)
+            } else {
+                completion(true)
+            }
+        })
+    }*/
     
     func initQRScanner() {
         // Get an instance of the AVCaptureDevice class to initialize a device object and provide the video
         // as the media type parameter.
-        let captureDevice = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
+        let captureDevice = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
         
         do {
             // Get an instance of the AVCaptureDeviceInput class using the previous device object.
@@ -77,7 +135,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
             captureSession_?.addOutput(captureMetadataOutput)
             
             // Set delegate and use the default dispatch queue to execute the call back
-            captureMetadataOutput.setMetadataObjectsDelegate(self, queue: dispatch_get_main_queue())
+            captureMetadataOutput.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
             
             // Detect all the supported bar code
             captureMetadataOutput.metadataObjectTypes = supportedBarCodes
@@ -109,18 +167,18 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         self.qrCodeScannerClosed_ = false;
         
         if let qrCodeFrameView = qrCodeFrameView_ {
-            qrCodeFrameView.layer.borderColor = UIColor.greenColor().CGColor
+            qrCodeFrameView.layer.borderColor = UIColor.green.cgColor
             qrCodeFrameView.layer.borderWidth = 2
             view.addSubview(qrCodeFrameView)
-            view.bringSubviewToFront(qrCodeFrameView)
+            view.bringSubview(toFront: qrCodeFrameView)
         }
         
         self.qrButtonClose_ = UIButton()
-        self.qrButtonClose_!.setTitle("Close", forState: .Normal)
-        self.qrButtonClose_!.setTitleColor(UIColor.blackColor(), forState: .Normal)
+        self.qrButtonClose_!.setTitle("Close", for: UIControlState())
+        self.qrButtonClose_!.setTitleColor(UIColor.black, for: UIControlState())
         self.qrButtonClose_!.addTarget(self, action:
             #selector(ViewController.buttonQRScannerCloseClicked(_:)),
-                                       forControlEvents: .TouchUpInside)
+                                       for: .touchUpInside)
         
         self.qrButtonClose_!.backgroundColor = UIColor(red: 1.0, green: 1.0,
                                                        blue: 1.0, alpha: 0.5)
@@ -128,41 +186,41 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         self.qrButtonClose_!.translatesAutoresizingMaskIntoConstraints = false
         
         self.view.addSubview(self.qrButtonClose_!)
-        self.view.bringSubviewToFront(self.qrButtonClose_!)
+        self.view.bringSubview(toFront: self.qrButtonClose_!)
         
         let widthConstraint = NSLayoutConstraint(item: self.qrButtonClose_!,
-                                                 attribute: NSLayoutAttribute.Width,
-                                                 relatedBy: NSLayoutRelation.Equal,
+                                                 attribute: NSLayoutAttribute.width,
+                                                 relatedBy: NSLayoutRelation.equal,
                                                  toItem: self.view,
-                                                 attribute: NSLayoutAttribute.Width,
+                                                 attribute: NSLayoutAttribute.width,
                                                  multiplier: 1.0, constant: 0)
         
         let heightConstraint = NSLayoutConstraint(item: self.qrButtonClose_!,
-                                                 attribute: NSLayoutAttribute.Height,
-                                                 relatedBy: NSLayoutRelation.Equal,
+                                                 attribute: NSLayoutAttribute.height,
+                                                 relatedBy: NSLayoutRelation.equal,
                                                  toItem: nil,
-                                                 attribute: NSLayoutAttribute.NotAnAttribute,
+                                                 attribute: NSLayoutAttribute.notAnAttribute,
                                                  multiplier: 1.0, constant: 60)
         
         let centerXConstraint = NSLayoutConstraint(item: self.qrButtonClose_!,
-                                                 attribute: NSLayoutAttribute.CenterX,
-                                                 relatedBy: NSLayoutRelation.Equal,
+                                                 attribute: NSLayoutAttribute.centerX,
+                                                 relatedBy: NSLayoutRelation.equal,
                                                  toItem: self.view,
-                                                 attribute: NSLayoutAttribute.CenterX,
+                                                 attribute: NSLayoutAttribute.centerX,
                                                  multiplier: 1.0, constant: 0)
         
         let centerYConstraint = NSLayoutConstraint(item: self.qrButtonClose_!,
-                                                  attribute: NSLayoutAttribute.Bottom,
-                                                  relatedBy: NSLayoutRelation.Equal,
+                                                  attribute: NSLayoutAttribute.bottom,
+                                                  relatedBy: NSLayoutRelation.equal,
                                                   toItem: self.view,
-                                                  attribute: NSLayoutAttribute.Bottom,
+                                                  attribute: NSLayoutAttribute.bottom,
                                                   multiplier: 1.0, constant: 0)
 
         
        self.view.addConstraints([widthConstraint, heightConstraint, centerXConstraint, centerYConstraint])
     }
     
-    func buttonQRScannerCloseClicked(sender: UIButton!) {
+    func buttonQRScannerCloseClicked(_ sender: UIButton!) {
         self.stopQRScanner()
     }
     
@@ -173,12 +231,12 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         self.qrButtonClose_!.removeFromSuperview()
     }
     
-    func captureOutput(captureOutput: AVCaptureOutput!, didOutputMetadataObjects
-        metadataObjects: [AnyObject]!, fromConnection connection: AVCaptureConnection!) {
+    func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects
+        metadataObjects: [Any]!, from connection: AVCaptureConnection!) {
         
         // Check if the metadataObjects array is not nil and it contains at least one object.
         if metadataObjects == nil || metadataObjects.count == 0 {
-            qrCodeFrameView_?.frame = CGRectZero
+            qrCodeFrameView_?.frame = CGRect.zero
             NSLog("No Bar code!");
             return
         }
@@ -192,7 +250,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         if supportedBarCodes.contains(metadataObj.type) {
             //        if metadataObj.type == AVMetadataObjectTypeQRCode {
             // If the found metadata is equal to the QR code metadata then update the status label's text and set the bounds
-            let barCodeObject = videoPreviewLayer_?.transformedMetadataObjectForMetadataObject(metadataObj)
+            let barCodeObject = videoPreviewLayer_?.transformedMetadataObject(for: metadataObj)
             qrCodeFrameView_?.frame = barCodeObject!.bounds
             
             if metadataObj.stringValue != nil {
@@ -205,20 +263,20 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
                     
                     let seconds = 1.0
                     let delay = seconds * Double(NSEC_PER_SEC)  // nanoseconds per seconds
-                    let dispatchTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
+                    let dispatchTime = DispatchTime.now() + Double(Int64(delay)) / Double(NSEC_PER_SEC)
                     
-                    dispatch_after(dispatchTime, dispatch_get_main_queue(), {
+                    DispatchQueue.main.asyncAfter(deadline: dispatchTime, execute: {
                         
                         // here code perfomed with delay
                         self.stopQRScanner();
                         
                         if ((self.qrCodeData_) != nil) {
                             let qrCodeDataArray: [String] = self.qrCodeData_!
-                                .componentsSeparatedByString("::");
+                                .components(separatedBy: "::");
                             
                             let appKey: String = qrCodeDataArray[0];
                             //register demo device
-                            self.reactionSDK_!.registerDemoDeviceWithAppKey(appKey);
+                            self.reactionSDK_!.registerDemoDevice(withAppKey: appKey);
                         }
                     })
                 }
@@ -231,34 +289,34 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         super.didReceiveMemoryWarning()
     }
     
-    @IBAction func onRefreshPress(sender: AnyObject) {
+    @IBAction func onRefreshPress(_ sender: AnyObject) {
         self.iosID.text = self.reactionSDK_?.getDeviceID()
         self.appKey.text = self.appKeyStr_
     }
     
-    @IBAction func onRegisterDemoPress(sender: AnyObject) {
+    @IBAction func onRegisterDemoPress(_ sender: AnyObject) {
         self.startQRScanner()
     }
     
-    @IBAction func onReportStringPress(sender: AnyObject) {
+    @IBAction func onReportStringPress(_ sender: AnyObject) {
         if (self.stringEventName.text?.characters.count > 0) &&
             (self.stringEventValue.text?.characters.count > 0) {
-            self.reactionSDK_!.reportStringWithName(stringEventName.text!,
+            self.reactionSDK_!.reportString(withName: stringEventName.text!,
                                             value: stringEventValue.text!)
         }
     }
 
-    @IBAction func onReportNumberPress(sender: AnyObject) {
+    @IBAction func onReportNumberPress(_ sender: AnyObject) {
         if (self.numberEventName.text?.characters.count > 0) &&
             (self.numberEventValue.text?.characters.count > 0) {
             if let floatValue = Float(numberEventValue.text!) {
-                self.reactionSDK_!.reportNumberWithName(numberEventName.text!,
+                self.reactionSDK_!.reportNumber(withName: numberEventName.text!,
                                                 value: floatValue)
             }
         }
     }
     
-    @IBAction func onReportRevenuePress(sender: AnyObject) {
+    @IBAction func onReportRevenuePress(_ sender: AnyObject) {
         if self.revenueEventValue.text?.characters.count > 0 {
             if let floatValue = Float(revenueEventValue.text!) {
                 self.reactionSDK_!.reportRevenue(floatValue)
@@ -266,7 +324,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         }
     }
     
-    @IBAction func onReportPurchasePress(sender: AnyObject) {
+    @IBAction func onReportPurchasePress(_ sender: AnyObject) {
         if self.purchaseEventValue.text?.characters.count > 0 {
             if let floatValue = Float(purchaseEventValue.text!) {
                 self.reactionSDK_!.reportPurchase(floatValue)

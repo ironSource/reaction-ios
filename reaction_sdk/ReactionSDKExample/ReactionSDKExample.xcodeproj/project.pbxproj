@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		422F69991DFCB97E0013E094 /* Pods_ReactionSDKExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 026BD51FC275E3194ADE1E28 /* Pods_ReactionSDKExample.framework */; };
+		42A171971E89340500E692A1 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A171961E89340500E692A1 /* NotificationService.swift */; };
+		42A1719B1E89340500E692A1 /* TestCenter.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 42A171941E89340500E692A1 /* TestCenter.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		42A171EF1E89797F00E692A1 /* ReactionNotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A171EE1E89797F00E692A1 /* ReactionNotificationService.m */; };
 		42B79FD51DA7A3CE003291B3 /* ViewInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B79FD31DA7A3CE003291B3 /* ViewInfo.swift */; };
 		42B79FD61DA7A3CE003291B3 /* ViewInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42B79FD41DA7A3CE003291B3 /* ViewInfo.xib */; };
 		42D16B851D92B1290094E457 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D16B841D92B1290094E457 /* AppDelegate.swift */; };
@@ -15,19 +18,50 @@
 		42D16B8A1D92B1290094E457 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42D16B881D92B1290094E457 /* Main.storyboard */; };
 		42D16B8C1D92B1290094E457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D16B8B1D92B1290094E457 /* Assets.xcassets */; };
 		42D16B8F1D92B1290094E457 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42D16B8D1D92B1290094E457 /* LaunchScreen.storyboard */; };
-		42D16B9A1D92B1290094E457 /* ReactionSDKExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D16B991D92B1290094E457 /* ReactionSDKExampleTests.swift */; };
 		42D16BB21D92B2C90094E457 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42D16BB11D92B2C90094E457 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		42D16B961D92B1290094E457 /* PBXContainerItemProxy */ = {
+		42A171991E89340500E692A1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 42D16B791D92B1290094E457 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 42D16B801D92B1290094E457;
-			remoteInfo = ReactionSDKExample;
+			remoteGlobalIDString = 42A171931E89340500E692A1;
+			remoteInfo = TestCenter;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		42A1716F1E890F9E00E692A1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				42A1719B1E89340500E692A1 /* TestCenter.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42A171D01E896C3400E692A1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42A171D21E896CCA00E692A1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		026BD51FC275E3194ADE1E28 /* Pods_ReactionSDKExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactionSDKExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +74,13 @@
 		42631F741DF8650A00FEF5AF /* AtomSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AtomSDK.framework; path = "../../../../../../../Library/Developer/Xcode/DerivedData/ReactionSDKExample-auqmokvbbjxqanbohiggtlmnvxte/Build/Products/Debug-iphoneos/AtomSDK/AtomSDK.framework"; sourceTree = "<group>"; };
 		42631F751DF8650A00FEF5AF /* sqlite3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = sqlite3.framework; path = "../../../../../../../Library/Developer/Xcode/DerivedData/ReactionSDKExample-auqmokvbbjxqanbohiggtlmnvxte/Build/Products/Debug-iphoneos/sqlite3/sqlite3.framework"; sourceTree = "<group>"; };
 		4285802F1DA27BC4000EF4B7 /* ReactionSDKExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReactionSDKExample.entitlements; sourceTree = "<group>"; };
+		42A171941E89340500E692A1 /* TestCenter.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TestCenter.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		42A171961E89340500E692A1 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		42A171981E89340500E692A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42A171EB1E89797E00E692A1 /* TestCenter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestCenter-Bridging-Header.h"; sourceTree = "<group>"; };
+		42A171EC1E89797F00E692A1 /* ReactionExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactionExtension.h; sourceTree = "<group>"; };
+		42A171ED1E89797F00E692A1 /* ReactionNotificationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactionNotificationService.h; sourceTree = "<group>"; };
+		42A171EE1E89797F00E692A1 /* ReactionNotificationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactionNotificationService.m; sourceTree = "<group>"; };
 		42B79FD31DA7A3CE003291B3 /* ViewInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInfo.swift; sourceTree = "<group>"; };
 		42B79FD41DA7A3CE003291B3 /* ViewInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewInfo.xib; sourceTree = "<group>"; };
 		42D16B811D92B1290094E457 /* ReactionSDKExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactionSDKExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,14 +90,18 @@
 		42D16B8B1D92B1290094E457 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42D16B8E1D92B1290094E457 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42D16B901D92B1290094E457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		42D16B951D92B1290094E457 /* ReactionSDKExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactionSDKExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		42D16B991D92B1290094E457 /* ReactionSDKExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionSDKExampleTests.swift; sourceTree = "<group>"; };
-		42D16B9B1D92B1290094E457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42D16BB11D92B2C90094E457 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		67ED621CCA422146B1570E5B /* Pods-ReactionSDKExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactionSDKExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactionSDKExample/Pods-ReactionSDKExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		42A171911E89340500E692A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		42D16B7E1D92B1290094E457 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -65,22 +110,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		42D16B921D92B1290094E457 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42A171951E89340500E692A1 /* TestCenter */ = {
+			isa = PBXGroup;
+			children = (
+				42A171EC1E89797F00E692A1 /* ReactionExtension.h */,
+				42A171ED1E89797F00E692A1 /* ReactionNotificationService.h */,
+				42A171EE1E89797F00E692A1 /* ReactionNotificationService.m */,
+				42A171961E89340500E692A1 /* NotificationService.swift */,
+				42A171981E89340500E692A1 /* Info.plist */,
+				42A171EB1E89797E00E692A1 /* TestCenter-Bridging-Header.h */,
+			);
+			path = TestCenter;
+			sourceTree = "<group>";
+		};
 		42D16B781D92B1290094E457 = {
 			isa = PBXGroup;
 			children = (
 				42D16BB11D92B2C90094E457 /* GoogleService-Info.plist */,
 				42D16B831D92B1290094E457 /* ReactionSDKExample */,
-				42D16B981D92B1290094E457 /* ReactionSDKExampleTests */,
+				42A171951E89340500E692A1 /* TestCenter */,
 				42D16B821D92B1290094E457 /* Products */,
 				7B97218345233986AB8E37B8 /* Pods */,
 				EEE6AB81465FF64EB12358F8 /* Frameworks */,
@@ -91,7 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				42D16B811D92B1290094E457 /* ReactionSDKExample.app */,
-				42D16B951D92B1290094E457 /* ReactionSDKExampleTests.xctest */,
+				42A171941E89340500E692A1 /* TestCenter.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,15 +161,6 @@
 				42B79FD41DA7A3CE003291B3 /* ViewInfo.xib */,
 			);
 			path = ReactionSDKExample;
-			sourceTree = "<group>";
-		};
-		42D16B981D92B1290094E457 /* ReactionSDKExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				42D16B991D92B1290094E457 /* ReactionSDKExampleTests.swift */,
-				42D16B9B1D92B1290094E457 /* Info.plist */,
-			);
-			path = ReactionSDKExampleTests;
 			sourceTree = "<group>";
 		};
 		7B97218345233986AB8E37B8 /* Pods */ = {
@@ -148,6 +190,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		42A171931E89340500E692A1 /* TestCenter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42A1719C1E89340600E692A1 /* Build configuration list for PBXNativeTarget "TestCenter" */;
+			buildPhases = (
+				42A171901E89340500E692A1 /* Sources */,
+				42A171911E89340500E692A1 /* Frameworks */,
+				42A171921E89340500E692A1 /* Resources */,
+				42A171D21E896CCA00E692A1 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestCenter;
+			productName = TestCenter;
+			productReference = 42A171941E89340500E692A1 /* TestCenter.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		42D16B801D92B1290094E457 /* ReactionSDKExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42D16B9E1D92B1290094E457 /* Build configuration list for PBXNativeTarget "ReactionSDKExample" */;
@@ -158,33 +218,18 @@
 				42D16B7F1D92B1290094E457 /* Resources */,
 				2D89C5A5F6BB6209CE849C93 /* [CP] Embed Pods Frameworks */,
 				D0F3EA3A2E55D01B2ABACFD1 /* [CP] Copy Pods Resources */,
+				42A1716F1E890F9E00E692A1 /* Embed App Extensions */,
+				42A171D01E896C3400E692A1 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				42A1719A1E89340500E692A1 /* PBXTargetDependency */,
 			);
 			name = ReactionSDKExample;
 			productName = ReactionSDKExample;
 			productReference = 42D16B811D92B1290094E457 /* ReactionSDKExample.app */;
 			productType = "com.apple.product-type.application";
-		};
-		42D16B941D92B1290094E457 /* ReactionSDKExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 42D16BA11D92B1290094E457 /* Build configuration list for PBXNativeTarget "ReactionSDKExampleTests" */;
-			buildPhases = (
-				42D16B911D92B1290094E457 /* Sources */,
-				42D16B921D92B1290094E457 /* Frameworks */,
-				42D16B931D92B1290094E457 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				42D16B971D92B1290094E457 /* PBXTargetDependency */,
-			);
-			name = ReactionSDKExampleTests;
-			productName = ReactionSDKExampleTests;
-			productReference = 42D16B951D92B1290094E457 /* ReactionSDKExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -192,10 +237,16 @@
 		42D16B791D92B1290094E457 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = ReAction;
 				TargetAttributes = {
+					42A171931E89340500E692A1 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UYFV8VN697;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
 					42D16B801D92B1290094E457 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = UYFV8VN697;
@@ -208,11 +259,6 @@
 								enabled = 1;
 							};
 						};
-					};
-					42D16B941D92B1290094E457 = {
-						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0800;
-						TestTargetID = 42D16B801D92B1290094E457;
 					};
 				};
 			};
@@ -230,12 +276,19 @@
 			projectRoot = "";
 			targets = (
 				42D16B801D92B1290094E457 /* ReactionSDKExample */,
-				42D16B941D92B1290094E457 /* ReactionSDKExampleTests */,
+				42A171931E89340500E692A1 /* TestCenter */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		42A171921E89340500E692A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		42D16B7F1D92B1290094E457 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -245,13 +298,6 @@
 				42B79FD61DA7A3CE003291B3 /* ViewInfo.xib in Resources */,
 				42D16B8C1D92B1290094E457 /* Assets.xcassets in Resources */,
 				42D16B8A1D92B1290094E457 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42D16B931D92B1290094E457 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,12 +346,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		42A171901E89340500E692A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42A171971E89340500E692A1 /* NotificationService.swift in Sources */,
+				42A171EF1E89797F00E692A1 /* ReactionNotificationService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		42D16B7D1D92B1290094E457 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -316,21 +371,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		42D16B911D92B1290094E457 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				42D16B9A1D92B1290094E457 /* ReactionSDKExampleTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		42D16B971D92B1290094E457 /* PBXTargetDependency */ = {
+		42A1719A1E89340500E692A1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 42D16B801D92B1290094E457 /* ReactionSDKExample */;
-			targetProxy = 42D16B961D92B1290094E457 /* PBXContainerItemProxy */;
+			target = 42A171931E89340500E692A1 /* TestCenter */;
+			targetProxy = 42A171991E89340500E692A1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -354,6 +401,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		42A1719D1E89340600E692A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = UYFV8VN697;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestCenter",
+				);
+				INFOPLIST_FILE = TestCenter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reaction.test.TestCenter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "TestCenter/TestCenter-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		42A1719E1E89340600E692A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = UYFV8VN697;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestCenter",
+				);
+				INFOPLIST_FILE = TestCenter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reaction.test.TestCenter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TestCenter/TestCenter-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		42D16B9C1D92B1290094E457 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -450,6 +543,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1C5C54231E6E15B9C9B24D1A /* Pods-ReactionSDKExample.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -471,7 +565,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -480,6 +574,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 67ED621CCA422146B1570E5B /* Pods-ReactionSDKExample.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -500,40 +595,22 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.reaction.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		42D16BA21D92B1290094E457 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = ReactionSDKExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.reaction.testapp.ReactionSDKExampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactionSDKExample.app/ReactionSDKExample";
-			};
-			name = Debug;
-		};
-		42D16BA31D92B1290094E457 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = ReactionSDKExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.reaction.testapp.ReactionSDKExampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactionSDKExample.app/ReactionSDKExample";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		42A1719C1E89340600E692A1 /* Build configuration list for PBXNativeTarget "TestCenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42A1719D1E89340600E692A1 /* Debug */,
+				42A1719E1E89340600E692A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		42D16B7C1D92B1290094E457 /* Build configuration list for PBXProject "ReactionSDKExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -548,15 +625,6 @@
 			buildConfigurations = (
 				42D16B9F1D92B1290094E457 /* Debug */,
 				42D16BA01D92B1290094E457 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		42D16BA11D92B1290094E457 /* Build configuration list for PBXNativeTarget "ReactionSDKExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				42D16BA21D92B1290094E457 /* Debug */,
-				42D16BA31D92B1290094E457 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

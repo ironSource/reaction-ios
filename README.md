@@ -1,4 +1,4 @@
-# ironSource.ReAction SDK for IOS
+# ironSource.Reaction SDK for IOS
 
 [![License][license-image]][license-url]
 [![Pods][pod-image]][pod-url]
@@ -9,7 +9,7 @@ Add dependency in your pod file
 ```ruby
 use_frameworks!
 
-pod 'ReActionSDK'
+pod 'ReactionSDK'
 
 pre_install do |installer|
     def installer.verify_no_static_framework_transitive_dependencies; end
@@ -20,7 +20,7 @@ end
 
 ### Add methods to your application in Swift: 
 ```swift
-import ReActionSDK
+import ReactionSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GCMReceiverDelegate {
